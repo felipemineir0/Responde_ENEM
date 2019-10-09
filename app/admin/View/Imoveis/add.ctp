@@ -16,6 +16,7 @@
                     <?php
                     $arrayCount = array(0 => "0", 1 => "1", 2 => "2", 3 => "3", 4 => "4", 5 => "5", 6 => "6", 7 => "7", 8 => "8", 9 => "9");
                     echo $this->Form->input('prova_aplicada');
+                    echo $this->Form->input('prova_aplicada');
                     echo $this->Form->input('introducao');
                     echo $this->Form->input('texto');
                     echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));

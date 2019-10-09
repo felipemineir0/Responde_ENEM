@@ -16,6 +16,7 @@
                             <thead>
                                 <tr>
                                     <th><?php echo $this->Paginator->sort('id'); ?></th>
+                                    <th><?php echo $this->Paginator->sort('imoveis_tipo_id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('prova_aplicada'); ?></th>
                                     <th><?php echo $this->Paginator->sort('introducao'); ?></th>
                                     <th><?php echo $this->Paginator->sort('texto'); ?></th>
@@ -28,6 +29,7 @@
                                 <?php foreach ($imoveis as $imovel): ?>
                                     <tr>
                                         <td><?php echo h($imovel['Imovel']['id']); ?>&nbsp;</td>
+                                        <td><?php echo h($imovel['ImoveisTipo']['nome']); ?>&nbsp;</td>
                                         <td><?php echo h($imovel['Imovel']['prova_aplicada']); ?>&nbsp;</td>
                                         <td><?php echo h($imovel['Imovel']['introducao']); ?>&nbsp;</td>
                                         <td><?php echo h($imovel['Imovel']['texto']); ?>&nbsp;</td>

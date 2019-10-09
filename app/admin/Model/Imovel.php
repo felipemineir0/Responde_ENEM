@@ -17,9 +17,17 @@ class Imovel extends AppModel {
      */
     public $imagem_upload = null;
     public $displayField = 'nome';
+    public $belongsTo = array(
+        'ImoveisTipo' => array(
+            'className' => 'ImoveisTipo',
+            'foreignKey' => 'imoveis_tipo_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+            )
+        );
 
     public function beforeSave($options = null) {
-
         if (!empty($this->data[$this->alias]['nome'])) {
             if (empty($this->data[$this->alias]['slug'])) {
                 $slug = strtolower(Inflector::slug($this->data[$this->alias]['nome'], "-"));
@@ -49,7 +57,7 @@ class Imovel extends AppModel {
             }
         }
 
-        //INICIO - Editar - Método de upload para pastas com ID 
+        //INICIO - Editar - MÃ©todo de upload para pastas com ID 
         if (!empty($this->data[$this->alias]['id'])) {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
             unset($this->data[$this->alias]['imagem']);
@@ -65,11 +73,11 @@ class Imovel extends AppModel {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
             $this->data[$this->alias]['imagem'] = "";
         }
-        //FIM - Editar - Método de upload para pastas com ID 
+        //FIM - Editar - MÃ©todo de upload para pastas com ID 
     }
 
     public function afterSave($created = true, $options = null) {
-        //INICIO - Adicionar - Método de upload para pastas com ID 
+        //INICIO - Adicionar - MÃ©todo de upload para pastas com ID 
         if ($this->imagem_upload["name"] != "") {
             $imagem_salva = $this->find("first", array(
                 'conditions' => array($this->alias . ".id =" => $this->data[$this->alias]['id']),
@@ -82,7 +90,6 @@ class Imovel extends AppModel {
                 return;
             }
         }
-        //Fim - Adicionar - Método de upload para pastas com ID 
+        //Fim - Adicionar - MÃ©todo de upload para pastas com ID 
     }
-
 }

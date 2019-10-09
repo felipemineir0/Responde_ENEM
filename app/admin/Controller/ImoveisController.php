@@ -1,5 +1,7 @@
 <?php
+
 App::uses('AppController', 'Controller');
+
 /**
  * Imoveis Controller
  *
@@ -36,7 +38,7 @@ class ImoveisController extends AppController {
      */
     public function view($id = null) {
         if (!$this->Imovel->exists($id)) {
-            throw new NotFoundException(__('Invalid product'));
+            throw new NotFoundException(__('Invalid imovel'));
         }
         $options = array('conditions' => array('Imovel.' . $this->Imovel->primaryKey => $id));
         $this->set('imovel', $this->Imovel->find('first', $options));
@@ -51,12 +53,15 @@ class ImoveisController extends AppController {
         if ($this->request->is('post')) {
             $this->Imovel->create();
             if ($this->Imovel->save($this->request->data)) {
-                $this->Session->setFlash(__('The product has been saved.'));
+                $this->Session->setFlash(__('The imovel has been saved.'));
                 return $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The product could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The imovel could not be saved. Please, try again.'));
             }
         }
+        $imoveisTipos = $this->Imovel->ImoveisTipo->find('list');
+        //$cidades = $this->Imovel->Cidade->find('list');
+        $this->set(compact('imoveisTipos'));
     }
 
     /**
@@ -68,20 +73,23 @@ class ImoveisController extends AppController {
      */
     public function edit($id = null) {
         if (!$this->Imovel->exists($id)) {
-            throw new NotFoundException(__('Invalid product.'));
+            throw new NotFoundException(__('Invalid imovel'));
         }
         if ($this->request->is(array('post', 'put'))) {
             
             if ($this->Imovel->save($this->request->data)) {
-                $this->Session->setFlash(__('The product has been saved.'));
+                $this->Session->setFlash(__('The imovel has been saved.'));
                 return $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The product could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The imovel could not be saved. Please, try again.'));
             }
         } else {
             $options = array('conditions' => array('Imovel.' . $this->Imovel->primaryKey => $id));
             $this->request->data = $this->Imovel->find('first', $options);
         }
+        $imoveisTipos = $this->Imovel->ImoveisTipo->find('list');
+        //$cidades = $this->Imovel->Cidade->find('list');
+        $this->set(compact('imoveisTipos'));
     }
 
     /**
@@ -94,14 +102,15 @@ class ImoveisController extends AppController {
     public function delete($id = null) {
         $this->Imovel->id = $id;
         if (!$this->Imovel->exists()) {
-            throw new NotFoundException(__('Invalid product.'));
+            throw new NotFoundException(__('Invalid imovel'));
         }
         $this->request->allowMethod('post', 'delete');
         if ($this->Imovel->delete()) {
-            $this->Session->setFlash(__('The product has been deleted.'));
+            $this->Session->setFlash(__('The imovel has been deleted.'));
         } else {
-            $this->Session->setFlash(__('The product could not be deleted. Please, try again.'));
+            $this->Session->setFlash(__('The imovel could not be deleted. Please, try again.'));
         }
         return $this->redirect(array('action' => 'index'));
     }
+
 }
