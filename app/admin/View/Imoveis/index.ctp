@@ -14,7 +14,7 @@
                     <div class=''>
                         <table class='data-table table table-bordered table-striped' style='margin-bottom:0;' >
                             <thead>
-                                <tr>
+                                <tr> 
                                     <th><?php echo $this->Paginator->sort('id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('imoveis_tipo_id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('prova_aplicada'); ?></th>
