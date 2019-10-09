@@ -22,12 +22,14 @@
                     echo $this->Form->input('texto');
                     echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                     echo $this->Form->input('pergunta');
-                    echo $this->Form->input('alternativa_1', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_1');
                     echo $this->Form->input('alternativa_2');
                     echo $this->Form->input('alternativa_3');
                     echo $this->Form->input('alternativa_4');
                     echo $this->Form->input('alternativa_5');
-                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
+                    echo $this->Form->input('alternativa_resposta_id', array('options' => array(1 => 'Alternativa 1', 2 => 'Alternativa 2',
+                                            3 => 'Alternativa 3', 4 => 'Alternativa 4', 5 => 'Alternativa 5')));
+                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 2 => "Não")));
                     ?>  
                     <?php if ($this->request->data["Imovel"]["imagem"] != "") { ?>
                     <div class="form-group">

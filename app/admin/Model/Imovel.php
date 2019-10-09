@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * Imovel Model
  *
  * @property ImoveisTipo $ImoveisTipo
+ * @property Resposta $Resposta
  */
 class Imovel extends AppModel {
     //The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -21,6 +22,13 @@ class Imovel extends AppModel {
         'ImoveisTipo' => array(
             'className' => 'ImoveisTipo',
             'foreignKey' => 'imoveis_tipo_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+            ),
+        'Resposta' => array(
+            'className' => 'Resposta',
+            'foreignKey' => 'alternativa_resposta_id',
             'conditions' => '',
             'fields' => '',
             'order' => ''
@@ -57,7 +65,7 @@ class Imovel extends AppModel {
             }
         }
 
-        //INICIO - Editar - MÃ©todo de upload para pastas com ID 
+        //INICIO - Editar - Método de upload para pastas com ID 
         if (!empty($this->data[$this->alias]['id'])) {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
             unset($this->data[$this->alias]['imagem']);
@@ -73,7 +81,7 @@ class Imovel extends AppModel {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
             $this->data[$this->alias]['imagem'] = "";
         }
-        //FIM - Editar - MÃ©todo de upload para pastas com ID 
+        //FIM - Editar - Método de upload para pastas com ID 
     }
 
     public function afterSave($created = true, $options = null) {
@@ -90,6 +98,6 @@ class Imovel extends AppModel {
                 return;
             }
         }
-        //Fim - Adicionar - MÃ©todo de upload para pastas com ID 
+        //Fim - Adicionar - Método de upload para pastas com ID 
     }
 }

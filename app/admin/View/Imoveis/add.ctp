@@ -15,17 +15,19 @@
                     <?php echo $this->Form->create('Imovel', $this->FormAdmin->formConfigs); ?>
                     <?php
                     $arrayCount = array(0 => "0", 1 => "1", 2 => "2", 3 => "3", 4 => "4", 5 => "5", 6 => "6", 7 => "7", 8 => "8", 9 => "9");
-                    echo $this->Form->input('prova_aplicada');
+                    echo $this->Form->input('imoveis_tipo_id');
                     echo $this->Form->input('prova_aplicada');
                     echo $this->Form->input('introducao');
                     echo $this->Form->input('texto');
                     echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                     echo $this->Form->input('pergunta');
-                    echo $this->Form->input('alternativa_1', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_1');
                     echo $this->Form->input('alternativa_2');
                     echo $this->Form->input('alternativa_3');
                     echo $this->Form->input('alternativa_4');
                     echo $this->Form->input('alternativa_5');
+                    echo $this->Form->input('alternativa_resposta_id', array('options' => array(1 => 'Alternativa 1', 2 => 'Alternativa 2',
+                                             3 => 'Alternativa 3', 4 => 'Alternativa 4', 5 => 'Alternativa 5')));
                     echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
                     ?>
                     <div class='form-actions form-actions-padding-sm'>

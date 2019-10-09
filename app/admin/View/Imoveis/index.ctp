@@ -19,10 +19,9 @@
                                     <th><?php echo $this->Paginator->sort('imoveis_tipo_id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('prova_aplicada'); ?></th>
                                     <th><?php echo $this->Paginator->sort('introducao'); ?></th>
-                                    <th><?php echo $this->Paginator->sort('texto'); ?></th>
-                                    <th><?php echo $this->Paginator->sort('created'); ?></th>
-                                    <th><?php echo $this->Paginator->sort('modified'); ?></th>
-                                    <th class="actions">Ações</th>
+                                    <th style="min-width: 95px;"><?php echo $this->Paginator->sort('created'); ?></th>
+                                    <th style="min-width: 95px;"><?php echo $this->Paginator->sort('modified'); ?></th>
+                                    <th class="actions" style="min-width: 100px;">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -32,11 +31,10 @@
                                         <td><?php echo h($imovel['ImoveisTipo']['nome']); ?>&nbsp;</td>
                                         <td><?php echo h($imovel['Imovel']['prova_aplicada']); ?>&nbsp;</td>
                                         <td><?php echo h($imovel['Imovel']['introducao']); ?>&nbsp;</td>
-                                        <td><?php echo h($imovel['Imovel']['texto']); ?>&nbsp;</td>
                                         <td><?php echo date("d-m-Y", strtotime($imovel['Imovel']['created'])); ?>&nbsp;</td>
                                         <td><?php echo date("d-m-Y", strtotime($imovel['Imovel']['modified'])); ?>&nbsp;</td>
                                         <td>
-                                            <div class="text-center" style="width: 50px;">
+                                            <div class="text-center">
                                                 <?php
                                                 echo $this->Html->link('<i class=\'icon-pencil\'></i> Editar', array('action' => 'edit', $imovel['Imovel']['id']), array('class' => 'btn btn-warning btn-xs has-tooltip', 'title' => 'Editar', 'data-original-title' => 'Editar', 'data-placement' => 'top', 'escape' => false)) . '&nbsp;';
                                                 echo $this->Form->postLink('<i class=\'icon-remove\'></i>', array('action' => 'delete', $imovel['Imovel']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-xs alert-delete has-tooltip', 'title' => 'Excluir', 'data-original-title' => 'Excluir', 'data-placement' => 'top',), __('Tem certeza que deseja excluir? %s', $imovel['Imovel']['id']));

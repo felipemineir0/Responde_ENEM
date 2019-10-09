@@ -60,8 +60,8 @@ class ImoveisController extends AppController {
             }
         }
         $imoveisTipos = $this->Imovel->ImoveisTipo->find('list');
-        //$cidades = $this->Imovel->Cidade->find('list');
-        $this->set(compact('imoveisTipos'));
+        $respostas = $this->Imovel->Resposta->find('list');
+        $this->set(compact('imoveisTipos', 'respostas'));
     }
 
     /**
@@ -88,8 +88,8 @@ class ImoveisController extends AppController {
             $this->request->data = $this->Imovel->find('first', $options);
         }
         $imoveisTipos = $this->Imovel->ImoveisTipo->find('list');
-        //$cidades = $this->Imovel->Cidade->find('list');
-        $this->set(compact('imoveisTipos'));
+        $respostas = $this->Imovel->Resposta->find('list');
+        $this->set(compact('imoveisTipos', 'respostas'));
     }
 
     /**
