@@ -33867,3 +33867,57 @@ Request URL: /Responde_ENEM/admin//img/logo@2x.png
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-10-09 19:24:53 Error: [MissingControllerException] Controller class RespondeENEMController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeENEMController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/responde_ENEM/admin//imgadmin/webroot/js/ckeditor/ckeditor.js
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-09 19:24:54 Error: [MissingControllerException] Controller class RespondeENEMController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeENEMController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/responde_ENEM/admin/imoveistipos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-09 19:24:55 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin//imgadmin/webroot/js/ckeditor/ckeditor.js
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-09 19:25:05 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin//imgadmin/webroot/js/ckeditor/ckeditor.js
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-09 19:25:12 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin//imgadmin/webroot/js/ckeditor/ckeditor.js
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-09 19:25:13 Error: [NotFoundException] Invalid imovel
+Request URL: /Responde_ENEM/admin/imoveis/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 [internal function]: ImoveisController->edit('img', 'meta_icons', 'favicon.png')
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImoveisController), Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImoveisController), Object(CakeRequest))
+#4 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

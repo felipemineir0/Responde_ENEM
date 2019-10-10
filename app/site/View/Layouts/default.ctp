@@ -124,7 +124,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6 endereco-footer">
                 <span class="telefones-footer">
-                    <img src="<?php echo $this->request->base ?>/img/WhatsApp.png" alt="" style="width: 26px;margin-top: -3px;margin-left: -33px;margin-right: 7px;"/><b>(34) 99965-2973</b></p>
+                    <img src="<?php echo $this->request->base ?>/img/WhatsApp.png" alt="" style="width: 26px;margin-top: -3px;margin-left: -33px;margin-right: 7px;"/><b>(34) 99163-5948</b></p>
                 </span>
                 <a class="logoCopyright" href="mailto:felipeborges@unipam.edu.br" target="_blank"><p>Desenvolvido por FELIPE BORGES</p></a>
             </div>

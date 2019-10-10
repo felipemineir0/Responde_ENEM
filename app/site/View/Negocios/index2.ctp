@@ -1,3 +1,13 @@
+<tr>
+    <td width="8" valign="top">
+        <input class="bolaradio" type="radio" id="4" name="questao<?php echo $imovel['Imovel']['id'];?>" value="D">
+    </td>
+    <td>
+        <label for="4"> D) <?php echo $imovel['Imovel']['alternativa_4'];?></label>
+    </td>
+</tr>
+
+
 <form action="processa.php" method="post">
 
     <tr>

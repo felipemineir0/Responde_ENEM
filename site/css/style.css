@@ -89,12 +89,12 @@ select::-ms-expand {display: none;}
 .home-text a.saiba-mais:hover{color: #812990;}
 .home-text .bg-zebrada{background: url(../img/barra-zebrada.png) center bottom no-repeat;    display: table;padding-bottom: 10px;margin-bottom: 40px;}
 
-.footer-site{height: 120px;background: url(../img/bg-footer.png) right top no-repeat;    z-index: 9;    position: relative;    margin-top: -8px;}
-.footer-site h5{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 400;float: left;margin-bottom: 40px;    margin-right: 8px;    margin-top: 2px;}
+.footer-site{height: 90px;background: url(../img/bg-footer.png) right top no-repeat; z-index: 9; position: relative; margin-top: -12px;}
+.footer-site h5{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 400;float: left;margin-bottom: 40px; margin-right: 8px; margin-top: 2px;}
 .footer-site p b{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 700;}
 .footer-site .telefones-footer{padding-top: 35px;}
 .footer-site .endereco-footer{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 500;padding: 0 54px;text-align: center;padding-top: 25px;}
-.footer-site .logo-footer img{float: right;    height: 89px;    margin-top: 20px;}
+.footer-site .logo-footer img{float: right; height: 75px; margin-top: 10px;}
 .footer-site .logoCopyright {    color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 700;}
 
 .banner-top{height: 320px;}
@@ -189,6 +189,7 @@ height: 35px;outline: none;}
 	.banner-home .slider-banner .elipse-banner{margin-right: 55px;}
 	.menu-linhas ul li{max-width: 150px;padding: 12px 23px 8px;margin: 0 0px;}
 	.listagem-produtos .image-prod img{width:100%;}
+	/*.footer-site{position: fixed;bottom: 0;width: 100%;}*/
 	}
 	
 @media (max-width: 540px) {
@@ -421,7 +422,7 @@ blockquote p {
 	margin: 0px 0px 5px 0px;
 	}
 	#theExam #questionDiv{
-	padding: 20px 5px 20px 5px;
+	padding: 20px 5px 5px 5px;
 	margin:5px;
 	}
 	#theExam #question{
