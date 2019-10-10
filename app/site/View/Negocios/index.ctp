@@ -77,7 +77,7 @@
                     <br>
                     <br>
                     <hr>
-                </div>
+                </div> 
             </div>
         </form>
         <?php $numQuestao++; endforeach; ?>
