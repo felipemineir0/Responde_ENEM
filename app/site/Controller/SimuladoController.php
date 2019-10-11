@@ -5,7 +5,7 @@ ini_set("display_errors", 1);
 
 App::uses('AppController', 'Controller');
 
-class NegociosController extends AppController {
+class SimuladoController extends AppController {
 
     public $components = array('Paginator');
     public $uses = array('Imovel', 'Album', 'AlbunsImagem', 'AlbunsVideo');
