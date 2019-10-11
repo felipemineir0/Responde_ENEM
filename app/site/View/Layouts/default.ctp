@@ -62,14 +62,14 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul>
-                    <li class="<?php if(($this->request->params["controller"] == 'home')) { echo 'active'; } ?>">
+                    <li class="<?php if(($this->request->params["controller"] == 'home')) { echo 'active'; } ?> menuMobile">
                         <a href="<?php echo $this->request->base ?>">HOME</a>
                     </li>
                     <li class="<?php if(($this->request->params["controller"] == 'institucional')) { echo 'active'; } ?>">
                         <a href="<?php echo $this->request->base ?>/institucional">INSTITUCIONAL</a>
                     </li>
-                    <li class="<?php if(($this->request->params["controller"] == 'negocios')) { echo 'active'; } ?>">
-                        <a href="<?php echo $this->request->base ?>/produtos">SIMULADO</a>
+                    <li class="<?php if(($this->request->params["controller"] == 'simulado')) { echo 'active'; } ?>">
+                        <a href="<?php echo $this->request->base ?>/simulado">SIMULADO</a>
                     </li>
                     <li class="<?php if(($this->request->params["controller"] == 'contato')) { echo 'active'; } ?>">
                         <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
@@ -96,13 +96,13 @@
                                 <li class="<?php if(($this->request->params["controller"] == 'home')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>">HOME</a>
                                 </li>
-                                <li <li class="<?php if(($this->request->params["controller"] == 'institucional')) { echo 'active'; } ?>">
+                                <li class="<?php if(($this->request->params["controller"] == 'institucional')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>/institucional">INSTITUCIONAL</a>
                                 </li>
-                                <li <li class="<?php if(($this->request->params["controller"] == 'negocios')) { echo 'active'; } ?>">
-                                    <a href="<?php echo $this->request->base ?>/produtos">SIMULADO</a>
+                                <li class="<?php if(($this->request->params["controller"] == 'simulado')) { echo 'active'; } ?>">
+                                    <a href="<?php echo $this->request->base ?>/simulado">SIMULADO</a>
                                 </li>
-                                <li <li class="<?php if(($this->request->params["controller"] == 'contato')) { echo 'active'; } ?>">
+                                <li class="<?php if(($this->request->params["controller"] == 'contato')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
                                 </li>
                             </ul>
@@ -119,27 +119,24 @@
     <footer class="footer-site">
         <div class="container">  
             <div class="col-lg-11 col-md-11 col-sm-11 cel-auto">
+                <div class="col-lg-3 col-md-3 col-sm-3 telefones-footer"></div>
 
-            <div class="col-lg-3 col-md-3 col-sm-3 telefones-footer"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 endereco-footer">
+                    <span class="telefones-footer">
+                        <img src="<?php echo $this->request->base ?>/img/WhatsApp.png" alt="" style="width: 26px;margin-top: -3px;margin-left: -33px;margin-right: 7px;"/><b>(34) 99163-5948</b></p>
+                    </span>
+                    <a class="logoCopyright" href="mailto:felipeborges@unipam.edu.br" target="_blank"><p>Desenvolvido por FELIPE BORGES</p></a>
+                </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 endereco-footer">
-                <span class="telefones-footer">
-                    <img src="<?php echo $this->request->base ?>/img/WhatsApp.png" alt="" style="width: 26px;margin-top: -3px;margin-left: -33px;margin-right: 7px;"/><b>(34) 99163-5948</b></p>
-                </span>
-                <a class="logoCopyright" href="mailto:felipeborges@unipam.edu.br" target="_blank"><p>Desenvolvido por FELIPE BORGES</p></a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 logo-footer">
-                <figure>
-                <a href="<?php echo $this->request->base ?>">
-                    <img src="<?php echo $this->request->base ?>/img/logo.png" alt=""/>
-                </a>
-                </figure>
-            </div>
-
+                <div class="col-lg-3 col-md-3 col-sm-3 logo-footer">
+                    <figure>
+                    <a href="<?php echo $this->request->base ?>">
+                        <img src="<?php echo $this->request->base ?>/img/logo.png" alt=""/>
+                    </a>
+                    </figure>
+                </div>
             </div>
         </div>
     </footer>
-
 </body>
 </html>

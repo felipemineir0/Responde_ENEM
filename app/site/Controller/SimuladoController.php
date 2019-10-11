@@ -8,27 +8,27 @@ App::uses('AppController', 'Controller');
 class SimuladoController extends AppController {
 
     public $components = array('Paginator');
-    public $uses = array('Imovel', 'Album', 'AlbunsImagem', 'AlbunsVideo');
+    public $uses = array('Questao', 'Album', 'AlbunsImagem', 'AlbunsVideo');
 
     public function index($slug_status = "") {
-        $this->Imovel->ImoveisTipo->recursive = -1;
-        $imoveisTipos = $this->Imovel->ImoveisTipo->find('all', array("fields" => array("nome", "slug")));
-        $this->set(compact('imoveisTipos'));
+        $this->Questao->MateriasTipo->recursive = -1;
+        $materiasTipos = $this->Questao->MateriasTipo->find('all', array("fields" => array("nome", "slug")));
+        $this->set(compact('materiasTipos'));
 
-        $fields_imoveis = array(
-            'Imovel.id',
-            'Imovel.slug',
-            'Imovel.prova_aplicada',
-            'Imovel.introducao',
-            'Imovel.pergunta',
-            'Imovel.imagem',
-            'Imovel.texto',
-            'Imovel.alternativa_1',
-            'Imovel.alternativa_2',
-            'Imovel.alternativa_3',
-            'Imovel.alternativa_4',
-            'Imovel.alternativa_5',
-            'ImoveisTipo.nome');
+        $fields_questoes = array(
+            'Questao.id',
+            'Questao.slug',
+            'Questao.prova_aplicada',
+            'Questao.introducao',
+            'Questao.pergunta',
+            'Questao.imagem',
+            'Questao.texto',
+            'Questao.alternativa_1',
+            'Questao.alternativa_2',
+            'Questao.alternativa_3',
+            'Questao.alternativa_4',
+            'Questao.alternativa_5',
+            'MateriasTipo.nome');
 
             if (!empty($slug_status)) {
 
@@ -38,20 +38,20 @@ class SimuladoController extends AppController {
 
             $this->paginate = array(
                 'order' => array(
-                    'Imovel.created' => 'desc',
+                    'Questao.created' => 'desc',
                 ),
                 'conditions' => $conditions,
-                'fields' => $fields_imoveis,
+                'fields' => $fields_questoes,
                 'limit' => 20
             );
-            $this->set('imoveis', $this->Paginator->paginate());
+            $this->set('questoes', $this->Paginator->paginate());
        
             } else {
 
             if (!empty($this->request->query["query"])) {
-                $conditions_or["Imovel.nome LIKE"] = "%" . $this->request->query["query"] . "%";
+                $conditions_or["Questao.nome LIKE"] = "%" . $this->request->query["query"] . "%";
 
-                $conditions_or["Imovel.descricao LIKE"] = "%" . $this->request->query["query"] . "%";
+                $conditions_or["Questao.descricao LIKE"] = "%" . $this->request->query["query"] . "%";
 
                 //$conditions_or["Cidade.nome LIKE"] = "%" . $this->request->query["query"] . "%";
 
@@ -60,19 +60,19 @@ class SimuladoController extends AppController {
 
 
             if (!empty($this->request->query["tipo"])) {
-                $conditions["ImoveisTipo.slug"] = $this->request->query["tipo"];
+                $conditions["MateriasTipo.slug"] = $this->request->query["tipo"];
             }
 
             $this->paginate = array(
                 'order' => array(
-                    'Imovel.created' => 'desc',
+                    'Questao.created' => 'desc',
                 ),
                 'conditions' => $conditions,
-                'fields' => $fields_imoveis,
+                'fields' => $fields_questoes,
                 'limit' => 12
             );
 
-            $this->set('imoveis', $this->Paginator->paginate());
+            $this->set('questoes', $this->Paginator->paginate());
         }
     }
 }

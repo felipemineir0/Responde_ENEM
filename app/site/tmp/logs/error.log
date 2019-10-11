@@ -3302,3 +3302,489 @@ Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-10-11 17:17:38 Error: [MissingControllerException] Controller class RespondeENEMController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeENEMController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:17:48 Error: [MissingControllerException] Controller class NegociosController could not be found.
+Exception Attributes: array (
+  'class' => 'NegociosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:17:57 Error: [MissingTableException] Table tb_imoveis_tipos for model ImoveisTipo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tb_imoveis_tipos',
+  'class' => 'ImoveisTipo',
+  'ds' => 'default',
+)
+Request URL: /Responde_ENEM/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('imoveis_tipos')
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\wamp64\www\Responde_ENEM\app\site\Controller\SimuladoController.php(15): Model->find('all', Array)
+#4 [internal function]: SimuladoController->index()
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SimuladoController), Array)
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#8 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2019-10-11 17:18:00 Error: [MissingControllerException] Controller class SimuladosController could not be found.
+Exception Attributes: array (
+  'class' => 'SimuladosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/simulados
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:18:18 Error: [MissingTableException] Table tb_imoveis_tipos for model ImoveisTipo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tb_imoveis_tipos',
+  'class' => 'ImoveisTipo',
+  'ds' => 'default',
+)
+Request URL: /Responde_ENEM/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('imoveis_tipos')
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\wamp64\www\Responde_ENEM\app\site\Controller\SimuladoController.php(15): Model->find('all', Array)
+#4 [internal function]: SimuladoController->index()
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SimuladoController), Array)
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#8 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2019-10-11 17:24:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:24:15 Error: [MissingControllerException] Controller class NegociosController could not be found.
+Exception Attributes: array (
+  'class' => 'NegociosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos/?tipo=biologia
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:25:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:27:18 Error: [MissingControllerException] Controller class ContatosController could not be found.
+Exception Attributes: array (
+  'class' => 'ContatosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/contatos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:28:16 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:30:23 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:30:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:33:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:34:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:34:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:35:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:36:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:36:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:36:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:48:55 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos/?tipo=historia
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:50:50 Error: [MissingControllerException] Controller class QuestoesController could not be found.
+Exception Attributes: array (
+  'class' => 'QuestoesController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/questoes/?tipo=historia&slug_status=undefined
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:01 Error: [MissingControllerException] Controller class QuestoesController could not be found.
+Exception Attributes: array (
+  'class' => 'QuestoesController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/questoes/?tipo=historia&slug_status=undefined
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:51:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:54:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:54:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 17:58:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:01:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:01:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:02:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:04:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:04:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:04:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:05:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:07:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:12:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:12:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/topo-produtos.jpg
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:14:25 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-11 18:14:50 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/produtos
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

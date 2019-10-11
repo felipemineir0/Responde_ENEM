@@ -29,8 +29,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, bo
 
 :-ms-input-placeholder {     color: inherit;}
 
-
-a:link, a:visited, a:active{color:#b79418;}
+a:link, a:visited, a:active{color: #fedc08; font-weight: 600;}
 
 ol, ul{list-style:none;}
 blockquote, q{quotes:none;}
@@ -50,11 +49,11 @@ select::-ms-expand {display: none;}
 
 .cel-auto{float: none !important;margin: auto;}
 
-.top-fixed{height: 162px;width: 100%;background: url(../img/top-bg.png) center -3px no-repeat;position: fixed;z-index: 9;}
+.top-fixed{height: 140px;width: 100%; /*background: #45c766;*/ position: relative;;z-index: 9;}
 .top-fixed .logo-site img{margin:18px 25px;}
 .top-fixed .menu-topo ul{float:right;margin-top: 25px;}
 .top-fixed .menu-topo ul li{display: inline;margin-right: 22px;}
-.top-fixed .menu-topo ul li a{color: #000;font-family: Ubuntu; font-size: 20px;font-weight: 700;text-transform: uppercase;padding: 7px 15px; border-radius: 30px;}
+.top-fixed .menu-topo ul li a{color: #fedc08;font-family: Ubuntu; font-size: 20px;font-weight: 700;text-transform: uppercase;padding: 7px 15px; border-radius: 30px;}
 .top-fixed .menu-topo ul li a:hover,.top-fixed .menu-topo ul li.active a{background-color: #fedc08;color: #000;}
 
 .banner-home{overflow: hidden;}
@@ -89,7 +88,7 @@ select::-ms-expand {display: none;}
 .home-text a.saiba-mais:hover{color: #812990;}
 .home-text .bg-zebrada{background: url(../img/barra-zebrada.png) center bottom no-repeat;    display: table;padding-bottom: 10px;margin-bottom: 40px;}
 
-.footer-site{height: 90px;background: url(../img/bg-footer.png) right top no-repeat; z-index: 9; position: relative; margin-top: -12px;}
+.footer-site{height: 90px;background: #45c766; z-index: 9; position: relative; margin-top: -12px;}
 .footer-site h5{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 400;float: left;margin-bottom: 40px; margin-right: 8px; margin-top: 2px;}
 .footer-site p b{color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 700;}
 .footer-site .telefones-footer{padding-top: 35px;}
@@ -97,8 +96,8 @@ select::-ms-expand {display: none;}
 .footer-site .logo-footer img{float: right; height: 75px; margin-top: 10px;}
 .footer-site .logoCopyright {    color: #000;font-family: Ubuntu;font-size: 14px;font-weight: 700;}
 
-.banner-top{height: 320px;}
-.banner-top h1{color: #ffffff;font-family: Ubuntu;font-size: 50px;font-weight: 700;margin-top: 220px;float: left;}
+.banner-top{height: 207px;}
+.banner-top h1{color: #ffffff;font-family: Ubuntu;font-size: 50px;font-weight: 700;margin-top: 80px;float: left;}
 .banner-top .title-produtos h1{    background: #fedc08;    padding: 5px 15px;}
 
 .text-institucional{padding-top: 88px;padding-bottom: 88px;}
@@ -194,16 +193,17 @@ height: 35px;outline: none;}
 	.banner-home .slider-banner .elipse-banner p{font-size: 20px;}
 	.banner-home .slick-next{ right: 0;}
 	.top-fixed{display: none;}
-	.navbar-btns{margin-bottom: 0;z-index: 9;}
-	.navbar-btns img{ width: 80px; position: absolute;}
-	.navbar-collapse{padding: 35px;}
+	.navbar-btns{margin-bottom: 0;z-index: 9;text-align: center;}
+	.navbar-btns img{ width: 80px; position: absolute; margin-left: -45px;}
+	.navbar-collapse{padding: 20px; margin-top: 14px; background-color: #fedc08;}
+	.navbar-collapse ul li {background-color: #45c766; padding: 15px 12px; text-align: center; font-size: 16px;margin: 3px;border-radius: 5px;}
 	.home-text img{width:100%;}
 	.redes-sociais a{ margin: auto;margin-bottom: 10px;float: none;width: 47px;}
 	.home-text h2{margin-top: 40px;}
 	.home-text .bg-zebrada{ padding-bottom: 35px;}
 	.footer-site{ background-size: cover; height: auto;}
-	.banner-top{ height: 140px; background-size: cover !important;}
-	.banner-top h1{font-size: 40px;margin-top: 70px;}
+	.banner-top{ height: 130px !important; background-size: cover !important;}
+	.banner-top h1{font-size: 40px;margin-top: 50px !important;}
 	.missao-visao{height: auto;background-size:cover;}
 	.missao-visao .col-missao-visao{padding: 0;}
 	.missao-visao .box-missao-visao{ margin-top: 66px;}

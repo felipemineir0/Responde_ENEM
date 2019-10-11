@@ -1,12 +1,12 @@
 <?php
 Router::connect('/', array('controller' => 'home'));
-//Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+Router::connect('/contato', array('controller' => 'contato'));
+Router::connect('/contatos', array('controller' => 'contato'));
+Router::connect('/fale-conosco', array('controller' => 'contato'));
+Router::connect('/faleconosco', array('controller' => 'contato'));
 Router::connect('/Institucional', array('controller' => 'Institucional'));
-Router::connect('/Servicos',array('controller'=>'Servicos'));
-Router::connect('/produtos', array('controller' => 'negocios'));
-//Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-//Router::connect('/paginas/:slug_pagina', array('controller' => 'paginas', 'action' => 'index'), array('pass' => array("slug_pagina")));
-
+Router::connect('/simulado', array('controller' => 'simulado'));
+Router::connect('/simulados', array('controller' => 'simulado'));
 CakePlugin::routes();
 
 require CAKE . 'Config' . DS . 'routes.php';

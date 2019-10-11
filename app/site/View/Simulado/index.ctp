@@ -1,7 +1,7 @@
 <main>
-    <section class="banner-top" style="background: url(<?php echo $this->request->base ?>/img/topo-produtos.jpg) center top no-repeat;">
+    <section class="banner-top">
         <div class="container">
-            <div class="col-lg-10 col-md-10 col-sm-10 cel-auto title-produtos">
+            <div class="col-lg-12 col-md-12 col-sm-12 title-produtos">
                 <h1>Simulado</h1>                  
             </div>
         </div>
@@ -13,14 +13,14 @@
                 <div class="col-md-5">
                     <p >Escolha a matéria desejada para fazer o Simulado</p>
                 </div>
-                <?php echo $this->Form->create("Imovel", array('url' => array('controller' => '/imoveis', 'action' => 'index'),
+                <?php echo $this->Form->create("Questao", array('url' => array('controller' => '/questoes', 'action' => 'index'),
                         'class' => "col-xs-12 col-sm-5 col-md-5"));
                 ?>
 
                     <select class="formTransform col-xs-12 col-sm-12 col-md-12" name="CboOrganizar" id="CboOrganizar">
                         <option value="">Selecione uma matéria</option>
-                        <?php foreach ($imoveisTipos as $tipo) { ?>
-                        <option value="<?php echo $tipo["ImoveisTipo"]["slug"] ?>">Linha <?php echo $tipo["ImoveisTipo"]["nome"] ?></option>
+                        <?php foreach ($materiasTipos as $tipo) { ?>
+                        <option value="<?php echo $tipo["MateriasTipo"]["slug"] ?>"><?php echo $tipo["MateriasTipo"]["nome"] ?></option>
 
                         <?php } ?>
                     </select>
@@ -35,7 +35,7 @@
         <div class="row" id="theExam">
         <!-- INICIO QUESTÃO -->
         <?php $letra = ['A','B','C','D','E']; ?>
-        <?php $numQuestao = 1; foreach($imoveis as $imovel): ?>
+        <?php $numQuestao = 1; foreach($questoes as $questao): ?>
 
         <form action="?action=markTest" method="post" name="QTL-form" id="QTL-form">
             <input type="hidden" value="36808" name="userAttemptID">
@@ -44,30 +44,30 @@
                 <br>
                 <div id="question">
                     <fieldset id="1">
-                    <p>(<?php echo $imovel['Imovel']['prova_aplicada'];?>) <?php echo $imovel['Imovel']['introducao'];?></p>
+                    <p>(<?php echo $questao['Questao']['prova_aplicada'];?>) <?php echo $questao['Questao']['introducao'];?></p>
                 
-                    <?php if (!empty($imovel['Imovel']['imagem'])) {?>
+                    <?php if (!empty($questao['Questao']['imagem'])) {?>
                         <div class="image-prod">
-                            <img src="<?php echo $this->request->base ?>/upload/imoveis/<?php echo $imovel['Imovel']['id'] ?>/278x174-<?php echo $imovel['Imovel']['imagem'] ?>" alt="<?php echo $imovel['Imovel']['nome'];?>" />
+                            <img src="<?php echo $this->request->base ?>/upload/questoes/<?php echo $questao['Questao']['id'] ?>/278x174-<?php echo $questao['Questao']['imagem'] ?>" alt="<?php echo $questao['Questao']['nome'];?>" />
                         </div>
                     <?php } ?>
 
                     <blockquote>
-                        <p><?php echo $imovel['Imovel']['texto'];?></p>
+                        <p><?php echo $questao['Questao']['texto'];?></p>
                     </blockquote>
 
-                    <p><?php echo $imovel['Imovel']['pergunta'];?></p>
+                    <p><?php echo $questao['Questao']['pergunta'];?></p>
                     
                     <table width="90%" class="qtablela">
                         <tbody>
                         <?php for ($inc=1; $inc <= 5; $inc++ ):?>
                         <tr>
                             <td width="8" valign="top">
-                                <input id="<?php echo $imovel['ImoveisTipo']['nome'];?>_<?php echo $imovel['Imovel']['id'];?>_<?php echo $inc;?>" name="questao_<?php echo $imovel['Imovel']['id'];?>" 
+                                <input id="<?php echo $questao['MateriasTipo']['nome'];?>_<?php echo $questao['Questao']['id'];?>_<?php echo $inc;?>" name="questao_<?php echo $questao['Questao']['id'];?>" 
                                 class="bolaradio" type="radio" value="<?php echo $letra[$inc -1]; ?>">
                             </td>
                             <td>
-                                <label for="<?php echo $imovel['ImoveisTipo']['nome'];?>_<?php echo $imovel['Imovel']['id'];?>_<?php echo $inc;?>"><?php echo $letra[$inc -1]; ?>) <?php echo $imovel['Imovel']['alternativa_'.$inc];?></label>
+                                <label for="<?php echo $questao['MateriasTipo']['nome'];?>_<?php echo $questao['Questao']['id'];?>_<?php echo $inc;?>"><?php echo $letra[$inc -1]; ?>) <?php echo $questao['Questao']['alternativa_'.$inc];?></label>
                             </td>
                         </tr>
                         <?php endfor; ?>
@@ -93,18 +93,18 @@
         <!--<div class="container">
             <div class="row">
                 <!-- INICIO LINHA PRODUTOS 
-                <?php foreach($imoveis as $imovel):?>
+                <?php foreach($questoes as $questao):?>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-prod">
                     <div class="image-prod">
-                        <img src="<?php echo $this->request->base ?>/upload/imoveis/<?php echo $imovel['Imovel']['id'] ?>/278x174-<?php echo $imovel['Imovel']['imagem'] ?>" alt="<?php echo $imovel['Imovel']['nome'];?>" />
+                        <img src="<?php echo $this->request->base ?>/upload/questoes/<?php echo $questao['Questao']['id'] ?>/278x174-<?php echo $questao['Questao']['imagem'] ?>" alt="<?php echo $questao['Questao']['nome'];?>" />
                     </div>
                     
                     <div class="barra-zebrada"></div>
 
-                    <h2><?php echo $imovel['Imovel']['nome'];?></h2>
-                    <p><b><?php echo $imovel['Imovel']['descricao'];?></b><br/>
-                    <?php echo $imovel['Imovel']['texto'];?><br/><br/>
-                    <b>Embalagem:</b> <?php echo $imovel['Imovel']['embalagem'];?>
+                    <h2><?php echo $questao['Questao']['nome'];?></h2>
+                    <p><b><?php echo $questao['Questao']['descricao'];?></b><br/>
+                    <?php echo $questao['Questao']['texto'];?><br/><br/>
+                    <b>Embalagem:</b> <?php echo $questao['Questao']['embalagem'];?>
                     </p>
                 </div>
                 <?php endforeach;?>
@@ -122,8 +122,8 @@
 
         $("#CboOrganizar").change(function () {
             if ($(this).val() != "")
-        window.location = "<?php echo $this->request->base ?>" + "/produtos/?tipo=" + $(this).val();
-        //window.location = "<?php echo $this->request->base ?>" + "/imoveis/?tipo=" + $(this).val() + "&slug_status=" + $("#slug_status").val();
+        window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val();
+        //window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val() + "&slug_status=" + $("#slug_status").val();
         })
 
     });
