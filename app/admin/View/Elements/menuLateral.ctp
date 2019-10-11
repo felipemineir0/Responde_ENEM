@@ -11,15 +11,15 @@
             "action" => "index"), array("escape" => false));
         ?>
     </li>
-    <li class='materias' id="materia">
+    <li class='questoes' id="questoes">
         <?php
-        echo $this->Html->link("<i class='icon-book'></i>Cadastro Tipo Matéria", array("controller" => "imoveistipos",
+        echo $this->Html->link("<i class='icon-book'></i>Cadastro de Questões", array("controller" => "questoes",
             "action" => "index"), array("escape" => false));
         ?>
     </li>
-    <li class='questoes' id="questoes">
+    <li class='materias' id="materia">
         <?php
-        echo $this->Html->link("<i class='icon-book'></i>Cadastro Questões", array("controller" => "imoveis",
+        echo $this->Html->link("<i class='icon-book'></i>Cadastro Tipo de Matéria", array("controller" => "materiastipos",
             "action" => "index"), array("escape" => false));
         ?>
     </li>

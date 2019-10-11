@@ -16,7 +16,7 @@
                             <thead>
                                 <tr> 
                                     <th><?php echo $this->Paginator->sort('id'); ?></th>
-                                    <th><?php echo $this->Paginator->sort('imoveis_tipo_id'); ?></th>
+                                    <th><?php echo $this->Paginator->sort('materias_tipo_id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('prova_aplicada'); ?></th>
                                     <th><?php echo $this->Paginator->sort('introducao'); ?></th>
                                     <th style="min-width: 95px;"><?php echo $this->Paginator->sort('created'); ?></th>
@@ -25,19 +25,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($imoveis as $imovel): ?>
+                                <?php foreach ($questoes as $questao): ?>
                                     <tr>
-                                        <td><?php echo h($imovel['Imovel']['id']); ?>&nbsp;</td>
-                                        <td><?php echo h($imovel['ImoveisTipo']['nome']); ?>&nbsp;</td>
-                                        <td><?php echo h($imovel['Imovel']['prova_aplicada']); ?>&nbsp;</td>
-                                        <td><?php echo h($imovel['Imovel']['introducao']); ?>&nbsp;</td>
-                                        <td><?php echo date("d-m-Y", strtotime($imovel['Imovel']['created'])); ?>&nbsp;</td>
-                                        <td><?php echo date("d-m-Y", strtotime($imovel['Imovel']['modified'])); ?>&nbsp;</td>
+                                        <td><?php echo h($questao['Questao']['id']); ?>&nbsp;</td>
+                                        <td><?php echo h($questao['MateriasTipo']['nome']); ?>&nbsp;</td>
+                                        <td><?php echo h($questao['Questao']['prova_aplicada']); ?>&nbsp;</td>
+                                        <td><?php echo h($questao['Questao']['introducao']); ?>&nbsp;</td>
+                                        <td><?php echo date("d-m-Y", strtotime($questao['Questao']['created'])); ?>&nbsp;</td>
+                                        <td><?php echo date("d-m-Y", strtotime($questao['Questao']['modified'])); ?>&nbsp;</td>
                                         <td>
                                             <div class="text-center">
                                                 <?php
-                                                echo $this->Html->link('<i class=\'icon-pencil\'></i> Editar', array('action' => 'edit', $imovel['Imovel']['id']), array('class' => 'btn btn-warning btn-xs has-tooltip', 'title' => 'Editar', 'data-original-title' => 'Editar', 'data-placement' => 'top', 'escape' => false)) . '&nbsp;';
-                                                echo $this->Form->postLink('<i class=\'icon-remove\'></i>', array('action' => 'delete', $imovel['Imovel']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-xs alert-delete has-tooltip', 'title' => 'Excluir', 'data-original-title' => 'Excluir', 'data-placement' => 'top',), __('Tem certeza que deseja excluir? %s', $imovel['Imovel']['id']));
+                                                echo $this->Html->link('<i class=\'icon-pencil\'></i> Editar', array('action' => 'edit', $questao['Questao']['id']), array('class' => 'btn btn-warning btn-xs has-tooltip', 'title' => 'Editar', 'data-original-title' => 'Editar', 'data-placement' => 'top', 'escape' => false)) . '&nbsp;';
+                                                echo $this->Form->postLink('<i class=\'icon-remove\'></i>', array('action' => 'delete', $questao['Questao']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-xs alert-delete has-tooltip', 'title' => 'Excluir', 'data-original-title' => 'Excluir', 'data-placement' => 'top',), __('Tem certeza que deseja excluir? %s', $questao['Questao']['id']));
                                                 ?>
                                             </div>
                                         </td>

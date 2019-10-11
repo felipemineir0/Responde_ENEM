@@ -23,16 +23,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($imoveisTipos as $imoveisTipo): ?>
+                                <?php foreach ($materiasTipos as $materiasTipo): ?>
                                     <tr>
-                                        <td><?php echo h($imoveisTipo['ImoveisTipo']['id']); ?>&nbsp;</td>
-                                        <td><?php echo h($imoveisTipo['ImoveisTipo']['nome']); ?>&nbsp;</td>
-                                        <td><?php echo date("d-m-Y", strtotime($imoveisTipo['ImoveisTipo']['created'])); ?>&nbsp;</td>
-                                        <td><?php echo date("d-m-Y", strtotime($imoveisTipo['ImoveisTipo']['modified'])); ?>&nbsp;</td>
+                                        <td><?php echo h($materiasTipo['MateriasTipo']['id']); ?>&nbsp;</td>
+                                        <td><?php echo h($materiasTipo['MateriasTipo']['nome']); ?>&nbsp;</td>
+                                        <td><?php echo date("d-m-Y", strtotime($materiasTipo['MateriasTipo']['created'])); ?>&nbsp;</td>
+                                        <td><?php echo date("d-m-Y", strtotime($materiasTipo['MateriasTipo']['modified'])); ?>&nbsp;</td>
                                         <td>
                                         <div class="text-center">
-                                            <?php echo $this->Html->link('<i class=\'icon-pencil\'></i> Editar', array('action' => 'edit', $imoveisTipo['ImoveisTipo']['id']), array('class' => 'btn btn-warning btn-xs has-tooltip','title'=> 'Editar','data-original-title' => 'Editar','data-placement' => 'top','escape' => false)) . '&nbsp;'; 
-                                            echo $this->Form->postLink('<i class=\'icon-remove\'></i>', array('action' => 'delete', $imoveisTipo['ImoveisTipo']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-xs alert-delete has-tooltip', 'title' => 'Excluir', 'data-original-title' => 'Excluir', 'data-placement' => 'top', ), __('Tem certeza que deseja excluir? %s', $imoveisTipo['ImoveisTipo']['id'])); ?>
+                                            <?php echo $this->Html->link('<i class=\'icon-pencil\'></i> Editar', array('action' => 'edit', $materiasTipo['MateriasTipo']['id']), array('class' => 'btn btn-warning btn-xs has-tooltip','title'=> 'Editar','data-original-title' => 'Editar','data-placement' => 'top','escape' => false)) . '&nbsp;'; 
+                                            echo $this->Form->postLink('<i class=\'icon-remove\'></i>', array('action' => 'delete', $materiasTipo['MateriasTipo']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-xs alert-delete has-tooltip', 'title' => 'Excluir', 'data-original-title' => 'Excluir', 'data-placement' => 'top', ), __('Tem certeza que deseja excluir? %s', $materiasTipo['MateriasTipo']['id'])); ?>
                                         </div>
                                         </td>
                                     </tr>

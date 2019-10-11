@@ -8,30 +8,30 @@ App::uses('AppController', 'Controller');
  */
 class RespostasController extends AppController {
 
-/**
- * Components
- *
- * @var array
- */
+	/**
+	 * Components
+	 *
+	 * @var array
+	 */
 	public $components = array('Paginator');
 
-/**
- * index method
- *
- * @return void
- */
+	/**
+	 * index method
+	 *
+	 * @return void
+	 */
 	public function index() {
 		$this->Resposta->recursive = 0;
 		$this->set('respostas', $this->Paginator->paginate());
 	}
 
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	/**
+	 * view method
+	 *
+	 * @throws NotFoundException
+	 * @param string $id
+	 * @return void
+	 */
 	public function view($id = null) {
 		if (!$this->Resposta->exists($id)) {
 			throw new NotFoundException(__('Invalid resposta'));
@@ -40,11 +40,11 @@ class RespostasController extends AppController {
 		$this->set('resposta', $this->Resposta->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
+	/**
+	 * add method
+	 *
+	 * @return void
+	 */
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Resposta->create();
@@ -57,13 +57,13 @@ class RespostasController extends AppController {
 		}
 	}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	/**
+	 * edit method
+	 *
+	 * @throws NotFoundException
+	 * @param string $id
+	 * @return void
+	 */
 	public function edit($id = null) {
 		if (!$this->Resposta->exists($id)) {
 			throw new NotFoundException(__('Invalid resposta'));
@@ -81,13 +81,13 @@ class RespostasController extends AppController {
 		}
 	}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	/**
+	 * delete method
+	 *
+	 * @throws NotFoundException
+	 * @param string $id
+	 * @return void
+	 */
 	public function delete($id = null) {
 		$this->Resposta->id = $id;
 		if (!$this->Resposta->exists()) {

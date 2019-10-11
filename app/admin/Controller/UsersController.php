@@ -32,7 +32,7 @@ class UsersController extends AppController {
                 $this->Cookie->write('User', $this->Auth->user(), false, 43200);
                 return $this->redirect($this->Auth->redirect());
             }
-            $this->Session->setFlash(__('Usuário ou senha inválidos. Tente novamente.'));
+            $this->Session->setFlash(__('Usuário ou senha inválidos. Por favor, Tente novamente.'));
         }
         $this->layout = '';
         
@@ -109,7 +109,7 @@ class UsersController extends AppController {
         if ($this->User->delete()) {
             $this->Session->setFlash('Registro excluído com sucesso!', 'default', array('class' => 'alert alert-success space'));
         } else {
-            $this->Session->setFlash('Registro não pode ser excluído. Por favor, tente novamente', 'default', array('class' => 'alert alert-danger space'));
+            $this->Session->setFlash('Registro não pode ser excluído. Por favor, tente novamente.', 'default', array('class' => 'alert alert-danger space'));
         }
         return $this->redirect(array('action' => 'index'));
     }
@@ -139,7 +139,7 @@ class UsersController extends AppController {
                     $this->Session->setFlash('Senha alterada com sucesso!', 'default', array('class' => 'alert alert-success space'));
                     return $this->redirect(array('action' => 'index'));
                 } else {
-                    $this->Session->setFlash('Houve um erro no salvamento, favor tentar novamente', 'default', array('class' => 'alert alert-danger space'));
+                    $this->Session->setFlash('Houve um erro no salvamento. Por favor, tente novamente.', 'default', array('class' => 'alert alert-danger space'));
                 }
             } else {
                 $this->Session->setFlash('Senha atual não corresponde a senha digitada.', 'default', array('class' => 'alert alert-danger space'));

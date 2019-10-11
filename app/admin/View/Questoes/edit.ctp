@@ -2,7 +2,7 @@
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
             <i class='icon-briefcase'></i>
-            <span><?php echo __('Adicionar Questão'); ?></span>
+            <span><?php echo __('Editar Questão'); ?></span>
         </h1>
     </div>
 </div>
@@ -11,11 +11,12 @@
     <div class='col-sm-12'>
         <div class='box'>
             <div class='box-content'>
-                <div class="imoveis form">
-                    <?php echo $this->Form->create('Imovel', $this->FormAdmin->formConfigs); ?>
+                <div class="questoes form">
+                    <?php echo $this->Form->create('Questao', $this->FormAdmin->formConfigs); ?>
                     <?php
+                    echo $this->Form->input('id');
                     $arrayCount = array(0 => "0", 1 => "1", 2 => "2", 3 => "3", 4 => "4", 5 => "5", 6 => "6", 7 => "7", 8 => "8", 9 => "9");
-                    echo $this->Form->input('imoveis_tipo_id');
+                    echo $this->Form->input('materias_tipo_id');
                     echo $this->Form->input('prova_aplicada');
                     echo $this->Form->input('introducao');
                     echo $this->Form->input('texto');
@@ -27,9 +28,17 @@
                     echo $this->Form->input('alternativa_4');
                     echo $this->Form->input('alternativa_5'); 
                     echo $this->Form->input('alternativa_resposta_id', array('options' => array(1 => 'Alternativa 1', 2 => 'Alternativa 2',
-                                             3 => 'Alternativa 3', 4 => 'Alternativa 4', 5 => 'Alternativa 5')));
-                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
-                    ?>
+                                            3 => 'Alternativa 3', 4 => 'Alternativa 4', 5 => 'Alternativa 5')));
+                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 2 => "Não")));
+                    ?>  
+                    <?php if ($this->request->data["Questao"]["imagem"] != "") { ?>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="arquivo">Imagem atual</label>
+                        <div class="col-md-5 controls">
+                            <?php echo $this->Html->image('../../site/upload/questoes/' . $this->request->data["Questao"]["id"] . '/s_' . $this->request->data["Questao"]["imagem"]); ?>
+                        </div>
+                    </div>
+                    <?php } ?>
                     <div class='form-actions form-actions-padding-sm'>
                         <div class='row'>
                             <div class='col-md-10 col-md-offset-2'>

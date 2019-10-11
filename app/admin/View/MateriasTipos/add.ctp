@@ -2,7 +2,7 @@
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
             <i class='icon-book'></i>
-            <span><?php echo __('Editar Tipo Matéria'); ?></span>
+            <span><?php echo __('Adicionar Tipo de Matéria'); ?></span>
         </h1>
     </div>
 </div>
@@ -11,10 +11,9 @@
     <div class='col-sm-12'>
         <div class='box'>
             <div class='box-content'>
-                <div class="imoveisTipos form">
-                    <?php echo $this->Form->create('ImoveisTipo', $this->FormAdmin->formConfigs); ?>
+                <div class="materiasTipo form">
+                    <?php echo $this->Form->create('MateriasTipo', $this->FormAdmin->formConfigs); ?>
                     <?php
-                    echo $this->Form->input('id');
                     echo $this->Form->input('nome');
                     ?>
                     <div class='form-actions form-actions-padding-sm'>

@@ -1,8 +1,8 @@
 <div class='col-xs-12'>
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-dollar'></i>
-            <span><?php echo __('Produtos'); ?></span>
+            <i class='icon-book'></i>
+            <span><?php echo __('Editar Tipo de Matéria'); ?></span>
         </h1>
     </div>
 </div>
@@ -11,15 +11,11 @@
     <div class='col-sm-12'>
         <div class='box'>
             <div class='box-content'>
-                <div class="galerias form">
-                    <?php echo $this->Form->create('Galeria', $this->FormAdmin->formConfigs); ?>
+                <div class="materiasTipo form">
+                    <?php echo $this->Form->create('MateriasTipo', $this->FormAdmin->formConfigs); ?>
                     <?php
+                    echo $this->Form->input('id');
                     echo $this->Form->input('nome');
-                    //echo $this->Form->input('data', array('class' => ''));
-                    echo $this->Form->input('descricao');
-                    echo $this->Form->input('texto'/*,array("class" => "ckeditor")*/);
-                    echo $this->Form->input('embalagem');
-                    echo $this->Form->input("imagem", array('class' => '','type' => 'file','accept' => 'image/gif, image/png, image/jpeg','label' => array('text' => 'Imagem','class' => 'col-md-2 control-label')));
                     ?>
                     <div class='form-actions form-actions-padding-sm'>
                         <div class='row'>
