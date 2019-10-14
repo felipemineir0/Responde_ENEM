@@ -3950,3 +3950,11 @@ Request URL: /Responde_ENEM/site/upload/destaques/2/2000x900-novo-projeto-1.png
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-10-14 15:22:19 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [/home/felipe/public_html/Responde_ENEM/lib/Cake/Utility/String.php, line 25]
+2019-10-14 15:22:19 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 /home/felipe/public_html/Responde_ENEM/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', '/home/felipe/pu...', 25)
+#1 /home/felipe/public_html/Responde_ENEM/lib/Cake/Core/App.php(929): ErrorHandler::handleError(64, 'Cannot use 'Str...', '/home/felipe/pu...', 25, Array)
+#2 /home/felipe/public_html/Responde_ENEM/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

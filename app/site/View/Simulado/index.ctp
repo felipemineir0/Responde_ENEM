@@ -35,14 +35,15 @@
         <div class="row" id="theExam">
         <!-- INICIO QUESTÃO -->
         <?php $letra = ['A','B','C','D','E']; ?>
+        <form action="?action=markTest" method="post" name="QTL-form" id="QTL-form">
         <?php $numQuestao = 1; foreach($questoes as $questao): ?>
 
-        <form action="?action=markTest" method="post" name="QTL-form" id="QTL-form">
+        
             <input type="hidden" value="36808" name="userAttemptID">
             <div id="questionDiv">
                 <b class="greyTextsingle">Questão <?php echo $numQuestao; ?></b>
                 <br>
-                <div id="question">
+                <div id="question" class="question">
                     <fieldset id="1">
                     <p>(<?php echo $questao['Questao']['prova_aplicada'];?>) <?php echo $questao['Questao']['introducao'];?></p>
                 
@@ -64,7 +65,8 @@
                         <tr>
                             <td width="8" valign="top">
                                 <input id="<?php echo $questao['MateriasTipo']['nome'];?>_<?php echo $questao['Questao']['id'];?>_<?php echo $inc;?>" name="questao_<?php echo $questao['Questao']['id'];?>" 
-                                class="bolaradio" type="radio" value="<?php echo $letra[$inc -1]; ?>">
+                                class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa'?>">
+                                <?php //debug($questao['Questao']) ?>
                             </td>
                             <td>
                                 <label for="<?php echo $questao['MateriasTipo']['nome'];?>_<?php echo $questao['Questao']['id'];?>_<?php echo $inc;?>"><?php echo $letra[$inc -1]; ?>) <?php echo $questao['Questao']['alternativa_'.$inc];?></label>
@@ -73,18 +75,21 @@
                         <?php endfor; ?>
                         </tbody>
                     </table>
+
                     </fieldset>
                     <br>
                     <br>
                     <hr>
                 </div> 
             </div>
-        </form>
+       
         <?php $numQuestao++; endforeach; ?>
-        <!-- FINAL QUESTÃO -->
-        <div class="formulario-contato" style="padding: 0 0;">
+            <div class="formulario-contato" style="padding: 0 0;">
             <button type="submit">corrigir <i class="fas fa-chevron-circle-right"></i></button>
-        </div>
+            </div>
+         </form>
+        <!-- FINAL QUESTÃO -->
+        
         </div>
     </div>
 
@@ -126,7 +131,21 @@
         //window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val() + "&slug_status=" + $("#slug_status").val();
         })
 
+       
+
     });
+    $('#QTL-form').submit(function(e){
+        e.preventDefault();
+        $('input:checked').each(function(index) {
+            fieldset = $(this).parent().parent().parent().parent().parent()
+            fieldset.find('p').remove()
+            if($(this).data('correct') == 'falsa'){
+                fieldset.append('<p>resposta incorreta</p>')
+            }else{
+                fieldset.append('<p>resposta correta</p>')
+            }
+        });
+    })
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),

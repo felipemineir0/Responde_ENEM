@@ -28,6 +28,7 @@ class SimuladoController extends AppController {
             'Questao.alternativa_3',
             'Questao.alternativa_4',
             'Questao.alternativa_5',
+            'Questao.alternativa_resposta_id',
             'MateriasTipo.nome');
 
             if (!empty($slug_status)) {
