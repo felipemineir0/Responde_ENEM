@@ -57,7 +57,7 @@ class Destaque extends AppModel {
                 App::import('Component', 'Upload');
                 $Upload = new UploadComponent();
                 $tamanhos = array(
-                    "2000" => "900",
+                    "1400" => "570",
                 );
                 $this->data[$this->alias]['imagem'] = $Upload->upload($this->imagem_upload, "upload" . DS . "destaques" . DS . $this->data[$this->alias]['id'] . DS, false, $tamanhos, true);
             }
@@ -84,5 +84,4 @@ class Destaque extends AppModel {
         }
         //Fim - Adicionar - Método de upload para pastas com ID 
     }
-
 }

@@ -49,7 +49,7 @@ select::-ms-expand {display: none;}
 
 .cel-auto{float: none !important;margin: auto;}
 
-.top-fixed{height: 140px;width: 100%; /*background: #45c766;*/ position: relative;;z-index: 9;}
+.top-fixed{height: 146px;width: 100%;position: relative;z-index: 9;}
 .top-fixed .logo-site img{margin:18px 25px;}
 .top-fixed .menu-topo ul{float:right;margin-top: 25px;}
 .top-fixed .menu-topo ul li{display: inline;margin-right: 22px;}
@@ -57,20 +57,20 @@ select::-ms-expand {display: none;}
 .top-fixed .menu-topo ul li a:hover,.top-fixed .menu-topo ul li.active a{background-color: #fedc08;color: #000;}
 
 .banner-home{overflow: hidden;}
-.banner-home .slider-banner{height:714px;}
+.banner-home .slider-banner{height:570px;}
 .banner-home .slider-banner .elipse-banner{width:383px;height:400px;background: url(../img/ellipse-banner.png);margin-top: 148px;margin-right: 128px;float: right;}
 .banner-home .slider-banner .elipse-banner h2{color: #812990;font-family: Pacifico;font-size: 35px;font-weight: 400;letter-spacing: -0.81px;text-align: center;margin-top: 60px;
     margin-bottom: 35px;}
 .banner-home .slider-banner .elipse-banner p{color: #6a4201;font-family: Ubuntu;font-size: 25px;font-weight: 700;letter-spacing: -1px;padding: 10px 35px;text-align: center;}
 .banner-home .slick-next{ text-indent: -9999px; background: url(../img/next-banner.png);width: 60px;height: 60px;}
-.banner-home .slick-dots{bottom: 200px;margin-left:230px;}
-.banner-home .slick-dots li button{width: 14px;height: 13px;background-color: #fffefd;border-radius: 30px;text-indent: -9999px;}
-.banner-home .slick-dots li.slick-active button{background-color: #6a4201;}
+.banner-home .slick-dots{ bottom: 50px; margin-left: 310px;}
+.banner-home .slick-dots li button{width: 14px;height: 13px;background-color: #45c766;border-radius: 30px;text-indent: -9999px;}
+.banner-home .slick-dots li.slick-active button{background-color: #fedc08;}
 
-.redes-sociais{background-color: #fedc08;    padding: 16px 0px;    border-radius: 100px;margin-top: -65px;position: relative;z-index: 8}
-.redes-sociais h3{color: #812990;font-family: Pacifico;font-size: 30px;font-weight: 400;letter-spacing: -1px;padding: 7px 0 7px 50px;}
+.redes-sociais{background-color: #45c766; padding: 16px 0px; border-radius: 100px;margin-top: -65px;position: relative;z-index: 8}
+.redes-sociais h3{color: #fedc08; font-family: Pacifico; font-weight: 400; letter-spacing: -1px; padding: 5px 0 5px 0; text-align: center;}
 .redes-sociais a{display: block; margin-right: 20px;   float: right;    padding:5px 15px;    border-radius: 100px;    color: #812990;    font-size: 25px;    border: 1px solid #812990;}
-.redes-sociais a.instagram{    padding: 5px 12px; }
+.redes-sociais a.instagram{padding: 5px 12px; }
 .redes-sociais a:hover{background:#812990;color:#fedc08;}
 
 .redes-sociais.interna{margin-top: 0px;}

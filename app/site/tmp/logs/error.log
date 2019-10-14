@@ -3788,3 +3788,165 @@ Request URL: /Responde_ENEM/site/produtos
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-10-14 00:24:16 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/banner-top-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/bg-institucional.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:19 Error: [MissingControllerException] Controller class VideoController could not be found.
+Exception Attributes: array (
+  'class' => 'VideoController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/video/video.mp4
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/banner-top-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/bg-institucional.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 00:24:26 Error: [MissingControllerException] Controller class VideoController could not be found.
+Exception Attributes: array (
+  'class' => 'VideoController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/video/video.mp4
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 01:22:22 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:21:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/bg-institucional.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:21:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/banner-top-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:21:30 Error: [MissingControllerException] Controller class VideoController could not be found.
+Exception Attributes: array (
+  'class' => 'VideoController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/video/video.mp4
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:21:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/banner-top-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:29:01 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/1/s_maxresdefault-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:29:23 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/2/s_novo-projeto-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:31:37 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/2/2000x900-novo-projeto-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:31:37 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/1/2000x900-maxresdefault-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:31:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/1/2000x900-maxresdefault-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-14 02:31:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/upload/destaques/2/2000x900-novo-projeto-1.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
