@@ -62,7 +62,7 @@
                     <table width="90%" class="qtablela">
                         <tbody>
                         <?php for ($inc=1; $inc <= 5; $inc++ ):?>
-                        <tr>
+                        <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null?>">
                             <td width="8" valign="top">
                                 <input id="<?php echo $questao['MateriasTipo']['nome'];?>_<?php echo $questao['Questao']['id'];?>_<?php echo $inc;?>" name="questao_<?php echo $questao['Questao']['id'];?>" 
                                 class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa'?>">
@@ -136,12 +136,17 @@
     });
     $('#QTL-form').submit(function(e){
         e.preventDefault();
+        $('.v').removeClass('resposta-correta')
         $('input:checked').each(function(index) {
             fieldset = $(this).parent().parent().parent().parent().parent()
             fieldset.find('p').remove()
+            
             if($(this).data('correct') == 'falsa'){
+                fieldset.find('.v').addClass('resposta-correta');
+                console.log(fieldset.find('.v'))
                 fieldset.append('<p>resposta incorreta</p>')
             }else{
+
                 fieldset.append('<p>resposta correta</p>')
             }
         });
