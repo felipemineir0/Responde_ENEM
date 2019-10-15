@@ -263,10 +263,6 @@ height: 35px;outline: none;}
     background-color: #45C766;
     color: #fff;
 }
-#question label:hover { 
-    background-color: #45C766;
-    color:#fff;
-}
 blockquote p {
     color: #999;
     padding: 0 18px;

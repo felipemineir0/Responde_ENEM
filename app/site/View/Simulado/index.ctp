@@ -35,7 +35,7 @@
         <div class="row" id="theExam">
         <!-- INICIO QUESTÃO -->
         <?php $letra = ['A','B','C','D','E']; ?>
-        <form action="?action=markTest" method="post" name="QTL-form" id="QTL-form">
+        <form action="?action=correcao" method="post" name="SIMULADO-form" id="SIMULADO-form">
         <?php $numQuestao = 1; foreach($questoes as $questao): ?>
 
         
@@ -93,32 +93,7 @@
         </div>
     </div>
 
-    <section class="listagem-produtos">
-
-        <!--<div class="container">
-            <div class="row">
-                <!-- INICIO LINHA PRODUTOS 
-                <?php foreach($questoes as $questao):?>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-prod">
-                    <div class="image-prod">
-                        <img src="<?php echo $this->request->base ?>/upload/questoes/<?php echo $questao['Questao']['id'] ?>/278x174-<?php echo $questao['Questao']['imagem'] ?>" alt="<?php echo $questao['Questao']['nome'];?>" />
-                    </div>
-                    
-                    <div class="barra-zebrada"></div>
-
-                    <h2><?php echo $questao['Questao']['nome'];?></h2>
-                    <p><b><?php echo $questao['Questao']['descricao'];?></b><br/>
-                    <?php echo $questao['Questao']['texto'];?><br/><br/>
-                    <b>Embalagem:</b> <?php echo $questao['Questao']['embalagem'];?>
-                    </p>
-                </div>
-                <?php endforeach;?>
-                <!-- FINAL LINHA PRODUTOS 
-            </div>
-            <?php echo $this->Element('paginacao'); ?>
-        </div>-->
-        
-    </section>
+    <section class="listagem-produtos"></section>
 </main>
 
 <script type="text/javascript">
@@ -134,7 +109,7 @@
        
 
     });
-    $('#QTL-form').submit(function(e){
+    $('#SIMULADO-form').submit(function(e){
         e.preventDefault();
         $('.v').removeClass('resposta-correta')
         $('input:checked').each(function(index) {
@@ -142,9 +117,12 @@
             fieldset.find('p').remove()
             
             if($(this).data('correct') == 'falsa'){
+                var letra_correcao = <?= $questao['Questao']['alternativa_resposta_id']; ?>;
                 fieldset.find('.v').addClass('resposta-correta');
                 console.log(fieldset.find('.v'))
-                fieldset.append('<p>resposta incorreta</p>')
+                fieldset.append('<span class="incorrect">Você errou essa.</span>' +
+                '<p>Resposta certa é letra ' +
+                '<span class="incorrectFeedback">' + letra_correcao + '</span></p>')
             }else{
 
                 fieldset.append('<p>resposta correta</p>')
@@ -158,3 +136,8 @@
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 </script>
+<style>
+.resposta-correta { background-color: #45C766; }
+.incorrect { color: #ff0000; font-weight: bold; background: left no-repeat url(img/incorrect.png); padding: 30px 30px 30px 50px; display: block; }
+.incorrectFeedback { background: #45c766; padding: 3px 8px; color: #fff; }
+</style>
