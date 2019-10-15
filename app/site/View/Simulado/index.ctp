@@ -59,7 +59,7 @@
 
                     <p><?php echo $questao['Questao']['pergunta'];?></p>
                     
-                    <table width="90%" class="qtablela">
+                    <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id']?>">
                         <tbody>
                         <?php for ($inc=1; $inc <= 5; $inc++ ):?>
                         <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null?>">
@@ -117,7 +117,7 @@
             fieldset.find('p').remove()
             
             if($(this).data('correct') == 'falsa'){
-                var letra_correcao = <?= $questao['Questao']['alternativa_resposta_id']; ?>;
+                var letra_correcao = fieldset.find('.qtablela').data('correta')
                 fieldset.find('.v').addClass('resposta-correta');
                 console.log(fieldset.find('.v'))
                 fieldset.append('<span class="incorrect">Você errou essa.</span>' +

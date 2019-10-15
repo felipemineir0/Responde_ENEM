@@ -3958,3 +3958,25 @@ Stack Trace:
 #2 /home/felipe/public_html/Responde_ENEM/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2019-10-15 09:12:32 Error: [MissingActionException] Action SimuladoController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'SimuladoController',
+  'action' => 'img',
+)
+Request URL: /~felipe/Responde_ENEM/site/simulado/img/incorrect.png
+Stack Trace:
+#0 /home/felipe/public_html/Responde_ENEM/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/felipe/public_html/Responde_ENEM/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#2 /home/felipe/public_html/Responde_ENEM/site/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-10-15 09:18:18 Error: [MissingActionException] Action SimuladoController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'SimuladoController',
+  'action' => 'img',
+)
+Request URL: /~felipe/Responde_ENEM/site/simulado/img/incorrect.png
+Stack Trace:
+#0 /home/felipe/public_html/Responde_ENEM/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/felipe/public_html/Responde_ENEM/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#2 /home/felipe/public_html/Responde_ENEM/site/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
