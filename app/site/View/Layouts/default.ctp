@@ -115,7 +115,9 @@
     </header>   
 
     <?php echo $this->fetch('content'); ?>
-                
+    
+    <a href="#top" class="glyphicon">^</a>
+
     <footer class="footer-site">
         <div class="container">  
             <div class="col-lg-11 col-md-11 col-sm-11 cel-auto">
@@ -140,3 +142,25 @@
     </footer>
 </body>
 </html>
+
+<style>
+    a[href="#top"]{
+    padding: 9px; position: fixed; top: 92%; right: 40px; display: none; z-index: 999; background: #fedc08; width: 40px; height: 40px; text-align: center; font-size: 35px; color: green;    font-weight: bold;}
+    a[href="#top"]:hover{ text-decoration:none;opacity: 1;}
+</style>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a[href="#top"]').fadeIn();
+        } else {
+            $('a[href="#top"]').fadeOut();
+        }
+    });
+
+    $('a[href="#top"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});
+</script>
