@@ -49,6 +49,7 @@
     color: transparent;
     outline: none;
     /*background: transparent;*/
+    margin-right: 30px;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
