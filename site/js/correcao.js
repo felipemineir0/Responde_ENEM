@@ -6,13 +6,23 @@ $('#SIMULADO-form').submit(function(e) {
         fieldset.find('p').remove()
 
         if ($(this).data('correct') == 'falsa') {
-            var letr = letra_correcao - 1
             var letra_correcao = fieldset.find('.qtablela').data('correta')
+            var letra = letra_correcao;
+            if (letra == 1) {
+                msgLetra = "A";   
+            } else if (letra == 2) {
+                msgLetra = "B";   
+            } else if (letra == 3) {
+                msgLetra = "C";
+            } else if (letra == 4) {
+                msgLetra = "D";
+            } else if (letra == 5) {
+                msgLetra = "E";
+            }
             fieldset.find('.v').addClass('resposta-correta');
             console.log(fieldset.find('.v'))
             fieldset.append('<span class="incorrect"> Você errou essa.</span>' +
-                '<p> Resposta certa é letra ' +
-                '<span class="incorrectFeedback">' + letra_correcao + '</span></p>')
+                '<p> Resposta certa é letra ' + '<span class="incorrectFeedback">' + msgLetra + '</span></p>')
         } else {
             fieldset.append('<span class="correct"> Boa! Está correto!</span>')
         }

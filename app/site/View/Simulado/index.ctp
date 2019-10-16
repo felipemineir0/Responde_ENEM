@@ -21,10 +21,10 @@
 
                 <select class="formTransform col-xs-12 col-sm-12 col-md-12" name="CboOrganizar" id="CboOrganizar">
                     <option value="">Selecione uma matéria</option>
-                    <?php foreach ($materiasTipos as $tipo) { ?>
+                    <?php foreach ($materiasTipos as $tipo) : ?>
                         <option value="<?php echo $tipo["MateriasTipo"]["slug"] ?>"><?php echo $tipo["MateriasTipo"]["nome"] ?></option>
 
-                    <?php } ?>
+                    <?php endforeach; ?>
                 </select>
                 <?php echo $this->Form->end(); ?>
             </div>
@@ -36,13 +36,11 @@
     <div class="container entry">
         <div class="row" id="theExam">
             <!-- INICIO QUESTÃO -->
-            <?php $letra = ['A', 'B', 'C', 'D', 'E']; ?>
             <form action="?action=correcao" method="post" name="SIMULADO-form" id="SIMULADO-form">
-                <?php $numQuestao = 1;
+                <?php $numQuestao = 1; $letra = ['A', 'B', 'C', 'D', 'E'];
                 foreach ($questoes as $questao) : ?>
 
 
-                    <input type="hidden" value="36808" name="userAttemptID">
                     <div id="questionDiv">
                         <b class="greyTextsingle">Questão <?php echo $numQuestao; ?></b>
                         <br>
@@ -90,7 +88,7 @@
                 endforeach; ?>
                 <div class="formulario-contato" style="padding: 0 0;">
                     <div style="margin:2px;">Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono">
-                        <button type="submit">corrigir <i class="fas fa-chevron-circle-right"></i></button>
+                        <button type="submit" id="stop">corrigir <i class="fas fa-chevron-circle-right"></i></button>
                     </div>
             </form>
             <!-- FINAL QUESTÃO -->
@@ -105,7 +103,6 @@ $(function() {
     $("#CboOrganizar").change(function() {
         if ($(this).val() != "")
             window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val();
-        //window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val() + "&slug_status=" + $("#slug_status").val();
     })
 });
 </script>
