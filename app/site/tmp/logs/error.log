@@ -5528,3 +5528,525 @@ Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-10-17 01:21:28 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:28 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:28 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:30 Error: [MissingControllerException] Controller class RespondeEnemController could not be found.
+Exception Attributes: array (
+  'class' => 'RespondeEnemController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/responde_enem/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:21:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:29:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:29:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:29:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:30:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:30:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:30:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:46:31 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:46:31 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:46:31 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:47:03 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:47:04 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:47:04 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:51:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:51:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:51:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:53:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:53:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:53:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:55:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:55:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:55:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:58:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:58:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 01:58:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:00:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:00:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:00:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:02:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:02:25 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:02:25 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:44 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:34:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:36:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:36:09 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:36:09 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:37:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:46:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:46:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-17 02:46:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

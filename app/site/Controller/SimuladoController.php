@@ -28,6 +28,7 @@ class SimuladoController extends AppController {
             'Questao.alternativa_3',
             'Questao.alternativa_4',
             'Questao.alternativa_5',
+            'Questao.link_estudo',
             'Questao.alternativa_resposta_id',
             'MateriasTipo.nome');
 

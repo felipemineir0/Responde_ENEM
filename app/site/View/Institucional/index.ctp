@@ -2,14 +2,10 @@
     <section class="text-institucional">
         <div class="container">
             <div class="col-lg-10 col-md-10 col-sm-10 cel-auto">
-                <h2>A Indústria <b>Do Vale</b> foi fundada em 2008.</h2>
-                <h3>Seu maior objetivo é desenvolver produtos de limpeza com alto padrão de qualidade.</h3>
-                <p>Ao trabalhar com inovação nos processos de produção, matérias-primas de alta referência e com uma equipe capacitada, o produto final sempre será o que o consumidor mais deseja: qualidade e preço justo.</p>
-
-                <p>A Do Vale possui uma diversificada linha de produtos para atender o mercado de forma ampla. Produzimos a mais completa gama de produtos na linha automotiva, doméstica, lavanderia e até na limpeza de complexos industriais, como usinas de leite.</p>
-
-                <p>A preocupação com a excelência no atendimento aos clientes e parceiros, agindo com transparência e respeito, tem sido a mola mestra para chegarmos à credibilidade, maior patrimônio de nossa empresa.
-                </p>
+                <h2>O Responde <b>ENEM</b> foi fundado em 2019.</h2>
+                <h3>Seu objetivo é aplicar simulados para usuarios que desejam testar os conhecimentos 
+                <br> e também descobrir melhores lugares para estudo.</h3>
+                <p>Esta aplicação web tem como objetivo, desenvolver uma aplicação na qual usuários que desejam estudar para o ENEM consigam aprofundar mais objetivamente e em áreas melhores indicadas por um sistema utilizando machine learning juntamente com as técnicas anteriormente mencionadas para auxiliar nas indicações para que os usuários sejam recomendados apenas por sites que realmente lhe ajudarão a aprender determinados assuntos. De uma forma simples e prática, para uso tanto de jovens como para pessoas mais velhas consigam utilizar e encontrar as indicações de melhores lugares para estudo.</p>
             </div>
         </div>
     </section>

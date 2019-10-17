@@ -38,10 +38,10 @@ class EmailTemplateContatoComponent extends Component {
             $strHtml = $this->SubstituiValores($strHtml, "MENSAGEM", $obj["Contato"]["mensagem"]);
 
 
-            $nome = "Contato - Do Vale Limpeza";
+            $nome = "Contato - Responde ENEM";
 
             $Email = new CakeEmail('smtp');
-            $Email->to('contato@dovalelimpeza.com.br');
+            $Email->to('contato@.com.br');
             $Email->replyTo($obj["Contato"]["email"]);
             $Email->subject($nome);
             $Email->send($strHtml);
@@ -69,7 +69,5 @@ class EmailTemplateContatoComponent extends Component {
         //metodo de disparo Email 
         return $str;
     }
-
 }
-
 ?>

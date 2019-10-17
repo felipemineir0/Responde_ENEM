@@ -66,8 +66,6 @@
                                             <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null ?>">
                                                 <td width="8" valign="top">
                                                     <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa' ?>">
-                                                    <?php //debug($questao['Questao']) 
-                                                            ?>
                                                 </td>
                                                 <td>
                                                     <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo $questao['Questao']['alternativa_' . $inc]; ?></label>
