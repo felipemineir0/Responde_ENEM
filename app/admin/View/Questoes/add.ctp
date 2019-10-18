@@ -26,8 +26,8 @@
                     echo $this->Form->input('alternativa_3');
                     echo $this->Form->input('alternativa_4');
                     echo $this->Form->input('alternativa_5');
-                    echo $this->Form->input('alternativa_resposta_id', array('options' => array('A' => 'Alternativa 1', 'B' => 'Alternativa 2',
-                                            'C' => 'Alternativa 3', 'D' => 'Alternativa 4', 'E' => 'Alternativa 5')));
+                    echo $this->Form->input('alternativa_resposta_id', array('options' => array('1' => 'Alternativa 1', '2' => 'Alternativa 2',
+                                            '3' => 'Alternativa 3', '4' => 'Alternativa 4', '5' => 'Alternativa 5')));
                     echo $this->Form->input('link_estudo');
                     echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
                     ?>
