@@ -36,7 +36,7 @@
     <div class="container entry">
         <div class="row" id="theExam">
             <!-- INICIO QUESTÃO -->
-            <form action="?action=correcao" method="post" name="SIMULADO-form" id="SIMULADO-form">
+            <form action="?action=correcao" method="post" name="SIMULADO-form" id="SIMULADO-form" onclick="para();" onsubmit='document.getElementById("corrigir").disabled=true'>
                 <?php $numQuestao = 1; $letra = ['A', 'B', 'C', 'D', 'E'];
                 foreach ($questoes as $questao) : ?>
 
@@ -65,7 +65,9 @@
                                         <?php for ($inc = 1; $inc <= 5; $inc++) : ?>
                                             <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null ?>">
                                                 <td width="8" valign="top">
-                                                    <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa' ?>">
+                                                    <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" 
+                                                    name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" 
+                                                    data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa' ?>">
                                                 </td>
                                                 <td>
                                                     <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo $questao['Questao']['alternativa_' . $inc]; ?></label>
@@ -85,14 +87,16 @@
                 <?php $numQuestao++;
                 endforeach; ?>
                 <div class="formulario-contato" style="padding: 0 0;">
-                    <div style="margin:2px;">Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono">
-                        <button type="submit" id="stop">corrigir <i class="fas fa-chevron-circle-right"></i></button>
+                    <div style="margin:2px;">Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono" value="crono">
+                        <button type="submit" value="corrigir" id="corrigir">corrigir <i class="fas fa-arrow-alt-circle-right"></i></button>
+                        <a href="<?php echo $this->request->base ?>/simulado">fazer novamente <i class="fas fa-undo"></i></a>
                     </div>
+                </div>
             </form>
             <!-- FINAL QUESTÃO -->
         </div>
     </div>
-    <section class="listagem-produtos"></section>
+    <section class="espacamento-questoes"></section>
 </main>
 <script>
 $(function() {

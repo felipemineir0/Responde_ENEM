@@ -26,3 +26,7 @@ function StartCrono() {
     document.forms["SIMULADO-form"]["crono"].value = timeCrono;
     setTimeout("StartCrono()", 1000);
 }
+
+function para(){
+    clearInterval(interval);
+}

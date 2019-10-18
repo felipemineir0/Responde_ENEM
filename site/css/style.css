@@ -127,97 +127,7 @@ select::-ms-expand {display: none;}
 .menu-linhas ul li a{color: #7c8788;font-family: Ubuntu;font-size: 15px;font-weight: 500;line-height: 14.37px;text-transform: uppercase;line-height: 14.37px;}
 .menu-linhas ul li b{color: #7c8788;font-family: Pacifico;font-size: 14px;font-weight: 400;text-transform: lowercase;}
 
-.listagem-produtos{padding-top: 50px;} 
-.listagem-produtos .col-prod{padding: 0 33px;height: 530px;}
-.listagem-produtos .image-prod{text-align: center;border: 1px solid #812990;height: 177px;margin:10px; position: relative; z-index: 5;background: #fff;}
-.listagem-produtos .barra-zebrada{width:100%;height:21px;background:url(../img/zebrada2.jpg) no-repeat;    margin-top: -20px;    position: relative;    z-index: 2;}
-.listagem-produtos .col-prod h2{color: #812990;font-family: Ubuntu; font-size: 22px; font-weight: 700; line-height: 22px; text-transform: uppercase; margin-bottom: 16px; text-align: center;min-height: 50px;}
-.listagem-produtos .col-prod p{color: #646467;font-family: "Noto Sans";font-size: 16px;font-weight: 400;    padding: 0 8px;}
-.listagem-produtos .col-prod p b{font-family: "Noto Sans";font-size: 18px;font-weight: 700;}
-
-.paginacao-prods{text-align: center;background: url(../img/barra-zebrada.png) center bottom no-repeat;margin-top: 60px;}
-.paginacao-prods ul li{display: inline;    margin: 0 10px;}
-.paginacao-prods ul li a{background-color: #812990;color: #fedc08;font-family: "Noto Sans";font-size: 19px;font-weight: 700;padding: 7px 10px;    border-radius: 100px;}
-.paginacao-prods ul li a:hover,.paginacao-prods ul li.active a{color: #812990;background-color: #fedc08;}
-.paginacao-prods span a{background-color: #812990;color: #fedc08;font-family: "Noto Sans";font-size: 19px;font-weight: 700;padding: 7px 15px;border-radius: 100px;}
-
-.paginacao-prods span a:hover, .paginacao-prods span.active a {color: #812990;background-color: #fedc08;}
-.paginacao-prods span {display: inline;margin: 0 10px;}
-.tipo {background-color: #fedc08;border-radius: 100px;padding: 1em 0 4em 0;margin-top: 0;}
-.tipo p {font-size: 19px;color: #45C766;font-family: Pacifico;font-weight: 400;letter-spacing: -1px;float: right;margin-top: 10px;}
-.test {color: red;text-transform: uppercase;}
-.formTransform {background-color: #45C766!important;font-family: Ubuntu;color: #fedc08;font-size: 18px;border-radius: 0;height: 50px!important;}
-
-.formulario-contato-top{margin-top:75px;}
-.formulario-contato{background-color: #fff;padding: 80px 0;}
-.formulario-contato .row{margin-bottom: 15px;}
-.formulario-contato label{padding-left: 4px;color: #313131;font-family: "Noto Sans";font-size: 13px;font-weight: 400;line-height: 22.01px;text-transform: uppercase;}
-.formulario-contato input{border-radius: 18px;border: 1px solid #313131;background-color: #ffffff87;color:#313131;outline: none;}
-.formulario-contato textarea{border-radius: 18px;border: 1px solid #313131;background-color: #ffffff87;color:#313131;width:100%;height: 100px;outline: none;padding: 3px 0 0 11px;}
-.formulario-contato textarea:focus{ border-color: #fedc08; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);}
-.formulario-contato .form-padding-right-20{padding-right: 20px;}
-.formulario-contato .form-padding-left-20{padding-left: 20px;}
-.formulario-contato  button{color: #313131;font-family: Pacifico;font-size: 24px;font-weight: 400;float:right;border-radius: 100px;background-color: #fedc08;width: 124px;height: 35px;outline: none;}
-.formulario-contato  button:hover{opacity: 0.7;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
-.formulario-contato  button .fa-chevron-circle-right{    float: right;    margin-top: 7px;    margin-right: 8px;    margin-bottom: 11px;}
-
-.navbar-default{    border: 0;    background-color: inherit;    height: 0;    padding: 0;    min-height: 0;    margin-bottom: 0;    display: none;}
-#result_validacao{text-align: center;color: #fedc08;font-weight: 500;}
-
-@media (min-width: 992px){
-	.top-fixed .menu-topo ul li{ margin-right: 3px;}
-	.home-text img{width:100%;}
-	.redes-sociais h3{ font-size: 27px;}
-	.banner-home .slider-banner .elipse-banner{margin-right: 55px;}
-	.menu-linhas ul li{max-width: 150px;padding: 12px 23px 8px;margin: 0 0px;}
-	.listagem-produtos .image-prod img{width:100%;}
-}
-	
-@media (max-width: 540px) {
-	.navbar-default{ border: 0; background-color: inherit; height: auto; min-height: 50px; margin-bottom: 20px; display: block; }
-	.menu-topo{display: none;}
-	.banner-home .slider-banner{ height: 475px;}
-	.banner-home .slider-banner .elipse-banner{ width: 300px; height: 309px; background: url(../img/ellipse-banner.png); margin-top: 70px;margin-right: auto; float: none; background-size: cover;}
-	.banner-home .slider-banner .elipse-banner h2{color: #812990; font-family: Pacifico; font-size: 25px; font-weight: 400;	letter-spacing: -0.81px; text-align: center; margin-top: 60px; margin-bottom: 12px; padding-top: 40px;}
-	.banner-home .slider-banner .elipse-banner p{font-size: 20px;}
-	.banner-home .slick-next{ right: 0;}
-	.top-fixed{display: none;}
-	.navbar-btns{margin-bottom: 0;z-index: 9;text-align: center;}
-	.navbar-btns img{ width: 80px; position: absolute; margin-left: -45px;}
-	.navbar-collapse{padding: 20px; margin-top: 14px; background-color: #fedc08;}
-	.navbar-collapse ul li {background-color: #45c766; padding: 15px 12px; text-align: center; font-size: 16px;margin: 3px;border-radius: 5px;}
-	.home-text img{width:100%;}
-	.redes-sociais a{ margin: auto;margin-bottom: 10px;float: none;width: 47px;}
-	.home-text h2{margin-top: 40px;}
-	.home-text .bg-zebrada{ padding-bottom: 35px;}
-	.footer-site{ background-size: cover; height: auto;}
-	.banner-top{ height: 130px !important; background-size: cover !important;}
-	.banner-top h1{font-size: 40px;margin-top: 50px !important;}
-	.missao-visao{height: auto;background-size:cover;}
-	.missao-visao .col-missao-visao{padding: 0;}
-	.missao-visao .box-missao-visao{ margin-top: 66px;}
-	#play-pause{ margin-top: 50px !important; left: 39% !important; width: 80px !important; height: 80px !important;background-size: cover !important;}
-	.menu-linhas ul li{ margin-bottom: 10px;}
-	.listagem-produtos .image-prod img{width: 100%;}
-	.elipse-contato{ width: 300px; height: 309px; background: url(../img/ellipse-banner.png); margin-top: 70px;margin-right: auto; float: none; background-size: cover;}
-	.elipse-contato h2{color: #812990; font-family: Pacifico; font-size: 25px; font-weight: 400;letter-spacing: -0.81px; text-align: center; margin-top: 60px; margin-bottom: 12px; padding-top: 40px;}
-	.elipse-contato p{font-size:19px;padding: 65px 10px 0;}
-	.formulario-contato-top{margin-top:20px;}
-	.formulario-contato{padding: 20px 0;}
-	.formulario-contato .form-padding-left-20{padding-left: 5px; padding-right: 5px; margin-top: 15px;}
-	.formulario-contato .form-padding-right-20{padding-left: 5px; padding-right: 5px; }
-	.videoplayer iframe{width: 100%;height:175px;}
-	.logo-footer {text-align: center;}
-	.footer-site .logo-footer img {float:none;}
-	#lista-opcoes label {width:80%;}
-}
-	
-@media only screen and (min-width: 340px){
-	.qtablela tbody td input[type=radio] {visibility: visible;margin-right: 8px;cursor: pointer;}
-	.qtablela tbody td input[type=radio]:hover:before {	background: #fedc08;}
-	.qtablela tbody td input[type=radio]:before{content: " ";background-color: #fff;display: inline-block;margin-right: 10px;width: 23px;height: 23px;border: 2px solid #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 20px;visibility: visible;box-shadow: 0 0 0px 2px #fedc08;}
-	.qtablela tbody td input[type=radio]:checked:before {background-color: #45c766;}
-}
+.espacamento-questoes{padding-top: 50px;} 
 
 .qtablela { width: 100%; }
 #theExam #question { padding: 5px;} 
@@ -274,3 +184,89 @@ blockquote p { color: #999; padding: 0 18px; font-family: "Georgia"; font-size: 
 .greyTextsingle{ color:#45C766;font-size: 20px;font-family: Pacifico;}
 .greyTextresultado { color:#333;	font-size: 20px;text-transform: uppercase;}
 .smallText{ font-size:10px;}
+
+.paginacao-prods{text-align: center;background: url(../img/barra-zebrada.png) center bottom no-repeat;margin-top: 60px;}
+.paginacao-prods ul li{display: inline;    margin: 0 10px;}
+.paginacao-prods ul li a{background-color: #812990;color: #fedc08;font-family: "Noto Sans";font-size: 19px;font-weight: 700;padding: 7px 10px;    border-radius: 100px;}
+.paginacao-prods ul li a:hover,.paginacao-prods ul li.active a{color: #812990;background-color: #fedc08;}
+.paginacao-prods span a{background-color: #812990;color: #fedc08;font-family: "Noto Sans";font-size: 19px;font-weight: 700;padding: 7px 15px;border-radius: 100px;}
+
+.paginacao-prods span a:hover, .paginacao-prods span.active a {color: #812990;background-color: #fedc08;}
+.paginacao-prods span {display: inline;margin: 0 10px;}
+.tipo {background-color: #fedc08;border-radius: 100px;padding: 1em 0 4em 0;margin-top: 0;}
+.tipo p {font-size: 19px;color: #45C766;font-family: Pacifico;font-weight: 400;letter-spacing: -1px;float: right;margin-top: 10px;}
+.test {color: red;text-transform: uppercase;}
+.formTransform {background-color: #45C766!important;font-family: Ubuntu;color: #fedc08;font-size: 18px;border-radius: 0;height: 50px!important;}
+
+.formulario-contato-top{margin-top:75px;}
+.formulario-contato{background-color: #fff;padding: 80px 0;}
+.formulario-contato .row{margin-bottom: 15px;}
+.formulario-contato label{padding-left: 4px;color: #313131;font-family: "Noto Sans";font-size: 13px;font-weight: 400;line-height: 22.01px;text-transform: uppercase;}
+.formulario-contato input{border-radius: 18px;border: 1px solid #313131;background-color: #ffffff87;color:#313131;outline: none;}
+.formulario-contato textarea{border-radius: 18px;border: 1px solid #313131;background-color: #ffffff87;color:#313131;width:100%;height: 100px;outline: none;padding: 3px 0 0 11px;}
+.formulario-contato textarea:focus{ border-color: #fedc08; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);}
+.formulario-contato .form-padding-right-20{padding-right: 20px;}
+.formulario-contato .form-padding-left-20{padding-left: 20px;}
+.formulario-contato button{color: #313131;font-family: Pacifico;font-size: 24px;font-weight: 400;float:right;border-radius: 100px;background-color: #fedc08;width: 124px;height: 35px;outline: none;}
+.formulario-contato button:hover{opacity: 0.7;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.formulario-contato button .fa-chevron-circle-right{float: right;margin-top: 7px;margin-right: 8px;margin-bottom: 11px;}
+.formulario-contato a{color: #313131;font-family: Pacifico;font-weight: 400;float:right;border-radius: 100px;background-color: #fedc08;width: 170px;height: 35px;font-size: 18px;padding: 6px 5px 0 12px;outline: none;}
+.formulario-contato a:hover{ opacity: 0.7;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.formulario-contato a .fa-undo{float: right; margin-top: 2px; margin-right: 4px; font-size: 20px;}
+
+.navbar-default{border: 0;background-color: inherit;height: 0;padding: 0;min-height: 0;margin-bottom: 0;display: none;}
+#result_validacao{text-align: center;color: #fedc08;font-weight: 500;}
+
+@media (min-width: 992px){
+	.top-fixed .menu-topo ul li{ margin-right: 3px;}
+	.home-text img{width:100%;}
+	.redes-sociais h3{ font-size: 27px;}
+	.banner-home .slider-banner .elipse-banner{margin-right: 55px;}
+	.menu-linhas ul li{max-width: 150px;padding: 12px 23px 8px;margin: 0 0px;}
+	.formulario-contato a {margin-right: 17px;}
+}
+	
+@media (max-width: 540px) {
+	.navbar-default{ border: 0; background-color: inherit; height: auto; min-height: 50px; margin-bottom: 20px; display: block; }
+	.menu-topo{display: none;}
+	.banner-home .slider-banner{ height: 475px;}
+	.banner-home .slider-banner .elipse-banner{ width: 300px; height: 309px; background: url(../img/ellipse-banner.png); margin-top: 70px;margin-right: auto; float: none; background-size: cover;}
+	.banner-home .slider-banner .elipse-banner h2{color: #812990; font-family: Pacifico; font-size: 25px; font-weight: 400;	letter-spacing: -0.81px; text-align: center; margin-top: 60px; margin-bottom: 12px; padding-top: 40px;}
+	.banner-home .slider-banner .elipse-banner p{font-size: 20px;}
+	.banner-home .slick-next{ right: 0;}
+	.top-fixed{display: none;}
+	.navbar-btns{margin-bottom: 0;z-index: 9;text-align: center;}
+	.navbar-btns img{ width: 80px; position: absolute; margin-left: -45px;}
+	.navbar-collapse{padding: 20px; margin-top: 14px; background-color: #fedc08;}
+	.navbar-collapse ul li {background-color: #45c766; padding: 15px 12px; text-align: center; font-size: 16px;margin: 3px;border-radius: 5px;}
+	.home-text img{width:100%;}
+	.redes-sociais a{ margin: auto;margin-bottom: 10px;float: none;width: 47px;}
+	.home-text h2{margin-top: 40px;}
+	.home-text .bg-zebrada{ padding-bottom: 35px;}
+	.footer-site{ background-size: cover; height: auto;}
+	.banner-top{ height: 130px !important; background-size: cover !important;}
+	.banner-top h1{font-size: 40px;margin-top: 50px !important;}
+	.missao-visao{height: auto;background-size:cover;}
+	.missao-visao .col-missao-visao{padding: 0;}
+	.missao-visao .box-missao-visao{ margin-top: 66px;}
+	#play-pause{ margin-top: 50px !important; left: 39% !important; width: 80px !important; height: 80px !important;background-size: cover !important;}
+	.menu-linhas ul li{ margin-bottom: 10px;}
+	.elipse-contato{ width: 300px; height: 309px; background: url(../img/ellipse-banner.png); margin-top: 70px;margin-right: auto; float: none; background-size: cover;}
+	.elipse-contato h2{color: #812990; font-family: Pacifico; font-size: 25px; font-weight: 400;letter-spacing: -0.81px; text-align: center; margin-top: 60px; margin-bottom: 12px; padding-top: 40px;}
+	.elipse-contato p{font-size:19px;padding: 65px 10px 0;}
+	.formulario-contato-top{margin-top:20px;}
+	.formulario-contato{padding: 20px 0;}
+	.formulario-contato .form-padding-left-20{padding-left: 5px; padding-right: 5px; margin-top: 15px;}
+	.formulario-contato .form-padding-right-20{padding-left: 5px; padding-right: 5px; }
+	.videoplayer iframe{width: 100%;height:175px;}
+	.logo-footer {text-align: center;}
+	.footer-site .logo-footer img {float:none;}
+	#lista-opcoes label {width:80%;}
+}
+	
+@media only screen and (min-width: 340px){
+	.qtablela tbody td input[type=radio] {visibility: visible;margin-right: 8px;cursor: pointer;}
+	.qtablela tbody td input[type=radio]:hover:before {	background: #fedc08;}
+	.qtablela tbody td input[type=radio]:before{content: " ";background-color: #fff;display: inline-block;margin-right: 10px;width: 23px;height: 23px;border: 2px solid #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 20px;visibility: visible;box-shadow: 0 0 0px 2px #fedc08;}
+	.qtablela tbody td input[type=radio]:checked:before {background-color: #45c766;}
+}
