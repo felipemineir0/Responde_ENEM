@@ -5,7 +5,7 @@ App::uses('Controller', 'Controller');
 # note: this class goes in /app, not /app/controllers
 class AppController extends Controller
 {
-    var $components = array('Auth');
+    //var $components = array('Auth');
 
     public function beforeFilter()
     { }
