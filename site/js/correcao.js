@@ -1,7 +1,7 @@
 $('#SIMULADO-form').submit(function(e) {
     e.preventDefault();
     $('.v').removeClass('resposta-correta')
-    $('fieldset:not(:has(input[type=radio]:checked))').each(function(index) {
+    $('input:checked').each(function(index) {
         fieldset = $(this).parent().parent().parent().parent().parent()
         //fieldset.find('p').remove()
 
@@ -9,7 +9,7 @@ $('#SIMULADO-form').submit(function(e) {
             var letra_correcao = fieldset.find('.qtablela').data('correta')
             var letra = letra_correcao
             if (letra == 1) { msgLetra = "A"; }
-            else if (letra == 2) { msgLetra = "B"; } 
+            else if (letra == 2) { msgLetra = "B"; }
             else if (letra == 3) { msgLetra = "C"; }
             else if (letra == 4) { msgLetra = "D"; }
             else if (letra == 5) { msgLetra = "E"; }
@@ -29,7 +29,7 @@ $('#SIMULADO-form').submit(function(e) {
     if (aviso == '') {
         return true;
     } else {
-        alert('Faltou responder: questão (' + aviso + ')');
+        alert('Faltou responder as questões: (' + aviso + ')');
         return false;
     }
 })

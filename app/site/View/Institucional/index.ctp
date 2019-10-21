@@ -1,4 +1,12 @@
 <main>
+    <section class="banner-top">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 title-produtos">
+                <h1>Institucional</h1>
+            </div>
+        </div>
+    </section>
+
     <section class="text-institucional">
         <div class="container">
             <div class="col-lg-10 col-md-10 col-sm-10 cel-auto">

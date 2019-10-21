@@ -1,6 +1,22 @@
 <main>
 
-<section class="formulario-contato">
+<section class="banner-top">
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 title-produtos">
+            <h1>Fale conosco</h1>
+        </div>
+    </div>
+</section>
+<section class="text-contatos">
+        <div class="container">
+            <div class="col-lg-10 col-md-10 col-sm-10 cel-auto">
+                <h2>Ficou com alguma dúvida sobre o Responde <b>ENEM</b>??</h2>
+                <h3>Nós envie um formulário de contato, e responderemos o mais rápido possivel.</h3>
+            </div>
+        </div>
+    </section>
+	
+<section class="formulario-contato" style="margin-top: -60px;">
 
   	<div class="container-fluid">
       	<div class="container">

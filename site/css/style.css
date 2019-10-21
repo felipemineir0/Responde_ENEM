@@ -69,7 +69,7 @@ select::-ms-expand {display: none;}
 .banner-home .slick-dots li button{width: 14px;height: 13px;background-color: #257339;border-radius: 30px;text-indent: -9999px;}
 .banner-home .slick-dots li.slick-active button{background-color: #45c766;}
 
-.redes-sociais{background-color: #45c766; padding: 16px 0px; border-radius: 100px;margin-top: -65px;position: relative;z-index: 8}
+.redes-sociais{background-color: #45c766; padding: 16px 0px; border-radius: 100px;margin-top: -65px;position: relative;z-index: 8;    margin-bottom: 61px;}
 .redes-sociais h3{color: #fedc08; font-family: Pacifico; font-weight: 400; letter-spacing: -1px; padding: 5px 0 5px 0; text-align: center;}
 .redes-sociais a{display: block; margin-right: 20px;   float: right;    padding:5px 15px;    border-radius: 100px;    color: #812990;    font-size: 25px;    border: 1px solid #812990;}
 .redes-sociais a.instagram{padding: 5px 12px; }
@@ -101,22 +101,16 @@ select::-ms-expand {display: none;}
 .banner-top h1{color: #ffffff;font-family: Ubuntu;font-size: 50px;font-weight: 700;margin-top: 80px;float: left;}
 .banner-top .title-produtos h1{    background: #fedc08;    padding: 5px 15px;}
 
-.text-institucional{padding-top: 88px;padding-bottom: 88px;}
+.text-institucional{padding-top: 24px; padding-bottom: 96px;}
 .text-institucional h2{color: #313131;font-family: Ubuntu;font-size: 30px;font-weight: 700;}
 .text-institucional h2 b{color: #45c766;}
 .text-institucional h3{color: #313131;font-family: Ubuntu;font-size: 22px;font-weight: 400;line-height: 24px;margin-bottom: 35px;}
 .text-institucional p{color: #626262;font-family: "Noto Sans";font-size: 16px;font-weight: 400;margin-bottom: 25px;}
-#play-pause {position: absolute;width: 167px;height: 167px;background: url(../img/btn-play.png) center top no-repeat;display: block;left: 41%;margin-top: 165px;cursor: pointer;text-indent: 9999px; z-index: 999;overflow: hidden;}
 
-.missao-visao{height: 715px;background: url(../img/bg-institucional.png) center top no-repeat;    margin-top: -60px;}
-.missao-visao .col-missao-visao{    padding: 20px;}
-.missao-visao .box-missao-visao{background: url(../img/bg-missao.png);margin-top: 270px;padding: 20px;min-height: 215px;}
-.missao-visao .box-missao-visao h3{color: #fedc08;font-family: Ubuntu;font-size: 30px;font-weight: 700;    margin-bottom: 10px;}
-.missao-visao .box-missao-visao p{color: #ffffff;font-family: "Noto Sans";font-size: 16px;font-weight: 400;}
-
-.videoplayer{width:100%;overflow: hidden;  height: auto;}
-.videoplayer .player-video-home{width:100%;}
-.videoplayer iframe{width: 100%;height:550px;}
+.text-contatos {padding-top: 25px;padding-bottom: 0;}
+.text-contatos h2{color: #313131;font-family: Ubuntu;font-size: 30px;font-weight: 700;}
+.text-contatos h2 b{color: #45c766;}
+.text-contatos h3{color: #313131;font-family: Ubuntu;font-size: 22px;font-weight: 400;line-height: 24px;margin-bottom: 35px;}
 
 .menu-linhas{text-align: center;margin-top: 30px;}
 .menu-linhas ul li{margin: 0 10px;display: inline-block;text-align: center; max-width: 153px; border: 1px solid #7c8788; padding: 12px 23px 8px; border-radius: 38px; line-height: 18px;}
@@ -126,8 +120,6 @@ select::-ms-expand {display: none;}
 
 .menu-linhas ul li a{color: #7c8788;font-family: Ubuntu;font-size: 15px;font-weight: 500;line-height: 14.37px;text-transform: uppercase;line-height: 14.37px;}
 .menu-linhas ul li b{color: #7c8788;font-family: Pacifico;font-size: 14px;font-weight: 400;text-transform: lowercase;}
-
-.espacamento-questoes{padding-top: 50px;} 
 
 .qtablela { width: 100%; }
 #theExam #question { padding: 5px;} 
@@ -172,6 +164,7 @@ blockquote p { color: #999; padding: 0 18px; font-family: "Georgia"; font-size: 
 #question p {color:#333}#quizResults {color:#2496D4; font-size:16px;}
 #question label{display: block;	background-color: #fedc08;padding: 20px 15px;height:100%;font-family: Arial;font-size: 16px;cursor: pointer;border-radius: 15px 100px 100px 15px;}
 #question label:hover{background-color: #45C766;color:#fff;}
+.espacamento-questoes{padding-top: 50px;}
 #lista-opcoes input[type="radio"]:checked+label{background-color: #77C45D;color:#fff;}
 #lista-opcoes li:hover{	width:100%;	background:#fff;}
 #quiztable table{padding:5px !important;padding-left:0px !important;margin:0px !important;width:90% !important;	}
@@ -199,7 +192,7 @@ blockquote p { color: #999; padding: 0 18px; font-family: "Georgia"; font-size: 
 .formTransform {background-color: #45C766!important;font-family: Ubuntu;color: #fedc08;font-size: 18px;border-radius: 0;height: 50px!important;}
 
 .formulario-contato-top{margin-top:75px;}
-.formulario-contato{background-color: #fff;padding: 80px 0;}
+.formulario-contato{background-color: #fff;padding-bottom: 40px; }
 .formulario-contato .row{margin-bottom: 15px;}
 .formulario-contato label{padding-left: 4px;color: #313131;font-family: "Noto Sans";font-size: 13px;font-weight: 400;line-height: 22.01px;text-transform: uppercase;}
 .formulario-contato input{border-radius: 18px;border: 1px solid #313131;background-color: #ffffff87;color:#313131;outline: none;}
