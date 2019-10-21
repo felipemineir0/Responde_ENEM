@@ -2,18 +2,17 @@
 
 App::uses('Controller', 'Controller');
 
-class AppController extends Controller {
+# note: this class goes in /app, not /app/controllers
+class AppController extends Controller
+{
+    var $components = array('Auth');
 
-   # public $helpers = array('Data', 'Link', 'RenderElement');
-    #public $slug_idioma;
-    #public $uses = array('Destaque');
+    public function beforeFilter()
+    { }
 
-
-    public function beforeFilter() {
-    }
-
-    public function beforeRender() {
-    	#$destaques  = $this->Destaque->find('all', array('conditions' => array('ativo' => 1), 'order' => 'created'));
-		#$this->set(compact('destaques'));
+    public function beforeRender()
+    {
+        #$destaques  = $this->Destaque->find('all', array('conditions' => array('ativo' => 1), 'order' => 'created'));
+        #$this->set(compact('destaques'));
     }
 }
