@@ -7,14 +7,15 @@
 
 <div class='row grid-12 bg-bege'>
     <div class='container'>
-            <?php foreach ($cooperados as $cooperado) { ?>
+            <?php //foreach ($cooperados as $cooperado) { ?>
+            <h1 style="color:#FFF"><?php echo($cooperado["Cooperado"]["nome"]); ?></h1>
             <div class='noticia'>
                 <p><?php echo($cooperado["Cooperado"]["titulo_link"]); ?></p>
                 <a href="<?php echo($cooperado["Cooperado"]["link_cliente"]); ?>" target="_blank">
                     <p><?php echo($cooperado["Cooperado"]["link_cliente"]); ?></p>
                 </a>
             </div>
-            <?php }  ?>
+            <?php //}  ?>
 
     </div>
 </div>
