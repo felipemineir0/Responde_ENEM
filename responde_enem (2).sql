@@ -2,8 +2,8 @@
 -- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 186.202.152.70
--- Generation Time: 21-Out-2019 às 13:50
+-- Host: responde_enem.mysql.dbaas.com.br
+-- Generation Time: 22-Out-2019 às 14:54
 -- Versão do servidor: 5.6.40-84.0-log
 -- PHP Version: 5.6.30-0+deb8u1
 
@@ -31,23 +31,25 @@ SET time_zone = "+00:00";
 CREATE TABLE `tb_cooperados` (
   `id` int(11) NOT NULL,
   `nome` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `matricula` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Usado para Login',
   `email` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `matricula` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `link_cliente` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `telefone` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `feedback` varchar(50) CHARACTER SET utf8 NOT NULL COMMENT 'Onde conheceu?',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   `ativo` tinyint(4) DEFAULT '1',
-  `titulo_link` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL
+  `senha` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `senha_confirma` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `newsletter` tinyint(1) DEFAULT '2' COMMENT '1 = Sim | 2 = Nao'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_cooperados`
 --
 
-INSERT INTO `tb_cooperados` (`id`, `nome`, `email`, `password`, `matricula`, `link_cliente`, `created`, `modified`, `ativo`, `titulo_link`) VALUES
-(2, 'felipe', 'felipeborges@unipam.edu.br', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'felipe', 'https://www.youtube.com/', '2018-08-17 11:11:18', '2018-08-17 18:46:57', 1, 'Youtube'),
-(6, 'Henrique', 'henrique@aquainterativa.com.br', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'henrique', 'www.youtube.com.br', '2018-11-07 09:15:09', '2018-11-07 09:15:09', 1, 'link do youtube');
+INSERT INTO `tb_cooperados` (`id`, `nome`, `matricula`, `email`, `telefone`, `feedback`, `created`, `modified`, `ativo`, `senha`, `senha_confirma`, `newsletter`) VALUES
+(2, 'felipe', 'felipe', 'felipeborges@unipam.edu.br', 'Youtube', '', '2018-08-17 11:11:18', '2018-08-17 18:46:57', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b', '', 2),
+(6, 'Henrique', 'teste', 'teste@teste.com', 'link do youtube', '', '2018-11-07 09:15:09', '2018-11-07 09:15:09', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b', '', 2);
 
 -- --------------------------------------------------------
 
@@ -257,7 +259,8 @@ INSERT INTO `tb_usuarios` (`id`, `nome`, `email`, `created`, `modified`, `imagem
 -- Indexes for table `tb_cooperados`
 --
 ALTER TABLE `tb_cooperados`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `usuario_unique` (`matricula`);
 
 --
 -- Indexes for table `tb_curriculos`
