@@ -1,4 +1,4 @@
-<main>
+<main style="margin-bottom: 20px;">
     <section class="banner-top">
         <div class="container">
             <div class="col-lg-12 col-md-12 col-sm-12 title-produtos">
@@ -15,17 +15,17 @@
 
                 <div class="row user-row">
                     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
-                        <?php if (!empty($usuario['Cooperado']['imagem'])) : ?>
-                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($usuario['Cooperado']["id"] . "/s_" . $usuario['Cooperado']["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>" width="50" height="50" />
-                        <?php elseif ($usuario['Cooperado']['sexo'] == 'F') : ?>
-                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
-                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>
-                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                        <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/s_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="50" height="50" />
+                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
+                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
                         <?php endif; ?>
                     </div>
                     <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-                        <strong>Nome completo: <?php echo $usuario['Cooperado']['nome']; ?></strong><br>
-                        <span class="text-muted">Usuário de login: <?php echo $usuario['Cooperado']['matricula']; ?></span>
+                        <strong>Nome: <?php echo $cooperado['Cooperado']['nome']; ?></strong><br>
+                        <span class="text-muted">Usuário de login: <?php echo $cooperado['Cooperado']['matricula']; ?></span>
                     </div>
                 </div>
                 <div class="row user-infos user3">
@@ -37,51 +37,70 @@
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
-                                        <?php if (!empty($usuario['Cooperado']['imagem'])) : ?>
-                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($usuario['Cooperado']["id"] . "/m_" . $usuario['Cooperado']["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>"/>
-                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'F') : ?>
-                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
-                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>
-                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                                        <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/m_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" />
+                                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="140" height="140" />
+                                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="140" height="140" />
                                         <?php endif; ?>
                                     </div>
                                     <div class="col-xs-2 col-sm-2 hidden-md hidden-lg">
-                                        <img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
-                                    </div>
+                                        <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/s_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="50" height="50" />
+                                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
+                                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
+                                        <?php endif; ?> </div>
                                     <div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
-                                        <strong><?php echo $usuario['Cooperado']['nome']; ?></strong><br>
                                         <dl>
-                                            <dt>User level:</dt>
-                                            <dd>Administrator</dd>
+                                            <dt>Nome Completo:</dt>
+                                            <dd><strong><?php echo ucfirst($cooperado['Cooperado']['nome']); ?></strong></dd>
+                                            <dt>Email:</dt>
+                                            <dd><?php echo $cooperado['Cooperado']['email']; ?></dd>
+                                            <dt>Telefone:</dt>
+                                            <dd><?php echo formataTelefone($cooperado['Cooperado']['telefone']); ?></dd>
                                             <dt>Registrado desde:</dt>
-                                            <dd><?php echo $usuario['Cooperado']['created']; ?></dd>
-                                            <dt>Topics</dt>
-                                            <dd>15</dd>
-                                            <dt>Warnings</dt>
+                                            <dd><?php echo date("d-m-Y", strtotime($cooperado['Cooperado']['created'])); ?></dd>
+                                            <dt>Sexo</dt>
+                                            <dd>
+                                                <?php if ($cooperado['Cooperado']['sexo'] == 'F') : ?>Feminino
+                                                <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>Masculino
+                                                <?php endif; ?>
+                                            </dd>
+                                            <dt>Simulados feito : </dt>
                                             <dd>0</dd>
                                         </dl>
                                     </div>
-                                    <div class=" col-md-9 col-lg-9 hidden-xs hidden-sm">
-                                        <strong><?php echo $usuario['Cooperado']['nome']; ?></strong><br>
+                                    <div class="col-md-9 col-lg-9 hidden-xs hidden-sm">
                                         <table class="table table-user-information">
                                             <tbody>
                                                 <tr>
-                                                    <td>User level:</td>
-                                                    <td>Administrator</td>
+                                                    <td>Nome Completo: </td>
+                                                    <td><?php echo ucfirst($cooperado['Cooperado']['nome']); ?></td>
                                                 </tr>
                                                 <tr>
+                                                    <td>Email: </td>
+                                                    <td><?php echo $cooperado['Cooperado']['email']; ?></td>
+                                                </tr>
+                                                <?php if ($cooperado['Cooperado']['telefone']) : ?>
+                                                    <td>Telefone:</td>
+                                                    <td><?php echo formataTelefone($cooperado['Cooperado']['telefone']); ?></td>
+                                                <?php endif; ?>
+                                                <tr>
                                                     <td>Registrado desde:</td>
-                                                    <td><?php echo $usuario['Cooperado']['created']; ?></td>
+                                                    <td><?php echo date("d-m-Y", strtotime($cooperado['Cooperado']['created'])); ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Sexo: </td>
-                                                    <td><?php if ($usuario['Cooperado']['sexo'] == 'F') : ?>Feminino
-                                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>Masculino
+                                                    <td><?php if ($cooperado['Cooperado']['sexo'] == 'F') : ?>Feminino
+                                                        <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>Masculino
                                                     <?php endif; ?>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Warnings</td>
+                                                    <td>Simulados feito : </td>
                                                     <td>0</td>
                                                 </tr>
                                             </tbody>
@@ -89,16 +108,30 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel-footer">
-                                <button class="btn btn-sm btn-primary" type="button" data-toggle="tooltip">Enviar uma mensagem <i class="glyphicon glyphicon-envelope"></i></button>
+                            <div class="panel-footer hidden-md hidden-lg" style="min-height: 111px;">
+                                <?php echo $this->Html->link("Enviar uma mensagem <i class='glyphicon glyphicon-envelope'></i>", array(
+                                    "controller" => "contato", "action" => "index", $cooperado['Cooperado']["id"]
+                                ), array("escape" => false, "class" => "btn btn-sm btn-primary col-xs-12")); ?>
+                                <span>
+                                    <?php echo $this->Html->link("Editar dados <i class='glyphicon glyphicon-edit'></i>", array(
+                                        "controller" => "areausuario", "action" => "editar", $cooperado['Cooperado']["id"]
+                                    ), array("escape" => false, "class" => "btn btn-sm btn-warning col-xs-12")); ?>
+                                    <?php echo $this->Html->link("Sair <i class='glyphicon glyphicon-remove'></i>", array(
+                                        "controller" => "areausuario", "action" => "sair", $cooperado['Cooperado']["id"]
+                                    ), array("escape" => false, "class" => "btn btn-sm btn-danger col-xs-12")); ?>
+                                </span>
+                            </div>
+                            <div class="panel-footer hidden-xs hidden-sm">
+                                <?php echo $this->Html->link("Enviar uma mensagem <i class='glyphicon glyphicon-envelope'></i>", array(
+                                    "controller" => "contato", "action" => "index", $cooperado['Cooperado']["id"]
+                                ), array("escape" => false, "class" => "btn btn-sm btn-primary")); ?>
                                 <span class="pull-right">
-                                    <?php  echo $this->Html->link("Editar dados <i class='glyphicon glyphicon-edit'></i>", array(
-                                        "action" => "editar"), array("escape" => false, "class" => "btn btn-sm btn-warning"));
-                                    ?>
-                                    <?php  echo $this->Html->link("Sair <i class='glyphicon glyphicon-edit'></i>", array(
-                                        "controller" => "areausuario", "action" => "sair"), array("escape" => false, "class" => "btn btn-sm btn-danger"));
-                                    ?>
-                                    
+                                    <?php echo $this->Html->link("Editar dados <i class='glyphicon glyphicon-edit'></i>", array(
+                                        "controller" => "areausuario", "action" => "editar", $cooperado['Cooperado']["id"]
+                                    ), array("escape" => false, "class" => "btn btn-sm btn-warning")); ?>
+                                    <?php echo $this->Html->link("Sair <i class='glyphicon glyphicon-remove'></i>", array(
+                                        "controller" => "areausuario", "action" => "sair", $cooperado['Cooperado']["id"]
+                                    ), array("escape" => false, "class" => "btn btn-sm btn-danger")); ?>
                                 </span>
                             </div>
                         </div>
@@ -108,3 +141,20 @@
         </div>
     </section>
 </main>
+
+<?php
+function formataTelefone($numero)
+{
+    if (strlen($numero) == 11) {
+        $novo = substr_replace($numero, '(', 0, 0);
+        $novo = substr_replace($novo, ') ', 3, 0);
+        $novo = substr_replace($novo, '-', 10, 0);
+
+    } elseif (strlen($numero) == 10) {
+        $novo = substr_replace($numero, '(', 0, 0);
+        $novo = substr_replace($novo, ') ', 3, 0);
+        $novo = substr_replace($novo, '-', 9, 0);
+    }
+    return $novo;
+}
+?>

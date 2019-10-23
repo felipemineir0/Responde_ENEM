@@ -63,7 +63,7 @@ class QuestoesController extends AppController {
         if ($this->request->is(array('post', 'put'))) {
             
             if ($this->Questao->save($this->request->data)) {
-                $this->Session->setFlash(__('O questão foi salva.'));
+                $this->Session->setFlash(__('A questão foi salva.'));
                 return $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash(__('Não foi possível salvar a questão. Por favor, tente novamente.'));

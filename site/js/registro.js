@@ -1,28 +1,7 @@
 $(function () {
-    jQuery('#RegistroIndexForm').submit(function () {
-        if (validaForm())
-        {
-            var dados = jQuery(this).serialize();
-            jQuery.ajax({
-                type: "POST",
-                url: jQuery(this).attr("action"),
-                data: dados,
-                success: function (data)
-                {
 
-                    if ($.trim(data) == "true") {
-                        $("#result_validacao").html("Registrado com sucesso.");
-                        jQuery('#RegistroIndexForm')[0].reset();
-                    } else {
-                        $("#result_validacao").html("Houve algum erro no cadastro, tente novamente.<br />" + data);
-                    }
-                }
-            });
-        }
-        return false;
-    });
 
-    $('#RegistroTelefone').mask("(99) 9999-9999?9").ready(function (event) {
+    $('#CooperadoTelefone').mask("(99) 9999-9999?9").ready(function (event) {
         var target, phone, element;
         target = (event.currentTarget) ? event.currentTarget : event.srcElement;
         phone = target.value.replace(/\D/g, '');
@@ -35,7 +14,7 @@ $(function () {
         }
     });
 
-    $('#RegistroTelefone').focusout(function () {
+    $('#CooperadoTelefone').focusout(function () {
         var phone, element;
         element = $(this);
         element.unmask();
@@ -52,9 +31,9 @@ function validaForm()
 {
     var ret = true;
     var msg_validacao = "<ol style='color:red'>";
-    // $.validateEmail($('#RegistroEmail').val());
-    if ($('#RegistroEmail').val() != "") {
-        if (!$.validateEmail($('#RegistroEmail').val())) {
+    // $.validateEmail($('#CooperadoEmail').val());
+    if ($('#CooperadoEmail').val() != "") {
+        if (!$.validateEmail($('#CooperadoEmail').val())) {
             msg_validacao += "<li>Digite um e-mail válido.</li>";
             ret = false;
         }
@@ -63,17 +42,17 @@ function validaForm()
         msg_validacao += "<li>Preencha o e-mail.</li>";
         ret = false;
     }
-    if ($("#RegistroNome").val() == "") {
+    if ($("#CooperadoNome").val() == "") {
         msg_validacao += "<li>Preencha o seu nome.</li>";
         ret = false;
     }
 
-    if ($("#RegistroCidade").val() == "") {
+    if ($("#CooperadoCidade").val() == "") {
         msg_validacao += "<li>Preencha a cidade.</li>";
         ret = false;
     }
 
-    if ($("#RegistroMensagem").val() == "") {
+    if ($("#CooperadoMensagem").val() == "") {
         msg_validacao += "<li>Preencha sua mensagem.</li>";
         ret = false;
     }

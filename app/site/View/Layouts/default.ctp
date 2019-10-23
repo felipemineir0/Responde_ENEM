@@ -167,13 +167,7 @@
                                             } ?>">
                                     <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
                                 </li>
-                                <?php if (!empty($usuario['Cooperado']['matricula'])) : ?>
-                                    <?php echo $this->Element('loginMenuLogado'); ?>
-                                <?php elseif (empty($usuario['Cooperado']['matricula'])) : ?>
-                                    <?php echo $this->Element('loginMenuDeslogado'); ?>
-                                <?php endif; ?>
-                                    
-
+                                <?php echo $this->Element('loginMenu'); ?>
                             </ul>
                         </nav>
                     </div>

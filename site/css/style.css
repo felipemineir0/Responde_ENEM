@@ -236,6 +236,7 @@ a.dropdown-toggle.login-menu:hover,:focus {opacity: .8;}
 }
 	
 @media (max-width: 540px) {
+	.pull-right {float:none !important;}
 	.navbar-default{ border: 0; background-color: inherit; height: auto; min-height: 50px; margin-bottom: 20px; display: block; }
 	.menu-topo{display: none;}
 	.banner-home .slider-banner{ height: 475px;}
@@ -244,7 +245,7 @@ a.dropdown-toggle.login-menu:hover,:focus {opacity: .8;}
 	.banner-home .slider-banner .elipse-banner p{font-size: 20px;}
 	.banner-home .slick-next{ right: 0;}
 	.top-fixed{display: none;}
-	.navbar-btns{margin-bottom: 0;z-index: 9;text-align: center;}
+	.navbar-btns{margin-bottom: 14px;;z-index: 9;text-align: center;}
 	.navbar-btns img{ width: 80px; position: absolute; margin-left: -45px;}
 	.navbar-collapse{padding: 20px; margin-top: 14px; background-color: #fedc08;}
 	.navbar-collapse ul li {background-color: #45c766; padding: 15px 12px; text-align: center; font-size: 16px;margin: 3px;border-radius: 5px;}

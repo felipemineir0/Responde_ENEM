@@ -27,26 +27,26 @@
                     <div class="row">
 	                    <div class="col-lg-4 col-md-4 col-sm-4">
 	                        <label>nome</label>
-	                        <input type="text" name='data[Registro][nome]' id='ContatoNome' class="form-control" placeholder="Digite seu nome completo"/>
+	                        <input type="text" name='data[Registro][nome]' id='CooperadoNome' class="form-control" placeholder="Digite seu nome completo"/>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
 	                        <label>usuário</label>
-	                        <input type="text" name='data[Registro][usuario]' id='ContatoUsuario' class="form-control" placeholder="Digite o usuário que será usado para fazer o login" />
+	                        <input type="text" name='data[Registro][usuario]' id='CooperadoUsuario' class="form-control" placeholder="Digite o usuário que será usado para fazer o login" />
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
 	                        <label>e-mail</label>
-	                        <input type="email" name='data[Registro][email]' id='ContatoEmail' class="form-control" placeholder="Digite um email válido"/>
+	                        <input type="email" name='data[Registro][email]' id='CooperadoEmail' class="form-control" placeholder="Digite um email válido"/>
                         </div>
                     </div>
 
                     <div class="row">
 	                    <div class="col-lg-6 col-md-6 col-sm-6">
 	                        <label>telefone(Opcional)</label>
-	                        <input type="text" name='data[Registro][telefone]' id='ContatoTelefone' class="form-control" placeholder="Digite um telefone para contato" />
+	                        <input type="text" id='CooperadoTelefone' class="form-control" placeholder="Digite um telefone para contato" />
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <label for="onde">como nós encontrou?</label>
-                            <select name='data[Registro][onde]' id='ContatoOnde' class="form-control">
+                            <select name='data[Registro][onde]' id='CooperadoOnde' class="form-control">
                                 <option selected></option>
                                 <option>Indicação da escola</option>
                                 <option>Indicação de amigos</option>
@@ -59,11 +59,11 @@
                     <div class="row">
 	                    <div class="col-lg-6 col-md-6 col-sm-6">
 	                        <label>senha</label>
-	                        <input type="password" name='data[Registro][senha]' id='ContatoSenha' class="form-control" placeholder="Digite uma senha" data-rule-minlength="6" data-rule-maxlength="10"/>
+	                        <input type="password" name='data[Registro][senha]' id='CooperadoSenha' class="form-control" placeholder="Digite uma senha" data-rule-minlength="6" data-rule-maxlength="10"/>
 	                    </div>
 	                    <div class="col-lg-6 col-md-6 col-sm-6">
 	                        <label>confirmar senha</label>
-	                        <input type="password" name='data[Registro][senhaconfirma]' id='ContatoSenhaConfirma' class="form-control" placeholder="Digite sua senha novamente" data-rule-minlength="6" data-rule-maxlength="10" />
+	                        <input type="password" name='data[Registro][senhaconfirma]' id='CooperadoSenhaConfirma' class="form-control" placeholder="Digite sua senha novamente" data-rule-minlength="6" data-rule-maxlength="10" />
 	                    </div>
                     </div>
 

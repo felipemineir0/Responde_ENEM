@@ -163,7 +163,7 @@ class AuthComponent extends Component {
  *
  * @var string
  */
-	public static $sessionKey = 'Auth.User';
+	public static $sessionKey = 'Auth.Cooperado';
 
 /**
  * The current user, used for stateless authentication when
@@ -180,8 +180,8 @@ class AuthComponent extends Component {
  * @var mixed
  */
 	public $loginAction = array(
-		'controller' => 'users',
-		'action' => 'login',
+		'controller' => 'home',
+		'action' => 'index',
 		'plugin' => null
 	);
 
