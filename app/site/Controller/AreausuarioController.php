@@ -14,8 +14,6 @@ class AreausuarioController extends AppController {
 			if (!empty($result)) {
 
 				$this->Session->write('cooperadoLogado', 'true');
-				//CakeSession::read('Config.language');
-				//exit(debug($this->request["data"]));
 				$this->Auth->login($result);		
 				return $this->redirect(array('action' => 'index'));
 			}
@@ -27,17 +25,14 @@ class AreausuarioController extends AppController {
 	}
 
 	public function sair() {
-		$this->log($this->Session->id().':' ."UserLogout called\r\n", LOG_DEBUG);
-	   $this->Cookie->delete('Cooperado');
-	   $this->redirect($this->Auth->logout());
-   }
+		$this->Session->write('cooperadoLogado', '');
+		return $this->redirect($this->Auth->logout());
+	}
 
 
 	public function index() {
 		$logado = $this->Session->read('cooperadoLogado');
 		$usuario = $this->Auth->user();
-		//exit(debug($usuario));
-		//debug($_SESSION);
 		if (!empty($logado) && $logado == "true") {
 			$cooperado = $this->Cooperado->find("first",array('conditions'=> array('Cooperado.id' => $usuario['Cooperado']['id'])));
 			$this->set("cooperado",$cooperado);
@@ -56,7 +51,7 @@ class AreausuarioController extends AppController {
             if ($this->Cooperado->save($this->request->data)) {
                 $this->Session->setFlash('Registro editado com sucesso!', 'default', array('class' => 'alert alert-success space'));
                 return $this->redirect(array('action' => 'index'));
-            } else {
+            } else { 
                 $this->Session->setFlash('Registro não pode ser editado. Por favor, tente novamente', 'default', array('class' => 'alert alert-danger space'));
             }
         } else {
@@ -94,8 +89,6 @@ class AreausuarioController extends AppController {
 
 	function beforeFilter()
     {
-        // tell Auth not to check authentication when doing the 'register' action
-        //$this->Auth->allow('registro');
     }
 
     function registro()

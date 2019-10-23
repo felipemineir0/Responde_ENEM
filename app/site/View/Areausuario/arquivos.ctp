@@ -10,10 +10,7 @@
             <?php //foreach ($cooperados as $cooperado) { ?>
             <h1 style="color:#FFF"><?php echo($cooperado["Cooperado"]["nome"]); ?></h1>
             <div class='noticia'>
-                <p><?php echo($cooperado["Cooperado"]["titulo_link"]); ?></p>
-                <a href="<?php echo($cooperado["Cooperado"]["link_cliente"]); ?>" target="_blank">
-                    <p><?php echo($cooperado["Cooperado"]["link_cliente"]); ?></p>
-                </a>
+                <a href="mailto:<?php echo($cooperado["Cooperado"]["email"]); ?>" ><?php echo($cooperado["Cooperado"]["email"]); ?></a>
             </div>
             <?php //}  ?>
 

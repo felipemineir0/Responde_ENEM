@@ -8,4 +8,8 @@ class InstitucionalController extends AppController {
 
     }
 
+    public function beforeFilter() {
+        $this->Auth->allow(array('index'));
+    }
+
 }
