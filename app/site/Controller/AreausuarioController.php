@@ -30,7 +30,8 @@ class AreausuarioController extends AppController {
 
 	public function sair() {
 		$this->Session->write('cooperadoLogado', '');
-		return $this->redirect(array('controller' => 'home', 'action' => 'index'));
+		return $this->redirect($this->Auth->logout());
+		//return $this->redirect(array('controller' => 'home', 'action' => 'index'));
 	}
 
 	public function arquivos() {

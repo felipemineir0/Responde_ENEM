@@ -11,4 +11,8 @@ class HomeController extends AppController {
 		$this->set(compact('destaques'));
 	}
 
+	public function beforeFilter() {
+        $this->Auth->allow(array('index'));
+    }
+
 }

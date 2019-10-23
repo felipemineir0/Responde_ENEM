@@ -1,7 +1,10 @@
 <li class='dropdown dark user-menu'>
+    <?php if(empty($objsessao)) { ?>
     <a class='dropdown-toggle login-menu' data-toggle='dropdown' href='#'>Entrar</a>
     <div class="dropdown-menu">
-        <form class="px-4 py-3">
+        <?php
+        echo $this->Form->create("CooperadoLogin", array('url' => array('controller' => 'areausuario', 'action' => 'login'),'type' => 'post','class' => "px-4 py-3 form form-login"));
+        ?>
             <div class="form-group">
                 <label for="exampleDropdownFormEmail1">Usúario</label>
                 <input type="text" name="data[CooperadoLogin][matricula]" data-rule-minlength="6" data-rule-maxlength="10" data-rule-required="true" required="required" class="form-control" placeholder="Digite seu usuário"  id="CooperadoLoginMatricula">
@@ -19,4 +22,7 @@
         <div class="dropdown-divider"></div>
         <a class="test dropdown-item" href="<?php echo $this->request->base ?>/areausuario/registro" style="color: #45c766;font-family: Ubuntu !important;font-size: 15px !important;border-radius: 0 !important;}">Cadastre-se!</a>
     </div>
+    <?php } else { ?>
+        <a class='login-menu' href='<?php echo $this->request->base ?>/areausuario/arquivos'>Área Restrita</a>
+    <?php }?>
 </li>

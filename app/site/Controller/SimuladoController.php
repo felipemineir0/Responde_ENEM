@@ -77,4 +77,8 @@ class SimuladoController extends AppController {
             $this->set('questoes', $this->Paginator->paginate());
         }
     }
+
+    public function beforeFilter() {
+        $this->Auth->allow(array('index'));
+    }
 }

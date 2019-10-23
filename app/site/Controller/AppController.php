@@ -11,16 +11,16 @@ class AppController extends Controller
         'Session',
         'Auth' => array(
             'loginAction' => array(
-                'controller' => 'home',
-                'action' => 'index',
+                'controller' => 'areausuario',
+                'action' => 'login',
             ),
             'authenticate' => array(
                 'Form' => array(
                     'fields' => array('username' => 'matricula', 'password' => 'senha')
                 )
             ),
-            'loginRedirect' => array("\areausuario" => true, 'controller' => 'areausuario', 'action' => 'arquivos'),
-            'logoutRedirect' => array("\home" => true, 'controller' => 'home', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'areausuario', 'action' => 'arquivos'),
+            'logoutRedirect' => array('controller' => 'home', 'action' => 'index'),
             'userModel' => 'Cooperado',
         ),
         'Cookie'
@@ -33,6 +33,7 @@ class AppController extends Controller
         $usuario = $this->Auth->user();
 
         $objsessao = $this->Cooperado->find('first', array('conditions' => array('Cooperado.id' => $usuario['Cooperado']['id'])));
+        //exit(debug($objsessao));
         $this->set(compact('objsessao'));
     }
 }
