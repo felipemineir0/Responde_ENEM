@@ -9,8 +9,8 @@
     <section class="text-contatos">
         <div class="container">
             <div class="col-lg-10 col-md-10 col-sm-10 cel-auto">
-                <h2>Cadastre no Responde <b>ENEM</b></h2>
-                <h3>E receba <b style="color:#45c766;">muito +</b> benefícios, como estatística, histórico de simulados respondidos, link com indicação para estudos e muito mais.</h3>
+                <h2>Faça login no Responde <b>ENEM</b></h2>
+                <h3>E receba <b style="color:#45c766;">muito +</b> benefícios, como estatísticas personalizadas, histórico de simulados respondidos, link com indicação para estudos e muito mais.</h3>
             </div>
         </div>
     </section>
@@ -28,7 +28,7 @@
             <div class="clearfix"></div>
             <div class="grid-4">
                 <label>Senha</label>
-                <input name="data[CooperadoLogin][password]" data-rule-minlength="3" data-rule-required="true" required="required" class="TxtSenha" placeholder="Digite sua senha" type="password" id="CooperadoLoginPassword">
+                <input name="data[CooperadoLogin][senha]" data-rule-minlength="3" data-rule-required="true" required="required" class="TxtSenha" placeholder="Digite sua senha" type="password" id="CooperadoLoginPassword">
             </div>
             <div class="clearfix"></div>
             <button type="submit" class="btn-degrade">Entrar</button>

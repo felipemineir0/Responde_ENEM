@@ -144,7 +144,7 @@
                         </figure>
                     </div>
 
-                    <div class="col-lg-10 col-md-10 col-sm-10 menu-topo">
+                    <div class="col-lg-10 col-md-10 col-sm-10 menu-topo" style="margin-top: 25px;">
                         <nav>
                             <ul>
                                 <li class="<?php if (($this->request->params["controller"] == 'home')) {
@@ -167,37 +167,12 @@
                                             } ?>">
                                     <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
                                 </li>
-                                <?php if (!empty($logado) && $logado == "true") : ?>
-                                    <li class='dropdown dark user-menu'>
-                                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                                            <img src="<?php echo $this->webroot; ?>/upload/areausuario/<?php echo ($usuario["id"] . "/s_" . $usuario["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>" width="23" height="23" />
-                                            <span class='user-name'>
-                                                <?php echo ($usuario["nome"]); ?>
-                                            </span>
-                                            <b class='caret'></b>
-                                        </a>
-                                        <ul class='dropdown-menu'>
-                                            <li>
-                                                <?php echo $this->Html->link("<i class='icon-user'> Meus dados</i>", array( 
-                                                    "controller" => "areausuario", "action" => "edit", 2 ), array("escape" => false)); ?>
-                                            </li>
-                                            <li>
-                                                <?php echo $this->Html->link("<i class='icon-key'> Alterar senha</i>", array(
-                                                        "controller" => "areausuario", "action" => "alterar_senha", 2 ), array("escape" => false)); ?>
-                                            </li>
-                                            <li class='divider'></li>
-                                            <li>
-                                                <?php
-                                                    if (!empty($usuario["email"])) {
-                                                        echo $this->Html->link("<i class='icon-signout'>Sair</i>", array(
-                                                            "controller" => "areausuario", "action" => "logout"), array("escape" => false));
-                                                    } ?>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                <?php else :
-                                    echo $this->Element('loginMenu');
-                                endif; ?>
+                                <?php if (!empty($usuario['Cooperado']['matricula'])) : ?>
+                                    <?php echo $this->Element('loginMenuLogado'); ?>
+                                <?php elseif (empty($usuario['Cooperado']['matricula'])) : ?>
+                                    <?php echo $this->Element('loginMenuDeslogado'); ?>
+                                <?php endif; ?>
+                                    
 
                             </ul>
                         </nav>

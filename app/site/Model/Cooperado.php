@@ -4,49 +4,47 @@ App::uses('AppModel', 'Model');
 App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 
 /**
- * User Model
+ * Cooperado Model
  *
  */
-class User extends AppModel {
+class Cooperado extends AppModel
+{
 
     public $imagem_upload = null;
-    public $useTable = 'usuarios';
-    public $name = 'User';
+    public $useTable = 'cooperados';
+    public $name = 'Cooperado';
     public $validate = array(
         'email' => array(
             'required' => array(
                 'rule' => array('notEmpty', 'email'),
-                'message' => 'A e-mail é obrigatório'
+                'message' => 'O e-mail é obrigatório.'
             ),
             'minLength' => array(
                 "rule" => array("minLength", 5),
-                "message" => "Mínimo de 5 caracteres"
+                "message" => "Mínimo de 5 caracteres."
             ),
         ),
-        'password' => array(
+        'senha' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'A password is required'
-            ),
-            'tamanho' => array(
-                "rule" => array("between", 5, 22),
-                "message" => "Tamanho entre 5 e 22 caracteres"
-            ),
+                'message' => 'A senha é necessaria.'
+            )
         )
     );
     public $components = array(
         'Session',
         'Auth' => array(
-            'loginRedirect' => array('controller' => 'home', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'areausuario', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'home', 'action' => 'index')
         )
     );
 
-    public function beforeSave($options = array()) {
-        if (isset($this->data[$this->alias]['password'])) {
+    public function beforeSave($options = array())
+    {
+        if (isset($this->data[$this->alias]['senha'])) {
             $passwordHasher = new SimplePasswordHasher();
-            $this->data[$this->alias]['password'] = $passwordHasher->hash(
-                    $this->data[$this->alias]['password']
+            $this->data[$this->alias]['senha'] = $passwordHasher->hash(
+                $this->data[$this->alias]['senha']
             );
         }
 
@@ -57,7 +55,7 @@ class User extends AppModel {
             if (!empty($this->imagem_upload) && !empty($this->imagem_upload['name'])) {
                 App::import('Component', 'Upload');
                 $Upload = new UploadComponent();
-                $this->data[$this->alias]['imagem'] = $Upload->upload($this->imagem_upload, "upload" . DS . "users" . DS . $this->data[$this->alias]['id'] . DS, true);
+                $this->data[$this->alias]['imagem'] = $Upload->upload($this->imagem_upload, "upload" . DS . "cooperados" . DS . $this->data[$this->alias]['id'] . DS, true);
             }
         } else {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
@@ -68,7 +66,8 @@ class User extends AppModel {
         return true;
     }
 
-    public function afterSave($created = true, $options = null) {
+    public function afterSave($created = true, $options = null)
+    {
         //INICIO - Adicionar - Método de upload para pastas com ID 
         if (!empty($this->imagem_upload)) {
             $imagem_salva = $this->find("first", array(
@@ -84,5 +83,4 @@ class User extends AppModel {
         }
         //Fim - Adicionar - Método de upload para pastas com ID 
     }
-
 }

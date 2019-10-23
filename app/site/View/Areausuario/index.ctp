@@ -1,107 +1,110 @@
-<section class="grid-12 titulo">
-    <div class="container">
-        <h1 class='text-uppercase tituloDiferente'>Cooperados</h1>        
-    </div>
-</section>
-<div class='grid-12 bg-bege'>
-    <div class="container">
-        <div class='clearfix'></div>
-        <?php
-        echo $this->Form->create("CooperadoLogin", array('url' => array('controller' => 'areausuario', 'action' => 'login'),'type' => 'post','class' => "form form-login"));
-        ?>
-
-            <div class="grid-4">
-                <label>Usuário</label>
-                <input name="data[CooperadoLogin][matricula]" data-rule-minlength="3" data-rule-required="true" required="required" class="TxtLogin" placeholder="Digite seu usuário"  id="CooperadoLoginMatricula">
+<main>
+    <section class="banner-top">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 title-produtos">
+                <h1>Área do Usuário</h1>
             </div>
-            <div class="clearfix"></div>
-            <div class="grid-4">
-                <label>Senha</label>
-                <input name="data[CooperadoLogin][password]" data-rule-minlength="3" data-rule-required="true" required="required" class="TxtSenha" placeholder="Digite sua senha" type="password" id="CooperadoLoginPassword">
-            </div>
-            <div class="clearfix"></div>
-            <button type="submit" class="btn-degrade">Entrar</button>
-            <?php
-            echo $this->form->end();
-            ?>
-            
         </div>
-    </div>
+    </section>
 
+    <section>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-<style type="text/css">
-.form {
-    margin-top: 50px;
-}
-.form div {
-    margin: 40px auto;
-}
-.form input {
-    border: 0;
-    height: 35px;
-    border-radius: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-}
-.form button {
-    margin: 0 auto;
-}
-.bg-bege {
-    background: #333333;
-    padding-top: 35px !important;
-    padding-bottom: 70px !important;
-    margin-left: 0 !important;
-}
-.titulo {
-    margin-top: -70px;
-}
-.titulo h1 {
-    font-family: 'ubuntubold';
-    font-size:36px;
-    color:#333333;
-    float: left;
-    font-variant: all-petite-caps;
-    font-weight: 900;
-    margin-bottom: 0;
-}
-.titulo h1.tituloDiferente {
-    margin-top: -11px;
-}
-.titulo h1 span {
-    font-size:12px;
-}
-.noticia {
-    margin-bottom:50px;
-}
-.noticia span {
-    font-family: 'ubuntubold';
-    font-size:14px;
-    color: #261b18;
-}
-.noticia h3 {
-    font-size:16px;
-    color:#261b18;
-    margin-top:5px;
-}
-.btn-sair {
-    float: right;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-family: 'ubuntubold';
-    color: #225D27;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #EEE;
-}
-.btn-degrade {
-    background: rgb(223, 223, 223);
-    background: -moz-linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 100%);
-    background: -webkit-linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 100%);
-    background: -o-linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 100%);
-    background: -ms-linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(180deg, rgb(223, 223, 223) 0%, rgb(255, 255, 255) 100%);
-    border: 1px solid #FFF;
-    color: #ff0404;
-}
-</style>
+        <div class="container">
+            <div class="well col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="row user-row">
+                    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                        <?php if (!empty($usuario['Cooperado']['imagem'])) : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($usuario['Cooperado']["id"] . "/s_" . $usuario['Cooperado']["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>" width="50" height="50" />
+                        <?php elseif ($usuario['Cooperado']['sexo'] == 'F') : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>
+                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
+                        <strong>Nome completo: <?php echo $usuario['Cooperado']['nome']; ?></strong><br>
+                        <span class="text-muted">Usuário de login: <?php echo $usuario['Cooperado']['matricula']; ?></span>
+                    </div>
+                </div>
+                <div class="row user-infos user3">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Informações do usuário</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                        <?php if (!empty($usuario['Cooperado']['imagem'])) : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($usuario['Cooperado']["id"] . "/m_" . $usuario['Cooperado']["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>"/>
+                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'F') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>
+                                            <img class="img-circle" src="<?php echo $this->webroot; ?>/img/male.png" alt="<?php echo $usuario['Cooperado']["nome"] ?>" width="50" height="50" />
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 hidden-md hidden-lg">
+                                        <img class="img-circle" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50" alt="User Pic">
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
+                                        <strong><?php echo $usuario['Cooperado']['nome']; ?></strong><br>
+                                        <dl>
+                                            <dt>User level:</dt>
+                                            <dd>Administrator</dd>
+                                            <dt>Registrado desde:</dt>
+                                            <dd><?php echo $usuario['Cooperado']['created']; ?></dd>
+                                            <dt>Topics</dt>
+                                            <dd>15</dd>
+                                            <dt>Warnings</dt>
+                                            <dd>0</dd>
+                                        </dl>
+                                    </div>
+                                    <div class=" col-md-9 col-lg-9 hidden-xs hidden-sm">
+                                        <strong><?php echo $usuario['Cooperado']['nome']; ?></strong><br>
+                                        <table class="table table-user-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>User level:</td>
+                                                    <td>Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Registrado desde:</td>
+                                                    <td><?php echo $usuario['Cooperado']['created']; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sexo: </td>
+                                                    <td><?php if ($usuario['Cooperado']['sexo'] == 'F') : ?>Feminino
+                                                        <?php elseif ($usuario['Cooperado']['sexo'] == 'M') : ?>Masculino
+                                                    <?php endif; ?>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Warnings</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-primary" type="button" data-toggle="tooltip">Enviar uma mensagem <i class="glyphicon glyphicon-envelope"></i></button>
+                                <span class="pull-right">
+                                    <?php  echo $this->Html->link("Editar dados <i class='glyphicon glyphicon-edit'></i>", array(
+                                        "action" => "editar"), array("escape" => false, "class" => "btn btn-sm btn-warning"));
+                                    ?>
+                                    <?php  echo $this->Html->link("Sair <i class='glyphicon glyphicon-edit'></i>", array(
+                                        "controller" => "areausuario", "action" => "sair"), array("escape" => false, "class" => "btn btn-sm btn-danger"));
+                                    ?>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

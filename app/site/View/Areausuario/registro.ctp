@@ -22,7 +22,7 @@
       	<div class="container">
 
            	<div class="col-lg-11 col-md-11 col-sm-11 cel-auto formulario-contato-top">
-                <?php echo $this->Form->create("Registro", array('url' => array('controller' => 'areausuario', 'action' => 'index'), "class" => "form"));?>
+                <?php echo $this->Form->create("Registro", array('url' => array('controller' => 'areausuario', 'action' => 'registro'), "class" => "form"));?>
 
                     <div class="row">
 	                    <div class="col-lg-4 col-md-4 col-sm-4">

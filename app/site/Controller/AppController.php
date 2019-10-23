@@ -11,15 +11,15 @@ class AppController extends Controller
         'Session',
         'Auth' => array(
             'loginAction' => array(
-                'controller' => 'home',
-                'action' => 'index',
+                'controller' => 'areausuario',
+                'action' => 'login',
             ),
             'authenticate' => array(
                 'Form' => array(
                     'fields' => array('username' => 'matricula', 'password' => 'senha')
                 )
             ),
-            'loginRedirect' => array("\areausuario" => true, 'controller' => 'areausuario', 'action' => 'arquivos'),
+            'loginRedirect' => array("\areausuario" => true, 'controller' => 'areausuario', 'action' => 'index'),
             'logoutRedirect' => array("\home" => true, 'controller' => 'home', 'action' => 'index'),
             'userModel' => 'Cooperado',
         ),
@@ -27,12 +27,38 @@ class AppController extends Controller
     );
 
     public function beforeFilter() {
+
+          $this->renovaLogin(false);
+      
+          $this->Auth->allow('');
     }
 
     public function beforeRender() {
-        $usuario = $this->Auth->user();
 
-        $objsessao = $this->Cooperado->find('first', array('conditions' => array('Cooperado.id' => $usuario['Cooperado']['id'])));
-        $this->set(compact('objsessao'));
+        $this->renovaLogin(false);
+
+        $user = $this->Auth->user();
+
+        $usuario = $this->Cooperado->find('first', array('conditions' => array('Cooperado.id' => $user['Cooperado']['id'])));
+        $this->set(compact('usuario'));
     }
+
+    public function renovaLogin($redirect = false)
+  {
+    
+    $this->log($this->Session->id().':' ."renovaLogin Called\r\n", LOG_DEBUG);
+    $cookie_user = $this->Cookie->read('Cooperado');
+    $auth_user = $this->Auth->user();
+
+    //debug($this->Auth->allowedActions);
+    //die();
+    if (!empty($cookie_user) && empty($auth_user)) {
+      $this->log("renovaLogin: Lina 90\r\n", LOG_DEBUG);
+      $this->Auth->login($cookie_user);
+      if ($redirect) {
+        $this->log("renovaLogin: Lina 93\r\n", LOG_DEBUG);
+       return $this->redirect($this->Auth->redirect());   
+     }
+   }
+ }
 }

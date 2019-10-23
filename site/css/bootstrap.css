@@ -3174,7 +3174,7 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
+  background-color: #45c766;
   border-color: #4cae4c;
 }
 .btn-success:focus,
@@ -3185,7 +3185,7 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success:hover {
   color: #ffffff;
-  background-color: #449d44;
+  background-color: #218838;
   border-color: #398439;
 }
 .btn-success:active,
