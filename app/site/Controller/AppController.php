@@ -10,15 +10,15 @@ class AppController extends Controller
         'Session',
         'Auth' => array(
             'loginAction' => array(
-                'controller' => 'home',
-                'action' => 'index',
+                'controller' => 'areausuario',
+                'action' => 'login',
             ),
             'authenticate' => array(
                 'Form' => array(
                     'fields' => array('username' => 'matricula', 'password' => 'senha')
                 )
             ),
-            'loginRedirect' => array('controller' => 'areausuario', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'home', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'home', 'action' => 'index'),
             'userModel' => 'Cooperado',
         ),

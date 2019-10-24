@@ -29,8 +29,11 @@
                         echo $this->Form->input('matricula', array("data-rule-minlength" => '6', "data-rule-required" => 'true', "placeholder" => 'Usúario'));
                         echo $this->Form->input('email', array("data-rule-email" => 'true', "data-rule-required" => 'true', "placeholder" => 'E-mail'));
                         echo $this->Form->input('telefone', array("placeholder" => 'Telefone', "id" => 'CooperadoTelefone'));
-                        echo $this->Form->input('onde', array('options' => array(
-                            'Indicação da escola' => 'Indicação da escola', 'Indicação de amigos' => 'Indicação de amigos',
+                        echo $this->Form->input('sexo', array("data-rule-required" => 'true', 'options' => array(
+                            '' => 'Qual seu sexo?', 'F' => 'Feminino', 'M' => 'Masculino'
+                        )));
+                        echo $this->Form->input('onde', array("data-rule-required" => 'true', 'options' => array(
+                            '' => 'Onde nós conheceu?', 'Indicação da escola' => 'Indicação da escola', 'Indicação de amigos' => 'Indicação de amigos',
                             'Redes Sociais' => 'Redes Sociais', 'Propagandas' => 'Propagandas',
                         )));
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));

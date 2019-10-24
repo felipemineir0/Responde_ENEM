@@ -10,7 +10,7 @@ class AreausuarioController extends AppController {
 
 			$senha = sha1($this->request["data"]["CooperadoLogin"]["senha"]);
 			$matricula = $this->request["data"]["CooperadoLogin"]["matricula"];
-			$result = $this->Cooperado->find("first",array('conditions'=> array('Cooperado.senha' => $senha, 'Cooperado.matricula'=>$matricula, 'Cooperado.ativo' => 1 )));
+			$result = $this->Cooperado->find("first",array('conditions'=> array('Cooperado.senha' => $senha, 'Cooperado.matricula' => $matricula )));
 			if (!empty($result)) {
 
 				$this->Session->write('cooperadoLogado', 'true');
@@ -87,8 +87,8 @@ class AreausuarioController extends AppController {
 		$this->request->data = $this->Cooperado->find('first', $options);
 	}
 
-	function beforeFilter()
-    {
+	public function beforeFilter() {
+        $this->Auth->allow(['registro']);
     }
 
     function registro()
