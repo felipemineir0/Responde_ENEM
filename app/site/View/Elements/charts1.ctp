@@ -11,7 +11,7 @@ Highcharts.chart('chart1', {
         type: 'pie'
     },
     title: {
-        text: 'Acertos por disciplinas'
+        text: '% de acertos de cada disciplinas'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

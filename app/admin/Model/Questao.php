@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * Questao Model
  *
  * @property MateriasTipo $MateriasTipo
+ * @property TopicosTipo $TopicosTipo
  * @property Resposta $Resposta
  */
 class Questao extends AppModel {
@@ -22,6 +23,13 @@ class Questao extends AppModel {
         'MateriasTipo' => array(
             'className' => 'MateriasTipo',
             'foreignKey' => 'materias_tipo_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+            ),
+        'TopicosTipo' => array(
+            'className' => 'TopicosTipo',
+            'foreignKey' => 'topicos_tipo_id',
             'conditions' => '',
             'fields' => '',
             'order' => ''

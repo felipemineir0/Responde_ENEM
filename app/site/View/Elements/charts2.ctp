@@ -11,7 +11,7 @@ Highcharts.chart('chart2', {
         type: 'variablepie'
     },
     title: {
-        text: '% de acertos de cada disciplina'
+        text: 'Número de questões e acertos'
     },
     tooltip: {
         headerFormat: '',

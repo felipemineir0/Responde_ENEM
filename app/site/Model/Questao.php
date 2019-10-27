@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * Questao Model
  *
  * @property MateriasTipo $MateriasTipo
+ * @property TopicosTipo $MateriasTipo
  */
 class Questao extends AppModel {
     //The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -19,6 +20,13 @@ class Questao extends AppModel {
         'MateriasTipo' => array(
         'className' => 'MateriasTipo',
         'foreignKey' => 'materias_tipo_id',
+        'conditions' => '',
+        'fields' => '',
+        'order' => ''
+        ),
+        'TopicosTipo' => array(
+        'className' => 'TopicosTipo',
+        'foreignKey' => 'topicos_tipo_id',
         'conditions' => '',
         'fields' => '',
         'order' => ''

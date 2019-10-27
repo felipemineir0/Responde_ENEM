@@ -3,7 +3,7 @@
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
             <i class='icon-user'></i>
-            <span>Usuários</span>
+            <span>Usuários Admin</span>
         </h1>
         <?php echo $this->Html->link("<i class='icon-plus'></i><span>Adicionar</span>", array('action' => 'add'), array("class" => "btn btn-primary btn-lg", "title" => "Adicionar novo Registro", "style" => "float: right; margin: 18px 0 0 0;", "escape" => false)); ?>
 

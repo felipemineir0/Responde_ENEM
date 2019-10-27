@@ -23,9 +23,21 @@
             "action" => "index"), array("escape" => false));
         ?>
     </li>
+    <li class='materias' id="materia">
+        <?php
+        echo $this->Html->link("<i class='icon-book'></i>Cadastro Tipo de Tópico", array("controller" => "topicostipos",
+            "action" => "index"), array("escape" => false));
+        ?>
+    </li>
+    <li id="cooperado">
+        <?php
+        echo $this->Html->link("<i class='icon-user'></i>Usuários Comum", array("controller" => "usuario_comum",
+            "action" => "index"), array("escape" => false));
+        ?>
+    </li>
     <li id="users">
         <?php
-        echo $this->Html->link("<i class='icon-user'></i>Usuários", array("controller" => "Users",
+        echo $this->Html->link("<i class='icon-user'></i>Usuários Admin", array("controller" => "Users",
             "action" => "index"), array("escape" => false));
         ?>
     </li>

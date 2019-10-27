@@ -25,6 +25,7 @@
 
                     <div class="row">
                         <?php
+                        echo $this->Form->input('id', array('readonly' => 'readonly'));
                         echo $this->Form->input('nome', array("data-rule-minlength" => '6', "data-rule-required" => 'true', "placeholder" => 'Nome'));
                         echo $this->Form->input('matricula', array("data-rule-minlength" => '6', "data-rule-required" => 'true', "placeholder" => 'Usúario'));
                         echo $this->Form->input('email', array("data-rule-email" => 'true', "data-rule-required" => 'true', "placeholder" => 'E-mail'));
@@ -32,9 +33,8 @@
                         echo $this->Form->input('sexo', array("data-rule-required" => 'true', 'options' => array(
                             '' => 'Qual seu sexo?', 'F' => 'Feminino', 'M' => 'Masculino'
                         )));
-                        echo $this->Form->input('onde', array("data-rule-required" => 'true', 'options' => array(
-                            '' => 'Onde nós conheceu?', 'Indicação da escola' => 'Indicação da escola', 'Indicação de amigos' => 'Indicação de amigos',
-                            'Redes Sociais' => 'Redes Sociais', 'Propagandas' => 'Propagandas',
+                        echo $this->Form->input('feedback', array("data-rule-required" => 'true', 'options' => array(
+                            1 => 'Indicação da escola', 2 => 'Indicação de amigos' ,3 => 'Redes Sociais', 4 => 'Propagandas'
                         )));
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                         ?>
@@ -50,7 +50,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <input name="<?php $this->request->data["Cooperado"]["newsletter"]; ?>" id="<?php $this->request->data["Cooperado"]["newsletter"]; ?>" class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
                                     Gostaria de receber notícias/informações em seu email?
                                 </label>

@@ -1,4 +1,3 @@
-
 <?php
 /**
  *
@@ -31,15 +30,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             <?php echo $title_for_layout; ?>
             | Administração
         </title>
-        <script type="text/javascript" src="<?php echo $this->webroot; ?>/imgadmin/webroot/js/ckeditor/ckeditor.js"></script>
-
+        <script type="text/javascript" src="<?php echo $this->webroot; ?>imgadmin/js/ckeditor/ckeditor.js"></script>
         <script type="text/javascript">
             base_url = '<?php echo $this->webroot; ?>';
         </script> 
 
         <?php
         echo $this->Html->meta('meta_icons/favicon');
-
 
         echo $this->Html->css(
                 array(
@@ -68,13 +65,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     'demo.js',
         ));
 
-
-
         echo $this->fetch('meta');
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
-
 
     </head>
     <body class='<?php echo $this->Session->read('colorTheme'); ?>'>
@@ -91,7 +85,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
                         <?php echo $this->fetch('content'); ?>
 
-
                     </div>
                     <footer id='footer'>
                         <div class='footer-wrapper'>
@@ -104,23 +97,5 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 </div>
             </section>
         </div>
-
     </body>
-
-    <script>
-
-        $(document).ready(function () {
-            var controller = "<?php echo $this->request->params["controller"] ?>".toLowerCase();
-
-            $('#' + controller).addClass('active');
-
-            if (controller.indexOf("imoveis") != -1) {
-                $('#ImoveisBloco_ul').addClass('in');
-                $('#ImoveisBloco').addClass('in');
-            }
-        
-        });
-
-    </script>
-
 </html>

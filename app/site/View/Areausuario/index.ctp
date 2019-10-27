@@ -113,7 +113,7 @@ th { font-weight: 600; padding: 10px;}
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Simulados feito : </td>
+                                                    <td>Simulados feito: </td>
                                                     <td>0</td>
                                                 </tr>
                                             </tbody>
@@ -181,7 +181,6 @@ th { font-weight: 600; padding: 10px;}
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><?php echo $this->Element('charts1'); ?></div>
                                         <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><?php echo $this->Element('charts2'); ?></div>
@@ -235,17 +234,13 @@ dt span{font-weight: 400;}
 .table-user-information > tbody > tr > td {border-top: 0;}
 </style>
 <?php
-function formataTelefone($numero)
+function formataTelefone($phone)
 {
-    if (strlen($numero) == 11) {
-        $novo = substr_replace($numero, '(', 0, 0);
-        $novo = substr_replace($novo, ') ', 3, 0);
-        $novo = substr_replace($novo, '-', 10, 0);
-    } elseif (strlen($numero) == 10) {
-        $novo = substr_replace($numero, '(', 0, 0);
-        $novo = substr_replace($novo, ') ', 3, 0);
-        $novo = substr_replace($novo, '-', 9, 0);
+    $formatedPhone = preg_replace('/[^0-9]/', '', $phone);
+    $matches = [];
+    preg_match('/^([0-9]{2})([0-9]{4,5})([0-9]{4})$/', $formatedPhone, $matches);
+    if ($matches) {
+        return '('.$matches[1].') '.$matches[2].'-'.$matches[3];
     }
-    return $novo;
 }
 ?>

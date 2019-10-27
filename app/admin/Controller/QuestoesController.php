@@ -25,7 +25,7 @@ class QuestoesController extends AppController {
     public function index() {
         $this->Questao->recursive = 0;
         //$this->set('questoes', $this->Paginator->paginate());
-        $this->paginate = array('order' => array('created' => 'desc',), 'limit' => 10);
+        $this->paginate = array('order' => array('created' => 'desc',), 'limit' => 20);
         $this->set('questoes', $this->Paginator->paginate());
     }
 
@@ -45,8 +45,9 @@ class QuestoesController extends AppController {
             }
         }
         $materiasTipos = $this->Questao->MateriasTipo->find('list');
+        $topicosTipos = $this->Questao->TopicosTipo->find('list');
         $respostas = $this->Questao->Resposta->find('list');
-        $this->set(compact('materiasTipos', 'respostas'));
+        $this->set(compact('materiasTipos', 'topicosTipos','respostas'));
     }
 
     /**
@@ -73,8 +74,9 @@ class QuestoesController extends AppController {
             $this->request->data = $this->Questao->find('first', $options);
         }
         $materiasTipos = $this->Questao->MateriasTipo->find('list');
+        $topicosTipos = $this->Questao->TopicosTipo->find('list');
         $respostas = $this->Questao->Resposta->find('list');
-        $this->set(compact('materiasTipos', 'respostas'));
+        $this->set(compact('materiasTipos', 'topicosTipos','respostas'));
     }
 
     /**

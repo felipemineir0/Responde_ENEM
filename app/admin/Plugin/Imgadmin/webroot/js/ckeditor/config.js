@@ -8,10 +8,11 @@ CKEDITOR.editorConfig = function(config) {
     // config.language = 'fr';
     // config.uiColor = '#AADC6E';
     config.extraPlugins = 'mediaembed';
-    config.height = '500px';
+    config.height = '200px';
     config.filebrowserImageBrowseUrl = base_url + 'imgadmin/Imagens/add';
     config.toolbarGroups = [
-        {name: 'document', groups: ['mode', 'document', 'doctools']},
+        //{name: 'document', groups: ['mode', 'document', 'doctools']},
+        {name: 'insert', groups: ['image']},
         {name: 'clipboard', groups: ['clipboard', 'undo']},
         //{name: 'editing', groups: ['find', 'selection', 'spellchecker']},
         {name: 'editing', groups: ['selection']},
@@ -20,12 +21,11 @@ CKEDITOR.editorConfig = function(config) {
         //{name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
         {name: 'basicstyles', groups: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
         {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi']},
-        {name: 'links'},
-        {name: 'insert', groups: ['image']},
+        //{name: 'links'},
         '/',
         {name: 'styles'},
         {name: 'colors'},
-        {name: 'mediaembed'},
+        //{name: 'mediaembed'},
         
         //{name: 'tools'},
         //{name: 'others'},

@@ -38,14 +38,6 @@ class SimuladoController extends AppController {
 
             $conditions = array();
 
-            $this->paginate = array(
-                'order' => array(
-                    'Questao.created' => 'desc',
-                ),
-                'conditions' => $conditions,
-                'fields' => $fields_questoes,
-                'limit' => 20
-            );
             $this->set('questoes', $this->Paginator->paginate());
        
             } else {
@@ -67,11 +59,11 @@ class SimuladoController extends AppController {
 
             $this->paginate = array(
                 'order' => array(
-                    'Questao.created' => 'desc',
+                    'Questao.created' => 'asc',
                 ),
                 'conditions' => $conditions,
                 'fields' => $fields_questoes,
-                'limit' => 12
+                'limit' => 10
             );
 
             $this->set('questoes', $this->Paginator->paginate());

@@ -46,29 +46,33 @@
                         <br>
                         <div id="question" class="question">
                             <fieldset id=<?php echo $numQuestao; ?>>
-                                <p>(<?php echo $questao['Questao']['prova_aplicada']; ?>) <?php echo $questao['Questao']['introducao']; ?></p>
+                                (<?php echo "ENEM " . $questao['Questao']['prova_aplicada']; ?>) <?php echo substr($questao['Questao']['introducao'], 3); ?>
 
                                 <?php if (!empty($questao['Questao']['imagem'])) { ?>
                                     <div class="image-prod">
-                                        <img src="<?php echo $this->request->base ?>/upload/questoes/<?php echo $questao['Questao']['id'] ?>/278x174-<?php echo $questao['Questao']['imagem'] ?>" alt="<?php echo $questao['Questao']['nome']; ?>" />
+                                        <p><img src="<?php echo $this->request->base ?>/upload/questoes/<?php echo $questao['Questao']['id'] ?>/<?php echo $questao['Questao']['imagem'] ?>" alt="<?php echo $questao['Questao']['nome']; ?>" /></p>
                                     </div>
                                 <?php } ?>
 
+                                <?php if(!empty($questao['Questao']['texto'])) : ?>
                                 <blockquote>
-                                    <p><?php echo $questao['Questao']['texto']; ?></p>
+                                    <?php echo $questao['Questao']['texto']; ?>
                                 </blockquote>
+                                <?php endif; ?>
 
-                                <p><?php echo $questao['Questao']['pergunta']; ?></p>
+                                <?php if(!empty($questao['Questao']['pergunta'])) : ?>
+                                    <p><?php echo $questao['Questao']['pergunta']; ?></p>
+                                <?php endif; ?>
 
                                 <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>">
-                                    <tbody>
+                                    <tbody style="margin-top: 15px;">
                                         <?php for ($inc = 1; $inc <= 5; $inc++) : ?>
                                             <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null ?>">
                                                 <td width="8" valign="top">
                                                     <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa' ?>">
                                                 </td>
                                                 <td>
-                                                    <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo $questao['Questao']['alternativa_' . $inc]; ?></label>
+                                                    <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo substr($questao['Questao']['alternativa_' . $inc], 3); ?></label>
                                                 </td>
                                             </tr>
                                         <?php endfor; ?>

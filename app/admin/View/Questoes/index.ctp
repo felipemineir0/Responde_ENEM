@@ -17,10 +17,10 @@
                                 <tr> 
                                     <th><?php echo $this->Paginator->sort('id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('materias_tipo_id'); ?></th>
+                                    <th><?php echo $this->Paginator->sort('topicos_tipo_id'); ?></th>
                                     <th><?php echo $this->Paginator->sort('prova_aplicada'); ?></th>
                                     <th><?php echo $this->Paginator->sort('introducao'); ?></th>
                                     <th style="min-width: 95px;"><?php echo $this->Paginator->sort('created'); ?></th>
-                                    <th style="min-width: 95px;"><?php echo $this->Paginator->sort('modified'); ?></th>
                                     <th class="actions" style="min-width: 100px;">Ações</th>
                                 </tr>
                             </thead>
@@ -29,10 +29,10 @@
                                     <tr>
                                         <td><?php echo h($questao['Questao']['id']); ?>&nbsp;</td>
                                         <td><?php echo h($questao['MateriasTipo']['nome']); ?>&nbsp;</td>
+                                        <td><?php echo h($questao['TopicosTipo']['nome']); ?>&nbsp;</td>
                                         <td><?php echo h($questao['Questao']['prova_aplicada']); ?>&nbsp;</td>
-                                        <td><?php echo h($questao['Questao']['introducao']); ?>&nbsp;</td>
+                                        <td><?php echo mb_strimwidth($questao['Questao']['introducao'], 0, 220, '...'); ?>&nbsp;</td>
                                         <td><?php echo date("d-m-Y", strtotime($questao['Questao']['created'])); ?>&nbsp;</td>
-                                        <td><?php echo date("d-m-Y", strtotime($questao['Questao']['modified'])); ?>&nbsp;</td>
                                         <td>
                                             <div class="text-center">
                                                 <?php

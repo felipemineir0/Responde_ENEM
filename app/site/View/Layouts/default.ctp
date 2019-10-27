@@ -66,71 +66,38 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul>
-                    <li class="<?php if (($this->request->params["controller"] == 'home')) {
-                                    echo 'active';
-                                } ?> menuMobile">
+                    <li>
                         <a href="<?php echo $this->request->base ?>">HOME</a>
                     </li>
-                    <li class="<?php if (($this->request->params["controller"] == 'institucional')) {
-                                    echo 'active';
-                                } ?>">
+                    <li>
                         <a href="<?php echo $this->request->base ?>/institucional">INSTITUCIONAL</a>
                     </li>
-                    <li class="<?php if (($this->request->params["controller"] == 'simulado')) {
-                                    echo 'active';
-                                } ?>">
+                    <li>
                         <a href="<?php echo $this->request->base ?>/simulado">SIMULADO</a>
                     </li>
-                    <li class="<?php if (($this->request->params["controller"] == 'contato')) {
-                                    echo 'active';
-                                } ?>">
+                    <li>
                         <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
                     </li>
-                    <li class='dropdown dark user-menu'>
-                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            <img src="<?php echo $this->webroot; ?>/upload/users/<?php echo ($usuario["id"] . "/s_" . $usuario["imagem"]); ?>" alt="<?php echo $usuario["nome"] ?>" width="23" height="23" />
-
-                            <span class='user-name'>
-                                <?php echo ($usuario["nome"]); ?>
-
-                            </span>
-                            <b class='caret'></b>
-                        </a>
-                        <ul class='dropdown-menu'>
-                            <li>
-                                <?php
-                                echo $this->Html->link("<i class='icon-user'> Meus dados</i>", array(
-                                    "controller" => "users",
-                                    "action" => "edit", $usuario["id"]
-                                ), array("escape" => false));
-                                ?>
-
-                            </li>
-                            <li>
-                                <?php
-                                echo $this->Html->link("<i class='icon-key'> Alterar senha</i>", array(
-                                    "controller" => "users",
-                                    "action" => "alterar_senha", $usuario["id"]
-                                ), array("escape" => false));
-                                ?>
-
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <?php
-                                if (!empty($usuario["email"])) {
-                                    echo $this->Html->link("<i class='icon-signout'>Sair</i>", array(
-                                        "controller" => "users",
-                                        "action" => "logout"
-                                    ), array("escape" => false));
-                                }
-                                ?>
-                            </li>
-                        </ul>
+                    <li>
+                    <?php if (empty($objsessao)) : ?>
+                        <a href="<?php echo $this->request->base ?>/areausuario/login">ENTRAR</a>
+                        <?php else : ?>
+                        <?php echo $this->Html->link("MINHA PÁGINA", array( "controller" => "areausuario", 
+                        "action" => "index", $objsessao['Cooperado']["id"]), array("escape" => false)); ?>
+                        <?php endif ?>
                     </li>
                 </ul>
             </div>
         </nav>
+        <style>
+        .navbar-collapse ul li .active {
+    background-color: red;
+    padding: 15px 12px;
+    text-align: center;
+    font-size: 16px;
+    margin: 3px;
+    border-radius: 5px;
+        }</style>
 
         <div class="container-fluid top-fixed" id="topopage">
             <div class="container">
@@ -147,24 +114,16 @@
                     <div class="col-lg-10 col-md-10 col-sm-10 menu-topo" style="margin-top: 25px;">
                         <nav>
                             <ul>
-                                <li class="<?php if (($this->request->params["controller"] == 'home')) {
-                                                echo 'active';
-                                            } ?>">
+                                <li class="<?php if (($this->request->params["controller"] == 'home')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>">HOME</a>
                                 </li>
-                                <li class="<?php if (($this->request->params["controller"] == 'institucional')) {
-                                                echo 'active';
-                                            } ?>">
+                                <li class="<?php if (($this->request->params["controller"] == 'institucional')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>/institucional">INSTITUCIONAL</a>
                                 </li>
-                                <li class="<?php if (($this->request->params["controller"] == 'simulado')) {
-                                                echo 'active';
-                                            } ?>">
+                                <li class="<?php if (($this->request->params["controller"] == 'simulado')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>/simulado">SIMULADO</a>
                                 </li>
-                                <li class="<?php if (($this->request->params["controller"] == 'contato')) {
-                                                echo 'active';
-                                            } ?>">
+                                <li class="<?php if (($this->request->params["controller"] == 'contato')) { echo 'active'; } ?>">
                                     <a href="<?php echo $this->request->base ?>/contato">FALE CONOSCO</a>
                                 </li>
                                 <?php echo $this->Element('loginMenu'); ?>

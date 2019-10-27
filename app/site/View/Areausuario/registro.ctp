@@ -35,8 +35,7 @@
                             '' => 'Qual seu sexo?', 'F' => 'Feminino', 'M' => 'Masculino'
                         )));
                         echo $this->Form->input('onde', array("data-rule-required" => 'true', 'options' => array(
-                            '' => 'Onde nós conheceu?', 'Indicação da escola' => 'Indicação da escola', 'Indicação de amigos' => 'Indicação de amigos',
-                            'Redes Sociais' => 'Redes Sociais', 'Propagandas' => 'Propagandas',
+                            1 => 'Indicação da escola', 2 => 'Indicação de amigos',3 => 'Redes Sociais', 4 => 'Propagandas'
                         )));
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                         ?>
