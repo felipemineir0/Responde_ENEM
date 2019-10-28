@@ -157,11 +157,11 @@ blockquote { color: #717171; padding: 10px 0 10px 20px; font-family: "Georgia"; 
 #letra {background: #54d208;padding: 3px 8px;color: #fff;}
 #wpbody, #TB_window{font-size:1.2em !important;line-height:20px !important;	}
 
-#theExam td{padding:2px 3px 2px 8px !important;	}
 #theExam hr{border:dashed 1px #ccc;margin: 0px 0px 5px 0px;}
 #theExam #questionDiv{padding: 20px 5px 5px 5px;margin:5px;}
 #theExam #question{padding:5px;	}
-#question p {color:#333}#quizResults {color:#2496D4; font-size:16px;}
+#question p {color:#333}
+#quizResults {color:#58DF2B; font-size:30px;}
 #question label{display: block;	background-color: #fedc08;padding: 20px 15px;height:100%;font-family: Arial;font-size: 16px;cursor: pointer;border-radius: 15px 100px 100px 15px;}
 #question label:hover{background-color: #45C766;color:#fff;}
 .espacamento-questoes{padding-top: 50px;}
@@ -225,8 +225,10 @@ a.dropdown-toggle.login-menu:hover,:focus {opacity: .8;}
 [data-tooltip]:hover:after {display: block;}
 
 #result_validacao{text-align: center;color: #fedc08;font-weight: 500;}
+.result_simulado{color: #45c766; height: 50px;}
 
 @media (min-width: 992px){
+	.result_simulado{font-size: 30px;margin: 20px 0 20px 0;}
 	.top-fixed .menu-topo ul li{ margin-right: 3px;}
 	.home-text img{width:100%;}
 	.redes-sociais h3{ font-size: 27px;}
@@ -236,6 +238,8 @@ a.dropdown-toggle.login-menu:hover,:focus {opacity: .8;}
 }
 	
 @media (max-width: 540px) {
+	.image-prod img {width: 100%;}
+	.result_simulado{font-size: 16px;margin: 60px 0 0 0;}
 	.pull-right {float:none !important;}
 	.navbar-default{ border: 0; background-color: inherit; height: auto; min-height: 50px; margin-bottom: 20px; display: block; }
 	.menu-topo{display: none;}
@@ -272,9 +276,10 @@ a.dropdown-toggle.login-menu:hover,:focus {opacity: .8;}
 	.logo-footer {text-align: center;}
 	.footer-site .logo-footer img {float:none;}
 	#lista-opcoes label {width:80%;}
+	
 }
 	
-@media only screen and (min-width: 340px){
+@media only screen and (min-width: 320px){
 	.qtablela tbody td input[type=radio] {visibility: visible;margin-right: 8px;cursor: pointer;}
 	.qtablela tbody td input[type=radio]:hover:before {	background: #fedc08;}
 	.qtablela tbody td input[type=radio]:before{content: " ";background-color: #fff;display: inline-block;margin-right: 10px;width: 23px;height: 23px;border: 2px solid #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 20px;visibility: visible;box-shadow: 0 0 0px 2px #fedc08;}

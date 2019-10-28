@@ -37,7 +37,8 @@
         <div class="row" id="theExam">
             <!-- INICIO QUESTÃO -->
             <form action="?action=correcao" method="post" name="SIMULADO-form" id="SIMULADO-form" onsubmit='document.getElementById("corrigir").disabled=true'>
-                <?php $numQuestao = 1; $letra = ['A', 'B', 'C', 'D', 'E'];
+                <?php $numQuestao = 1;
+                $letra = ['A', 'B', 'C', 'D', 'E'];
                 foreach ($questoes as $questao) : ?>
 
 
@@ -54,13 +55,13 @@
                                     </div>
                                 <?php } ?>
 
-                                <?php if(!empty($questao['Questao']['texto'])) : ?>
-                                <blockquote>
-                                    <?php echo $questao['Questao']['texto']; ?>
-                                </blockquote>
+                                <?php if (!empty($questao['Questao']['texto'])) : ?>
+                                    <blockquote>
+                                        <?php echo $questao['Questao']['texto']; ?>
+                                    </blockquote>
                                 <?php endif; ?>
 
-                                <?php if(!empty($questao['Questao']['pergunta'])) : ?>
+                                <?php if (!empty($questao['Questao']['pergunta'])) : ?>
                                     <p><?php echo $questao['Questao']['pergunta']; ?></p>
                                 <?php endif; ?>
 
@@ -78,9 +79,7 @@
                                         <?php endfor; ?>
                                     </tbody>
                                 </table>
-
                             </fieldset>
-                            <br>
                             <br>
                             <hr>
                         </div>
@@ -89,25 +88,27 @@
                 <?php $numQuestao++;
                 endforeach; ?>
                 <div class="formulario-contato" style="padding: 0 0;">
-                    <div style="margin:2px;">Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono" value="crono">
+                    <div style="margin:2px;">Acertou 4 de 10 | Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono" value="crono">
                         <button type="submit" value="corrigir" id="corrigir">corrigir <i class="fas fa-arrow-alt-circle-right"></i></button>
                         <a href="<?php echo $this->request->base ?>/simulado">fazer novamente <i class="fas fa-undo"></i></a>
                     </div>
                 </div>
             </form>
             <!-- FINAL QUESTÃO -->
+            <h2 id="quizResults" style="margin-top: 25px;margin-bottom: 10px;line-height: 1em;font-family: Helvetica;font-weight: 400;">Você acertou 40% do simulado</h2>
+
         </div>
     </div>
     <section class="espacamento-questoes"></section>
 </main>
 <script>
-$(function() {
-    $("#CboOrganizar").val(getParameterByName('tipo'));
+    $(function() {
+        $("#CboOrganizar").val(getParameterByName('tipo'));
 
-    $("#CboOrganizar").change(function() {
-        if ($(this).val() != "")
-            window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val();
-    })
-});
+        $("#CboOrganizar").change(function() {
+            if ($(this).val() != "")
+                window.location = "<?php echo $this->request->base ?>" + "/simulado/?tipo=" + $(this).val();
+        })
+    });
 </script>
-<?php echo $this->Html->script(array("cronometro" ,"correcao")); ?>
+<?php echo $this->Html->script(array("cronometro", "correcao")); ?>

@@ -1,9 +1,11 @@
 $('#SIMULADO-form').submit(function(e) {
+    var correta = 1;
     e.preventDefault();
     $('.v').removeClass('resposta-correta')
     $('input:checked').each(function(index) {
         fieldset = $(this).parent().parent().parent().parent().parent()
         //fieldset.find('p').remove()
+        
 
         if ($(this).data('correct') == 'falsa') {
             var letra_correcao = fieldset.find('.qtablela').data('correta')
@@ -16,9 +18,10 @@ $('#SIMULADO-form').submit(function(e) {
             fieldset.find('.v').addClass('resposta-correta');
             console.log(fieldset.find('.v'))
             fieldset.append('<span class="incorrect"> Você errou essa.</span>' +
-                '<p> Resposta certa é letra ' + '<span class="incorrectFeedback">' + msgLetra + '</span></p>')
+                '<p> Resposta certa é letra ' + '<span class="incorrectFeedback">' + msgLetra + '</span> <br><br> Estude sobre o conteudo pelo link <a class="incorrectFeedback" target="_blank" href="https://youtu.be/YJjBDwFakh8">https://youtu.be/YJjBDwFakh8</a> </p>')
         } else {
-            fieldset.append('<span class="correct"> Boa! Está correto!</span>')
+            var respostas_corretas = correta++;
+            fieldset.append(respostas_corretas + '<span class="correct"> Boa! Está correto!</span>')
         }
     });
 
