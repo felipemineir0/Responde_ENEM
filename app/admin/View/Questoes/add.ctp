@@ -14,13 +14,13 @@
                 <div class="questoes form">
                     <?php echo $this->Form->create('Questao', $this->FormAdmin->formConfigs); ?>
                     <?php
-                    echo $this->Form->input('materias_tipo_id');
-                    echo $this->Form->input('topicos_tipo_id', array('empty' => ''));
-                    echo $this->Form->input('prova_aplicada');
+                    echo $this->Form->input('materias_tipo_id' , array('empty' => 'Selecione um tipo de máteria'));
+                    echo $this->Form->input('topicos_tipo_id', array('empty' => 'Selecione um tipo de tópico'));
+                    echo $this->Form->input('prova_aplicada' , array('placeholder' => 'Qual o ano de aplicação?'));
                     echo $this->Form->input('introducao', array('class' => 'ckeditor'));
                     echo $this->Form->input('texto', array('class' => 'ckeditor'));
                     echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
-                    echo $this->Form->input('pergunta');
+                    echo $this->Form->input('pergunta', array('placeholder' => 'Digite a pergunta da questão'));
                     echo $this->Form->input('alternativa_1', array('class' => 'ckeditor'));
                     echo $this->Form->input('alternativa_2', array('class' => 'ckeditor'));
                     echo $this->Form->input('alternativa_3', array('class' => 'ckeditor'));
@@ -28,7 +28,7 @@
                     echo $this->Form->input('alternativa_5', array('class' => 'ckeditor'));
                     echo $this->Form->input('alternativa_resposta_id', array('options' => array('1' => 'Alternativa 1', '2' => 'Alternativa 2',
                                             '3' => 'Alternativa 3', '4' => 'Alternativa 4', '5' => 'Alternativa 5')));
-                    echo $this->Form->input('link_estudo');
+                    echo $this->Form->input('link_estudo', array('placeholder' => 'https://www.youtube.com/'));
                     echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
                     ?>
                     <div class='form-actions form-actions-padding-sm'>
