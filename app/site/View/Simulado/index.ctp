@@ -47,7 +47,7 @@
                         <br>
                         <div id="question" class="question">
                             <fieldset id=<?php echo $numQuestao; ?>>
-                                (<?php echo "ENEM " . $questao['Questao']['prova_aplicada']; ?>) <?php echo substr($questao['Questao']['introducao'], 3); ?>
+                                <p>(<?php echo "ENEM " . $questao['Questao']['prova_aplicada']; ?>) <?php echo substr($questao['Questao']['introducao'], 3, -4); ?></p>
 
                                 <?php if (!empty($questao['Questao']['imagem'])) { ?>
                                     <div class="image-prod">
@@ -57,7 +57,7 @@
 
                                 <?php if (!empty($questao['Questao']['texto'])) : ?>
                                     <blockquote>
-                                        <?php echo $questao['Questao']['texto']; ?>
+                                        <p><?php echo substr($questao['Questao']['texto'], 3, -4); ?></p>
                                     </blockquote>
                                 <?php endif; ?>
 
@@ -65,15 +65,15 @@
                                     <p><?php echo $questao['Questao']['pergunta']; ?></p>
                                 <?php endif; ?>
 
-                                <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>">
+                                <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>" data-link_url="<?php echo $questao['Questao']['link_estudo']; ?>">
                                     <tbody style="margin-top: 15px;">
                                         <?php for ($inc = 1; $inc <= 5; $inc++) : ?>
                                             <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null ?>">
                                                 <td width="8" valign="top">
-                                                    <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa' ?>">
+                                                    <input id="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>" name="questao_<?php echo $questao['Questao']['id']; ?>" class="bolaradio" type="radio" value="alternativa_<?php echo $inc; ?>" data-correct="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'correta' : 'falsa'  ?>">
                                                 </td>
                                                 <td>
-                                                    <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo substr($questao['Questao']['alternativa_' . $inc], 3); ?></label>
+                                                    <label for="<?php echo $questao['MateriasTipo']['nome']; ?>_<?php echo $questao['Questao']['id']; ?>_<?php echo $inc; ?>"><?php echo $letra[$inc - 1]; ?>) <?php echo substr($questao['Questao']['alternativa_' . $inc], 3, -4); ?></label>
                                                 </td>
                                             </tr>
                                         <?php endfor; ?>
@@ -87,15 +87,26 @@
 
                 <?php $numQuestao++;
                 endforeach; ?>
-                <div class="formulario-contato" style="padding: 0 0;">
-                    <div style="margin:2px;">Acertou 4 de 10 | Tempo de simulado: <input type="text" size="7" name="crono" title="Cronómetro" id="crono" value="crono">
-                        <button type="submit" value="corrigir" id="corrigir">corrigir <i class="fas fa-arrow-alt-circle-right"></i></button>
-                        <a href="<?php echo $this->request->base ?>/simulado">fazer novamente <i class="fas fa-undo"></i></a>
+
+                <div class="row">
+                    <div class="formulario-contato" style="padding: 0 0;">
+                        <div style="margin:2px;">
+                            <div class="col-xs-12 col-sm-6 col-md-6 infos">
+                                <span id="result_acertos" style="font-weight: 500;"></span>
+                                <span>Tempo de simulado:&nbsp;&nbsp;</span>
+                                <input type="text" size="7" name="crono" title="Cronómetro" id="crono" value="crono">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 infos">
+                                <button type="submit" value="corrigir" id="corrigir">corrigir <i class="fas fa-arrow-alt-circle-right"></i></button>
+                                <a href="<?php echo $this->request->base ?>/simulado">fazer novamente <i class="fas fa-undo"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
             <!-- FINAL QUESTÃO -->
-            <h2 id="quizResults" style="margin-top: 25px;margin-bottom: 10px;line-height: 1em;font-family: Helvetica;font-weight: 400;">Você acertou 40% do simulado</h2>
+
+            <div id="result_simulado" class="result_simulado"></div>
 
         </div>
     </div>
@@ -111,4 +122,4 @@
         })
     });
 </script>
-<?php echo $this->Html->script(array("cronometro", "correcao")); ?>
+<?php echo $this->Html->script(array("correcao", "cronometro")); ?>

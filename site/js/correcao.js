@@ -1,14 +1,15 @@
 $('#SIMULADO-form').submit(function(e) {
-    var correta = 1;
+    var correta = 0;
+    var errada = 0;
     e.preventDefault();
     $('.v').removeClass('resposta-correta')
     $('input:checked').each(function(index) {
         fieldset = $(this).parent().parent().parent().parent().parent()
-        //fieldset.find('p').remove()
-        
 
         if ($(this).data('correct') == 'falsa') {
-            var letra_correcao = fieldset.find('.qtablela').data('correta')
+            errada++;
+            var letra_correcao = fieldset.find('.qtablela').data('correta');
+            var link_estudo = fieldset.find('.qtablela').data('link_url');
             var letra = letra_correcao
             if (letra == 1) { msgLetra = "A"; }
             else if (letra == 2) { msgLetra = "B"; }
@@ -17,13 +18,16 @@ $('#SIMULADO-form').submit(function(e) {
             else if (letra == 5) { msgLetra = "E"; }
             fieldset.find('.v').addClass('resposta-correta');
             console.log(fieldset.find('.v'))
-            fieldset.append('<span class="incorrect"> Você errou essa.</span>' +
-                '<p> Resposta certa é letra ' + '<span class="incorrectFeedback">' + msgLetra + '</span> <br><br> Estude sobre o conteudo pelo link <a class="incorrectFeedback" target="_blank" href="https://youtu.be/YJjBDwFakh8">https://youtu.be/YJjBDwFakh8</a> </p>')
+            fieldset.append('<span class="incorrect"> Você errou essa.</span>' + '<span> Estude pelo link  ' + link_estudo + '</span>' +
+                '<p> Resposta certa é letra ' + '<span class="incorrectFeedback">' + msgLetra + '</span></p>')
         } else {
-            var respostas_corretas = correta++;
-            fieldset.append(respostas_corretas + '<span class="correct"> Boa! Está correto!</span>')
+            correta++;
+            fieldset.append('<span class="correct"> Boa! Está correto!</span>')
         }
     });
+
+    document.getElementById("result_acertos").innerHTML = "Acertos: "  + correta + " de 10 | ";
+    document.getElementById("result_simulado").innerHTML = "Voce acertou " + ((10 * correta) / 100) * 100 + "% do simulado";
 
     var elementos = $('fieldset:not(:has(input[type=radio]:checked))');
     var aviso = elementos.map(function() {
