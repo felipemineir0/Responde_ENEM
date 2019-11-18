@@ -15,8 +15,8 @@
                     <?php echo $this->Form->create('TopicosTipo', $this->FormAdmin->formConfigs); ?>
                     <?php
                     echo $this->Form->input('id');
-                    echo $this->Form->input('nome');
-                    echo $this->Form->input('link_de_estudo');
+                    echo $this->Form->input('nome', array('placeholder' => 'Digite o nome do tópico'));
+                    echo $this->Form->input('link_de_estudo', array('placeholder' => 'https://www.youtube.com/'));
                     ?>
                     <div class='form-actions form-actions-padding-sm'>
                         <div class='row'>

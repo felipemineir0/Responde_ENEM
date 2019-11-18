@@ -63,7 +63,11 @@
                                     <p><?php echo $questao['Questao']['pergunta']; ?></p>
                                 <?php endif; ?>
 
-                                <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>" data-link_url="<?php echo $questao['Questao']['link_estudo']; ?>">
+                                <?php if(!empty($questao['Questao']['link_estudo'])) : ?>
+                                    <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>" data-link_url="<?php echo $questao['Questao']['link_estudo']; ?>">
+                                <?php else : ?>
+                                    <table width="90%" class="qtablela" data-correta="<?php echo $questao['Questao']['alternativa_resposta_id'] ?>" data-link_url="<?php echo $questao['TopicosTipo']['link_de_estudo']; ?>">
+                                <?php endif; ?>
                                     <tbody style="margin-top: 15px;">
                                         <?php for ($inc = 1; $inc <= 5; $inc++) : ?>
                                             <tr class="<?php echo $inc == $questao['Questao']['alternativa_resposta_id'] ? 'v' : null ?>">

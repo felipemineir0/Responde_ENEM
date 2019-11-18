@@ -8,12 +8,13 @@ App::uses('AppController', 'Controller');
 class SimuladoController extends AppController {
 
     public $components = array('Paginator');
-    public $uses = array('Questao', 'Album', 'AlbunsImagem', 'AlbunsVideo');
+    public $uses = array('Questao', );
 
     public function index($slug_status = "") {
         $this->Questao->MateriasTipo->recursive = -1;
         $materiasTipos = $this->Questao->MateriasTipo->find('all', array("fields" => array("nome", "slug")));
-        $this->set(compact('materiasTipos'));
+        $topicosTipos = $this->Questao->TopicosTipo->find('all', array("fields" => array("nome")));
+        $this->set(compact('materiasTipos','topicosTipos'));
 
         $fields_questoes = array(
             'Questao.id',
@@ -30,7 +31,8 @@ class SimuladoController extends AppController {
             'Questao.alternativa_5',
             'Questao.link_estudo',
             'Questao.alternativa_resposta_id',
-            'MateriasTipo.nome');
+            'MateriasTipo.nome',
+            'TopicosTipo.link_de_estudo' );
 
             if (!empty($slug_status)) {
 
@@ -46,8 +48,6 @@ class SimuladoController extends AppController {
                 $conditions_or["Questao.nome LIKE"] = "%" . $this->request->query["query"] . "%";
 
                 $conditions_or["Questao.descricao LIKE"] = "%" . $this->request->query["query"] . "%";
-
-                //$conditions_or["Cidade.nome LIKE"] = "%" . $this->request->query["query"] . "%";
 
                 $conditions = array('OR' => $conditions_or);
             }
