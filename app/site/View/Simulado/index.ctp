@@ -31,8 +31,6 @@
         </div>
         </div>
     </section>
-    <!-- onclick="para();" -->
-    <!--https://www.confiraconcursos.com.br/simulados-e-questoes/simulado-para-web-designer.html-->
     <div class="container entry">
         <div class="row" id="theExam">
             <!-- INICIO QUESTÃO -->
@@ -98,7 +96,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 infos">
                                 <button type="submit" value="corrigir" id="corrigir">corrigir <i class="fas fa-arrow-alt-circle-right"></i></button>
-                                <a href="<?php echo $this->request->base ?>/simulado">fazer novamente <i class="fas fa-undo"></i></a>
+                                <a onClick="window.location.reload();">fazer novamente <i class="fas fa-undo"></i></a>
                             </div>
                         </div>
                     </div>

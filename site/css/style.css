@@ -58,6 +58,10 @@ select::-ms-expand {display: none;}
 .top-fixed .menu-topo ul li{display: inline;margin-right: 22px;}
 .top-fixed .menu-topo ul li a{color: #fedc08;font-family: Ubuntu; font-size: 20px;font-weight: 700;text-transform: uppercase;padding: 7px 15px; border-radius: 30px;}
 .top-fixed .menu-topo ul li a:hover,.top-fixed .menu-topo ul li.active a{background-color: #fedc08;color: #313131;}
+img.img-circle.mini {width: 23px !important;height: 23px !important;}
+img.img-circle.pequeno {width: 50px !important;height: 50px !important;}
+img.img-circle.img-top.grande {	width: 190px !important;height: 190px !important;}
+img.img-circle.img-center.grande {width: 70%;}
 
 .banner-home{overflow: hidden;}
 .banner-home .slider-banner{height:570px;}
@@ -204,7 +208,7 @@ blockquote { color: #717171; padding: 10px 0 10px 20px; font-family: "Georgia"; 
 .formulario-contato button{color: #313131;font-family: Pacifico;font-size: 24px;font-weight: 400;float:right;border-radius: 100px;background-color: #fedc08;width: 124px;height: 35px;outline: none;}
 .formulario-contato button:hover{opacity: 0.7;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .formulario-contato button .fa-chevron-circle-right{float: right;margin-top: 7px;margin-right: 8px;margin-bottom: 11px;}
-.formulario-contato a{color: #313131;font-family: Pacifico;font-weight: 400;float:right;border-radius: 100px;background-color: #fedc08;width: 170px;height: 35px;font-size: 18px;padding: 6px 5px 0 12px;outline: none;}
+.formulario-contato a{color: #313131;font-family: Pacifico;font-weight: 400;cursor: pointer;float:right;border-radius: 100px;background-color: #fedc08;width: 170px;height: 35px;font-size: 18px;padding: 6px 5px 0 12px;outline: none;}
 .formulario-contato a:hover{ opacity: 0.7;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .formulario-contato a .fa-undo{float: right; margin-top: 2px; margin-right: 4px; font-size: 20px;}
 

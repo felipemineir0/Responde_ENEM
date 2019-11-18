@@ -1,10 +1,40 @@
 <style>
-#chartPorcentagem {min-width: 300px; max-width: 800px;height: 500px;margin: 1em auto;}
-caption {padding-bottom: 15px;font-family: 'Verdana';font-size: 1.2em;color:#555;}
-table {	font-family: 'Verdana';	font-size: 12pt;border-collapse: collapse;border: 1px solid #EBEBEB;margin: 2px auto; text-align: center; width: 100%;}
-table tr:nth-child(odd) {background-color: #fff;}
-table tr:nth-child(even) {background-color: #FCF9F9;}
-th { font-weight: 600; padding: 10px;}
+    #chartPorcentagem {
+        min-width: 300px;
+        max-width: 800px;
+        height: 500px;
+        margin: 1em auto;
+    }
+
+    caption {
+        padding-bottom: 15px;
+        font-family: 'Verdana';
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    table {
+        font-family: 'Verdana';
+        font-size: 12pt;
+        border-collapse: collapse;
+        border: 1px solid #EBEBEB;
+        margin: 2px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #FCF9F9;
+    }
+
+    th {
+        font-weight: 600;
+        padding: 10px;
+    }
 </style>
 
 <main style="margin-bottom: 20px;">
@@ -25,7 +55,7 @@ th { font-weight: 600; padding: 10px;}
                 <div class="row user-row">
                     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                         <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
-                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/s_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="50" height="50" />
+                            <img class="img-circle pequeno" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/" . $cooperado['Cooperado']["imagem"]); ?>" />
                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
                             <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
@@ -40,7 +70,8 @@ th { font-weight: 600; padding: 10px;}
                         <i class="glyphicon glyphicon-chevron-down text-muted"></i>
                     </div> -->
                 </div>
-                <div class="row"><!-- user-infos user1 -->
+                <div class="row">
+                    <!-- user-infos user1 -->
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
@@ -50,7 +81,7 @@ th { font-weight: 600; padding: 10px;}
                                 <div class="row">
                                     <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
                                         <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
-                                            <img class="img-circle img-top" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/m_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="100%" height="auto" />
+                                            <img class="img-circle img-top grande" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/" . $cooperado['Cooperado']["imagem"]); ?>" />
                                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
                                             <img class="img-circle img-top" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="100%" height="auto" />
                                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
@@ -59,7 +90,7 @@ th { font-weight: 600; padding: 10px;}
                                     </div>
                                     <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
                                         <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
-                                            <img class="img-circle img-center" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/s_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="70%" height="auto" />
+                                            <img class="img-circle img-center grande" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/" . $cooperado['Cooperado']["imagem"]); ?>" />
                                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
                                             <img class="img-circle img-center" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="70%" height="auto" />
                                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
@@ -67,16 +98,17 @@ th { font-weight: 600; padding: 10px;}
                                         <?php endif; ?> </div>
                                     <div class="col-xs-10 col-sm-10 hidden-md hidden-lg">
                                         <dl>
+                                            <dt>&nbsp</dt>
                                             <dt>Nome Completo: <strong><?php echo ucfirst($cooperado['Cooperado']['nome']); ?></strong></dt>
                                             <dt>Login de Usuário: <span><?php echo $cooperado['Cooperado']['matricula']; ?></span></dt>
                                             <dt>Email: <span><?php echo $cooperado['Cooperado']['email']; ?></span></dt>
                                             <dt>Telefone: <span><?php echo formataTelefone($cooperado['Cooperado']['telefone']); ?></span></dt>
                                             <dt>Registrado desde: <span><?php echo date("d-m-Y", strtotime($cooperado['Cooperado']['created'])); ?></span></dt>
-                                            <dt>Sexo: 
+                                            <dt>Sexo:
                                                 <span>
                                                     <?php if ($cooperado['Cooperado']['sexo'] == 'F') : ?>Feminino
                                                     <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>Masculino
-                                                    <?php endif; ?>
+                                                <?php endif; ?>
                                                 </span>
                                             </dt>
                                             <dt>Simulados feito: <span>0</span></dt>
@@ -152,13 +184,12 @@ th { font-weight: 600; padding: 10px;}
                     </div>
                 </div>
             </div>
-
             <div class="well col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="row user-row">
                     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                         <?php if (!empty($cooperado['Cooperado']['imagem'])) : ?>
-                            <img class="img-circle" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . "/s_" . $cooperado['Cooperado']["imagem"]); ?>" alt="<?php echo $cooperado["nome"] ?>" width="50" height="50" />
+                            <img class="img-circle pequeno" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($cooperado['Cooperado']["id"] . '/' . $cooperado['Cooperado']["imagem"]); ?>" />
                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'F') : ?>
                             <img class="img-circle" src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $cooperado['Cooperado']["nome"] ?>" width="50" height="50" />
                         <?php elseif ($cooperado['Cooperado']['sexo'] == 'M') : ?>
@@ -222,16 +253,49 @@ th { font-weight: 600; padding: 10px;}
 
 
 <style>
-.img-top {margin-top: 38px;}
-.img-center {display: block;margin-left: auto;margin-right: auto;}
-dt span{font-weight: 400;}
-.user-row {margin-bottom: 14px;}
-.user-row:last-child { margin-bottom: 0;}
-.dropdown-user {margin: 13px 0; padding: 5px;height: 100%;}
-.dropdown-user:hover {cursor: pointer;}
-.table-user-information > tbody > tr {border-top: 1px solid rgb(221, 221, 221);}
-.table-user-information > tbody > tr:first-child {border-top: 0;}
-.table-user-information > tbody > tr > td {border-top: 0;}
+    .img-top {
+        margin-top: 38px;
+    }
+
+    .img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    dt span {
+        font-weight: 400;
+    }
+
+    .user-row {
+        margin-bottom: 14px;
+    }
+
+    .user-row:last-child {
+        margin-bottom: 0;
+    }
+
+    .dropdown-user {
+        margin: 13px 0;
+        padding: 5px;
+        height: 100%;
+    }
+
+    .dropdown-user:hover {
+        cursor: pointer;
+    }
+
+    .table-user-information>tbody>tr {
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+
+    .table-user-information>tbody>tr:first-child {
+        border-top: 0;
+    }
+
+    .table-user-information>tbody>tr>td {
+        border-top: 0;
+    }
 </style>
 <?php
 function formataTelefone($phone)
@@ -240,7 +304,7 @@ function formataTelefone($phone)
     $matches = [];
     preg_match('/^([0-9]{2})([0-9]{4,5})([0-9]{4})$/', $formatedPhone, $matches);
     if ($matches) {
-        return '('.$matches[1].') '.$matches[2].'-'.$matches[3];
+        return '(' . $matches[1] . ') ' . $matches[2] . '-' . $matches[3];
     }
 }
 ?>

@@ -58,9 +58,7 @@ class SimuladoController extends AppController {
             }
 
             $this->paginate = array(
-                'order' => array(
-                    'Questao.created' => 'desc',
-                ),
+                'order' => 'RAND()',
                 'conditions' => $conditions,
                 'fields' => $fields_questoes,
                 'limit' => 10

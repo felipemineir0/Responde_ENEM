@@ -39,11 +39,11 @@
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                         ?>
 
-                        <?php if (!empty($cooperado['Cooperado']['matricula'])) : ?>
+                        <?php if (!empty($this->request->data['Cooperado']['imagem'] != "")) : ?>
                             <div class="form-group">
                             <label class="col-md-2 control-label" for="arquivo">Imagem atual</label>
                             <div class="col-md-5 controls">
-                                <?php echo $this->Html->image('../../site/upload/areausuario/' . $this->request->data["Cooperado"]["id"] . '/s_' . $this->request->data["Cooperado"]["imagem"]); ?>
+                                <?php echo $this->Html->image('../../site/upload/cooperados/' . $this->request->data["Cooperado"]["id"] . '/' . $this->request->data["Cooperado"]["imagem"]); ?>
                             </div>
                         </div>
                         <?php endif ?>
@@ -73,5 +73,9 @@
         </div>
     </section>
 </main>
-
+<style>
+.controls img {
+    width: 50px;
+}
+</style>
 <?php echo $this->Html->script(array("registro", "jquery.maskedinput.min")); ?>

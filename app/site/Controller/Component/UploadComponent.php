@@ -66,7 +66,6 @@ class UploadComponent extends Component {
         }
 
         if (strpos($imagem["type"], 'image') === false) {
-            exit(debug('chegou aqui'));
             return "";
         }
 

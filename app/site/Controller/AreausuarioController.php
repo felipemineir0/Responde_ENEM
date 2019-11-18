@@ -89,15 +89,20 @@ class AreausuarioController extends AppController {
 
 	public function beforeFilter() {
         $this->Auth->allow(['registro']);
-    }
+	}
 
     function registro()
     {
         if (!empty($this->data)) {
-            if ($this->data['Cooperado']['senha'] == $this->Auth->password($this->data['Cooperado']['senha_confirma'])) {
-                $this->Registro->create();
-                if ($this->Registro->save($this->data)) {
-                    $this->Auth->login($this->data);
+            if ($this->request->is('post')) {
+
+				if (isset($this->data[$this->alias]['senha'])) {
+					$this->data[$this->alias]['senha'] = md5($this->data[$this->alias]['senha']);
+				}
+
+                $this->Cooperado->create();
+                if ($this->Cooperado->save($this->data)) {
+                    //$this->Auth->login($this->data);
                     $this->redirect(array('controller' => 'home', 'action' => 'index'));
                 }
             }

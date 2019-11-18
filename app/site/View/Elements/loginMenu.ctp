@@ -23,7 +23,7 @@
         <div class="btn-group" style="margin-top: -5px;">
             <button type="button" class="btn btn-success" style="height: 40px;">
                 <?php if (!empty($objsessao['Cooperado']['imagem'])) : ?>
-                    <img src="<?php echo $this->webroot; ?>/upload/areausuario/<?php echo ($objsessao['Cooperado']["id"] . "/s_" . $objsessao['Cooperado']["imagem"]); ?>" alt="<?php echo $objsessao['Cooperado']["nome"] ?>" width="23" height="23" />
+                    <img class="img-circle mini" src="<?php echo $this->webroot; ?>/upload/cooperados/<?php echo ($objsessao['Cooperado']["id"] . "/" . $objsessao['Cooperado']["imagem"]); ?>" />
                 <?php elseif ($objsessao['Cooperado']['sexo'] == 'F') : ?>
                     <img src="<?php echo $this->webroot; ?>/img/female.png" alt="<?php echo $objsessao['Cooperado']["nome"] ?>" width="23" height="23" />
                 <?php elseif ($objsessao['Cooperado']['sexo'] == 'M') : ?>

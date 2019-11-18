@@ -42,10 +42,7 @@ class Cooperado extends AppModel
     public function beforeSave($options = array())
     {
         if (isset($this->data[$this->alias]['senha'])) {
-            $passwordHasher = new SimplePasswordHasher();
-            $this->data[$this->alias]['senha'] = $passwordHasher->hash(
-                $this->data[$this->alias]['senha']
-            );
+            $this->data[$this->alias]['senha'] = sha1($this->data[$this->alias]['senha']);
         }
 
         //INICIO - Editar - Método de upload para pastas com ID 

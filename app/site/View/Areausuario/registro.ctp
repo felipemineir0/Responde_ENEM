@@ -23,7 +23,7 @@
 
            	<div class="col-lg-11 col-md-11 col-sm-11 cel-auto formulario-contato-top">
 			   <div class="col-lg-11 col-md-11 col-sm-11 cel-auto formulario-contato-top">
-                    <?php echo $this->Form->create('Registro', $this->FormSite->formConfigs); ?>
+                    <?php echo $this->Form->create('Cooperado', $this->FormSite->formConfigs); ?>
 
                     <div class="row">
                         <?php
@@ -38,6 +38,7 @@
                             1 => 'Indicação da escola', 2 => 'Indicação de amigos',3 => 'Redes Sociais', 4 => 'Propagandas'
                         )));
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
+                        echo $this->Form->input('senha', array("placeholder" => 'Senha', "type" => "password", "data-rule-required" => 'true'));
                         ?>
 
                         <div class="row">
