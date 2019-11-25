@@ -1,0 +1,279 @@
+2019-11-25 20:38:40 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:40 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/upload/users/m_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/upload/users/m_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:44 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:44 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/upload/users/m_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:38:50 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/assets/images/meta_icons/favicon.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:34 Error: [NotFoundException] Questão inválida.
+Request URL: /Responde_ENEM/admin/questoes/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 [internal function]: QuestoesController->edit('img', 'meta_icons', 'favicon.png')
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestoesController), Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(QuestoesController), Object(CakeRequest))
+#4 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-11-25 20:39:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 20:42:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

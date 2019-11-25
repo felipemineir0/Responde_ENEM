@@ -32,15 +32,15 @@
                     <?php } ?>
                     <?php
                     echo $this->Form->input('pergunta', array('placeholder' => 'Digite a pergunta da questão'));
-                    echo $this->Form->input('alternativa_1', array('class' => 'ckeditor'));
-                    echo $this->Form->input('alternativa_2', array('class' => 'ckeditor'));
-                    echo $this->Form->input('alternativa_3', array('class' => 'ckeditor'));
-                    echo $this->Form->input('alternativa_4', array('class' => 'ckeditor'));
-                    echo $this->Form->input('alternativa_5', array('class' => 'ckeditor'));
-                    echo $this->Form->input('alternativa_resposta_id', array('options' => array('1' => 'Alternativa 1', '2' => 'Alternativa 2',
-                                            '3' => 'Alternativa 3', '4' => 'Alternativa 4', '5' => 'Alternativa 5')));
-                    echo $this->Form->input('link_estudo', array('placeholder' => 'https://www.youtube.com/'));
-                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 2 => "Não")));
+                    echo $this->Form->input('alternativa_A', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_B', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_C', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_D', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_E', array('class' => 'ckeditor'));
+                    echo $this->Form->input('alternativa_resposta_id', array('options' => array('1' => 'Alternativa A', '2' => 'Alternativa B',
+                                            '3' => 'Alternativa C', '4' => 'Alternativa D', '5' => 'Alternativa E')));
+                    echo $this->Form->input('link_estudo', array('placeholder' => 'Exemplo: https://www.google.com/'));
+                    echo $this->Form->input('ativo', array('options' => array(1 => "Sim", 0 => "Não")));
                     ?>
                     <div class='form-actions form-actions-padding-sm'>
                         <div class='row'>
