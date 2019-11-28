@@ -272,3 +272,121 @@
 
 2019-11-25 20:42:36 Debug: 2r54q3dvu1si7vn73m2o69u8g5:renovaLogin Called
 
+2019-11-25 22:04:31 Debug: 2r54q3dvu1si7vn73m2o69u8g5:renovaLogin Called
+
+2019-11-25 22:04:31 Debug: renovaLogin: Lina 90
+
+2019-11-25 22:04:31 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeFilter UsersController called
+
+2019-11-25 22:04:31 Debug: 3b7s3lilvftafdedap8ce6hu84:UserLogin called
+
+2019-11-25 22:04:31 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:04:31 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:04:52 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:04:52 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:04:52 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:09 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:05:30 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:05:46 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:06:07 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:06:07 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:06:07 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:06:13 Debug: 3b7s3lilvftafdedap8ce6hu84:renovaLogin Called
+
+2019-11-25 22:06:13 Debug: 3b7s3lilvftafdedap8ce6hu84:beforeFilter UsersController called
+
+2019-11-25 22:06:13 Debug: 3b7s3lilvftafdedap8ce6hu84:UserLogout called
+
+2019-11-25 22:06:13 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:06:13 Debug: kkflb89dnem99sahliu16ldj45:beforeFilter UsersController called
+
+2019-11-25 22:06:13 Debug: kkflb89dnem99sahliu16ldj45:UserLogin called
+
+2019-11-25 22:06:13 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:06:13 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:06:34 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:06:34 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:06:34 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:06:35 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:06:35 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:06:35 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:10:50 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:10:50 Debug: kkflb89dnem99sahliu16ldj45:beforeFilter UsersController called
+
+2019-11-25 22:10:50 Debug: kkflb89dnem99sahliu16ldj45:UserLogin called
+
+2019-11-25 22:10:50 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:10:50 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:11:12 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:20 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:20 Debug: kkflb89dnem99sahliu16ldj45:beforeFilter UsersController called
+
+2019-11-25 22:21:20 Debug: kkflb89dnem99sahliu16ldj45:UserLogin called
+
+2019-11-25 22:21:20 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:21:20 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:beforeRender Called, initiated in C:\wamp64\www\Responde_ENEM\lib\Cake\Event\CakeEventManager.php on line 242
+
+2019-11-25 22:21:41 Debug: kkflb89dnem99sahliu16ldj45:renovaLogin Called
+

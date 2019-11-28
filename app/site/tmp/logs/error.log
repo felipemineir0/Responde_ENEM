@@ -3138,3 +3138,233 @@ Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-11-25 22:03:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff2
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:03:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:03:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:26:42 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/site/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('destaques')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 C:\wamp64\www\Responde_ENEM\app\site\Controller\HomeController.php(10): Model->find('all', Array)
+#8 [internal function]: HomeController->index()
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#12 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-11-25 22:27:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/css/cake.generic.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:27:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/cake.power.gif
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:27:49 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/site/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('destaques')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 C:\wamp64\www\Responde_ENEM\app\site\Controller\HomeController.php(10): Model->find('all', Array)
+#8 [internal function]: HomeController->index()
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#12 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-11-25 22:28:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/css/cake.generic.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:28:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/cake.power.gif
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:28:53 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/favicon.ico
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:33:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('materias_tipos')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 C:\wamp64\www\Responde_ENEM\app\site\Controller\SimuladoController.php(15): Model->find('all', Array)
+#8 [internal function]: SimuladoController->index()
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SimuladoController), Array)
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#12 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-11-25 22:33:26 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('materias_tipos')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 C:\wamp64\www\Responde_ENEM\app\site\Controller\SimuladoController.php(15): Model->find('all', Array)
+#8 [internal function]: SimuladoController->index()
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SimuladoController), Array)
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#12 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-11-25 22:33:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/css/cake.generic.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:33:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/cake.power.gif
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:36:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'id11237991_responde_enem\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/site/simulado
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('materias_tipos')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 C:\wamp64\www\Responde_ENEM\app\site\Controller\SimuladoController.php(15): Model->find('all', Array)
+#8 [internal function]: SimuladoController->index()
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SimuladoController), Array)
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SimuladoController), Object(CakeRequest))
+#12 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-11-25 22:36:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/css/cake.generic.css
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:36:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/site/img/cake.power.gif
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\site\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -277,3 +277,214 @@ Request URL: /Responde_ENEM/admin/imgadmin/js/ckeditor/contents.css
 Stack Trace:
 #0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-11-25 22:04:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp64\www\Responde_ENEM\app\admin\View\Users\login.ctp(80): FormHelper->create('User', Array)
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(948): include('C:\\wamp64\\www\\R...')
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(910): View->_evaluate('C:\\wamp64\\www\\R...', Array)
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(471): View->_render('C:\\wamp64\\www\\R...')
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-11-25 22:05:15 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/login
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:05:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/questoes
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('questoes')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1449): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Component\PaginatorComponent.php(400): Model->hasField('created')
+#8 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Component\PaginatorComponent.php(144): PaginatorComponent->validateSort(Object(Questao), Array, Array)
+#9 C:\wamp64\www\Responde_ENEM\app\admin\Controller\QuestoesController.php(29): PaginatorComponent->paginate()
+#10 [internal function]: QuestoesController->index()
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestoesController), Array)
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(QuestoesController), Object(CakeRequest))
+#14 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-11-25 22:06:07 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/questoes
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('questoes')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1449): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Component\PaginatorComponent.php(400): Model->hasField('created')
+#8 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Component\PaginatorComponent.php(144): PaginatorComponent->validateSort(Object(Questao), Array, Array)
+#9 C:\wamp64\www\Responde_ENEM\app\admin\Controller\QuestoesController.php(29): PaginatorComponent->paginate()
+#10 [internal function]: QuestoesController->index()
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestoesController), Array)
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(QuestoesController), Object(CakeRequest))
+#14 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-11-25 22:06:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp64\www\Responde_ENEM\app\admin\View\Users\login.ctp(80): FormHelper->create('User', Array)
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(948): include('C:\\wamp64\\www\\R...')
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(910): View->_evaluate('C:\\wamp64\\www\\R...', Array)
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(471): View->_render('C:\\wamp64\\www\\R...')
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-11-25 22:06:35 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:11:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp64\www\Responde_ENEM\app\admin\View\Users\login.ctp(80): FormHelper->create('User', Array)
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(948): include('C:\\wamp64\\www\\R...')
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(910): View->_evaluate('C:\\wamp64\\www\\R...', Array)
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(471): View->_render('C:\\wamp64\\www\\R...')
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-11-25 22:11:12 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:21:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+',
+  'enabled' => true,
+)
+Request URL: /Responde_ENEM/admin/
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 C:\wamp64\www\Responde_ENEM\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#6 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp64\www\Responde_ENEM\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp64\www\Responde_ENEM\app\admin\View\Users\login.ctp(80): FormHelper->create('User', Array)
+#9 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(948): include('C:\\wamp64\\www\\R...')
+#10 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(910): View->_evaluate('C:\\wamp64\\www\\R...', Array)
+#11 C:\wamp64\www\Responde_ENEM\lib\Cake\View\View.php(471): View->_render('C:\\wamp64\\www\\R...')
+#12 C:\wamp64\www\Responde_ENEM\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 C:\wamp64\www\Responde_ENEM\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-11-25 22:21:41 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin//upload/users//s_
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-25 22:21:41 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /Responde_ENEM/admin/assets/images/meta_icons/favicon.png
+Stack Trace:
+#0 C:\wamp64\www\Responde_ENEM\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
